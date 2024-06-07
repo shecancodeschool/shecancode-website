@@ -17,7 +17,10 @@ module.exports = {
         slog : "#F9F9F9",
         banner : "#020F20",
         nav : "#142032"
-      }
+      },
+      screens: {
+        'xs': '500px',
+      },
     },
   },
   plugins: [],

@@ -1,24 +1,27 @@
 import React from 'react'
 import Image from 'next/image'
 import banner_img from "../public/banner_img.png"
+import {ButtonOne, ButtonTwo} from "./Buttons"
 
 const Banner = () => {
   return (
     <>
-      <div className="relative isolate flex flex-col justify-end overflow-hidden px-8 pb-8 pt-40 mx-auto mt-24">
-        <Image src={banner_img} alt="SheCanCODE_grad" className="absolute inset-0 h-full w-full object-cover"/>
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40"></div>
-        <div className='flex flex-col gap-3'>
-         <h3 className="z-10 mt-3 text-3xl font-bold text-white">UNLOCK YOUR CREATIVE POTENTIAL</h3>
-         <p className='z-10'>The ShecanCode bootcamp, one of the original  programs in the country,</p>
-         <p className='z-10'> cultivates artists who are inventive, rigorous, and engaged</p>
-        </div>
-        <div className="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-            <button></button>
+      <div className="relative h-screen isolate flex flex-col justify-end overflow-hidden">
+        <Image src={banner_img} alt="SheCanCODE_grad" className="inset-0 h-full w-full object-cover"/>
+        <div className='absolute bottom-10 left-10 md:bottom-52 md:left-60 flex flex-col justify-center items-start md:items-center gap-3 text-white p-4 md:p-0'>
+          <h3 className="z-10 mt-3 text-xl md:text-3xl font-bold text-left md:text-center">UNLOCK YOUR CREATIVE POTENTIAL</h3>
+          <div>
+           <p className='z-10 text-left md:text-center'>The ShecanCode bootcamp, one of the original programs in the country,</p>
+           <p className='z-10 text-left md:text-center'>cultivates artists who are inventive, rigorous, and engaged</p>
+          </div>
+          <div className='w-full flex justify-center items-center gap-5'>
+            <ButtonOne text="Enroll Now"/>
+            <ButtonTwo text="Get Started"/>
+          </div>
         </div>
       </div>
     </>
   )
 }
 
-export default Banner
+export default Banner;
