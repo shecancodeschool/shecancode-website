@@ -43,8 +43,8 @@ const CourseList = () => {
   return (
     <div className="container mx-auto p-4 relative overflow-hidden">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-[#333333] font-bold text-lg md:text-2xl">Favourite Courses</h2>
-        <a href="/all-courses" className="text-[#333333] hover:underline">See all</a>
+        <h2 className="text-[#333333] font-bold text-lg md:text-2xl font">Favourite Courses</h2>
+        <a href="/all-courses" className="text-[#333333] hover: font">See all</a>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {courses.map((course, i) => (
