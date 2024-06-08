@@ -3,16 +3,18 @@ import Banner from "@/components/Banner";
 import Statics from "@/components/Statics";
 import Slogan from "@/components/Slogan";
 import React from 'react'
+import HomeSloganSection from "@/components/HomeSloganSection";
+import CourseList from "@/components/CourseList";
+
 
 const page = () => {
   return (
     <>
-      <div className="">
-       <Header />
        <Banner/>
-      </div>
       <Slogan/>
+      <CourseList />
       <Statics />
+      <HomeSloganSection />
     </>
   );
 }

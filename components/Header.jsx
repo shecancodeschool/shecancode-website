@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from "../public/SCC_Logo.png"
@@ -8,19 +8,36 @@ import { BiMenuAltRight } from "react-icons/bi";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   }
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div className='fixed z-50 w-full flex justify-between items-center px-10 py-5 bg-gray-500 bg-opacity-50 transition-opacity text-white'>
+      <div className={`fixed z-50 w-full flex justify-between items-center px-4 md:px-12 md:py-3 py-1 transition-colors duration-300 ${scrolled ? 'bg-[#111E37] bg-opacity-100' : 'bg-[#111E37] bg-opacity-50'} text-white`}>
         <div>
-          <Image src={logo} width={50} height={50} />
+          <Image src={logo} width={80} height={60} />
         </div>
         <div className='hidden md:flex'>
-          <ul className='w-full flex justify-between gap-x-12'>
+          <ul className='w-full flex justify-between items-center  gap-x-12 mt-2 font'>
             <Link href="/home">
               <li>Home</li>
             </Link>
@@ -46,24 +63,24 @@ function Header() {
         </div>
       </div>
       {menuOpen && (
-        <div className='md:hidden bg-gray-500/50 text-white'>
-          <ul className='flex flex-col items-center gap-y-4 py-4'>
+        <div className='md:hidden fixed top-0 left-0 w-full h-full bg-[#011225] text-white z-40'>
+          <ul className='flex flex-col items-start gap-y-4 ml-10 py-4 mt-20'>
             <Link href="/home">
-              <li>Home</li>
+              <li onClick={toggleMenu}>Home</li>
             </Link>
             <Link href="/courses">
-              <li>Courses</li>
+              <li onClick={toggleMenu}>Courses</li>
             </Link>
             <Link href="/community">
-              <li>Community</li>
+              <li onClick={toggleMenu}>Community</li>
             </Link>
             <Link href="/careers">
-              <li>Careers</li>
+              <li onClick={toggleMenu}>Careers</li>
             </Link>
             <Link href="/news">
-              <li>News</li>
+              <li onClick={toggleMenu}>News</li>
             </Link>
-            <ButtonOne text="Enroll now" />
+            <ButtonOne text="Enroll now" onClick={toggleMenu} />
           </ul>
         </div>
       )}
