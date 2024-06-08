@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D&family=Poppins:wght@400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,7 +23,18 @@
 body {
   background: #ffffff;
   color: black;
+
   font-family: 'K2D', sans-serif;
 }
 
-.font{font-family: 'K2D', sans-serif;}
+.font{font-family: 'K2D';}
+.text-regular {
+  font-size: 16px;
+}
+.text-regular-30 {
+  font-size: 30px;
+}
+.poppins {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
