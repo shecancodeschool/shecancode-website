@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <>
-      <div className='flex justify-between items-center px-10 py-5 bg-gray-500/50 opacity-100 transition-opacity text-white'>
+      <div className='fixed z-50 w-full flex justify-between items-center px-10 py-5 bg-gray-500 bg-opacity-50 transition-opacity text-white'>
         <div>
           <Image src={logo} width={50} height={50} />
         </div>
