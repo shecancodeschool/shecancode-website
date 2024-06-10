@@ -13,6 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/shecancodeschool/shecancode-website.git"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  },  
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
@@ -22,11 +28,18 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
-    "react-slick": "^0.30.2"
+    "react-slick": "^0.30.2",
+    "sharp": "^0.33.4",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.24.7",
     "@eslint/js": "^9.4.0",
-    "eslint": "9.x",
+    "eslint": "^9.4.0",
+    "eslint-config-next": "^14.2.3",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
     "globals": "^15.3.0",
     "husky": "^9.0.11",
     "postcss": "^8",

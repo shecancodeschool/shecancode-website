@@ -13,10 +13,10 @@ const page = () => {
        <Banner/>
       <Slogan/>
       <CourseList />
-      <Statics />
       <HomeSloganSection />
+      <Statics />
     </>
   );
-}
+} 
 
 export default page

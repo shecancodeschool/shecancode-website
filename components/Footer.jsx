@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col space-y-2 mt-6">
           <p className="text-blue-500 f font-semibold mb-4 font">Follow us</p>
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-4">
             <a href="#" className="flex items-center space-x-2 hover:text-green-500">
               <svg
                 fill="#317ACC"
@@ -111,7 +111,7 @@ const Footer = () => {
 
         </div>
         <div className="w-full md:w-1/3 h-32 mb-6 mt-6 overflow-hidden">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.553554881119!2d30.072044274050132!3d-1.9306041366678404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca70041075f0d%3A0x8dd8bd686d407d92!2sSheCanCode%20Training%20Center!5e0!3m2!1sfr!2srw!4v1717664442768!5m2!1sfr!2srw" width="450" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.553554881119!2d30.072044274050132!3d-1.9306041366678404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca70041075f0d%3A0x8dd8bd686d407d92!2sSheCanCode%20Training%20Center!5e0!3m2!1sfr!2srw!4v1717664442768!5m2!1sfr!2srw" width="450" height="100%"  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
 

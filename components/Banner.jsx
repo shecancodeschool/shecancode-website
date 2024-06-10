@@ -16,8 +16,8 @@ const Banner = () => {
            <p className='z-10 font md:text-[24px] text-[18px] '>cultivates artists who are inventive, rigorous, and engaged</p>
          </div>
          <div className='w-full flex justify-center items-center gap-5'>
-         <button className='bg-btn1 md:px-10 md:py-3 py-2 px-6 rounded md:text-[30px] text-[15px] font' >Enroll Now</button>
-         <button className='border border-white md:px-10 md:py-3 py-2 px-6  rounded md:text-[30px] text-[15px] font' >Get started</button>
+         <button className='bg-btn1 md:px-10 md:py-3 py-2 px-6 rounded md:text-[30px] text-[15px] border  border-btn1 font ' >Enroll Now</button>
+         <button className='border border-white md:px-10 md:py-3 py-2 px-6 rounded md:text-[30px] text-[15px] font hover:bg-white hover:text-blue-950 hover:border-white transition-all duration-400 ease-in-out  hover:shadow-lg hover:transform'>Get started</button>
          </div>
        </div>
      </div>
