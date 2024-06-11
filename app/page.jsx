@@ -5,6 +5,8 @@ import Slogan from "@/components/Slogan";
 import React from 'react'
 import HomeSloganSection from "@/components/HomeSloganSection";
 import CourseList from "@/components/CourseList";
+import EducationWalkSection from "@/components/EducationWalk";
+import ReviewsCarousel from "@/components/review/reviewCaresoul";
 
 
 const page = () => {
@@ -15,6 +17,8 @@ const page = () => {
       <CourseList />
       <HomeSloganSection />
       <Statics />
+      <EducationWalkSection />
+      <ReviewsCarousel />
     </>
   );
 } 

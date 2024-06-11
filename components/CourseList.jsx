@@ -88,8 +88,8 @@ const CourseList = () => {
   return (
     <div className=" px-6 md:px-12 md:py-3 py-1 md:mt-16 mt-8 md:mb-14 mb-7">
       <div className="flex justify-between items-center mb-12">
-        <h2 className="text-[#333333] font-semibold text-lg md:text-[45px] text-[24px] font">Favourite Courses</h2>
-        <a href="/all-courses" className="text-[#333333] md:text-[20px] font-k2d">See all</a>
+        <h2 className="text-[#0B2B4E] font-semibold text-lg md:text-[45px] text-[24px] font">Favourite Courses</h2>
+        <a href="/all-courses" className="text-[#0B2B4E] md:text-[20px] font-k2d">See all</a>
       </div>
       {/* <div className="flex flex-wrap justify-center gap-8"> */}
         <Slider ref={sliderRef} {...settings}>

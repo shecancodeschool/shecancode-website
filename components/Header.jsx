@@ -32,7 +32,7 @@ function Header() {
 
   return (
     <>
-      <div className={`fixed z-50 w-full flex justify-between items-center px-4 md:px-12 md:py-3 py-1 transition-colors duration-300 ${scrolled ? 'bg-[#111E37] bg-opacity-100' : 'bg-[#111E37] bg-opacity-50'} text-white`}>
+      <div className={`fixed z-50 w-full flex justify-between items-center px-4 md:px-16 md:py-3 py-1 transition-colors duration-300 ${scrolled ? 'bg-[#111E37] bg-opacity-100' : 'bg-[#111E37] bg-opacity-50'} text-white`}>
         <div>
           <Image src={logo} width={80} height={60} />
         </div>
