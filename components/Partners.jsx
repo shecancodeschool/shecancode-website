@@ -8,6 +8,17 @@ const logos = [
   { src: '/iremboGov.PNG', alt: 'Irembo logo' },
 ];
 
+const settings = {
+  dots: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 2000,
+  autoplaySpeed: 2000,
+  cssEase: "linear"
+};
+
 const PartnersSection = () => {
   return (
     <div className=" px-4 md:px-14 md:py-3 py-1 md:mt-24 mt-8 md:my-16 mb-7 md:text-center ">
