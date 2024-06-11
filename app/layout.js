@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import EducationWalkSection from "@/components/EducationWalk";
+import OurPartnersSection from "@/components/Partners";
 
 
 
@@ -17,7 +18,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
        <Header />
+       <div>
         {children}
+       </div>
         <Footer />
       </body>
     </html>

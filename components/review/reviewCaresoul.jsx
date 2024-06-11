@@ -73,12 +73,12 @@ const ReviewsCarousel = () => {
     };
 
     return (
-        <div className="px-4 md:px-14 md:py-3 py-1 md:mt-24 mt-8 md:my-16 mb-7">
-            <h2 className="text-[42px] text-center font-bold text-[#0B2B4E] font my-12">Reviews</h2>
+        <div className="px-4 md:px-14 md:py-3 py-1 md:mt-24 mt-8 md:my-24 ">
+            <h2 className="md:text-[50px] text-3xl md:text-center font-bold text-[#0B2B4E] font my-6 md:my-24">Reviews</h2>
             <div className='flex flex-col md:flex-row gap-3 justify-between'>
                 <div className='flex flex-col justify-center md:basis-1/3'>
-                    <h2 className="text-[36px] md:text-[48px] max-w-xs font-bold text-[#0B2B4E] mb-8">What Our <span className="text-blue-500">Students</span> Say About Us</h2>
-                    <div className="flex justify-start md:mt-12">
+                    <h2 className="text-[30px] md:text-[48px] max-w-xs font-bold text-[#0B2B4E] font mb-8">What Our <span className="text-blue-500">Students</span> Say About Us</h2>
+                    <div className="flex md:justify-start justify-end md:mt-12">
                         <button className="mr-2 bg-btn1 p-5 rounded-full" onClick={prevReview}>
                             <svg viewBox="0 0 1024 1024" fill="#ffffff" height="1em" width="1em">
                                 <path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z" />
@@ -91,10 +91,10 @@ const ReviewsCarousel = () => {
                         </button>
                     </div>
                 </div>
-                <div className="md:basis-2/3 flex flex-col md:flex-row">
+                <div className="md:basis-2/3 flex flex-col gap-4 md:gap-1 md:flex-row">
                     {/* <Slider {...settings}> */}
                         {reviews.map((review, index) => (
-                            <div key={index} className="p-4">
+                            <div key={index} className="md:p-4">
                                 <div className="p-6 bg-[#E2ECF2] rounded-lg shadow-lg w-[300px] h-full">
                                     <div className="flex items-center mb-4">
                                         <img src={review.imgSrc} alt={review.name} className="w-12 h-12 rounded-full mr-4" />

@@ -55,3 +55,21 @@ body {
   background-color: #22c55e; /* Tailwind's green-500 color */
   z-index: -1;
 }
+.text-regular-48 {
+  font-size: 48px;
+}
+
+
+
+@keyframes movePartners {
+  0% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-movePartners {
+  animation: movePartners 30s linear infinite;
+}

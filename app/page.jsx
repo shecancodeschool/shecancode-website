@@ -7,18 +7,20 @@ import HomeSloganSection from "@/components/HomeSloganSection";
 import CourseList from "@/components/CourseList";
 import EducationWalkSection from "@/components/EducationWalk";
 import ReviewsCarousel from "@/components/review/reviewCaresoul";
+import PartnersSection from "@/components/Partners";
 
 
 const page = () => {
   return (
     <>
-       <Banner/>
+      <Banner/>
       <Slogan/>
       <CourseList />
       <HomeSloganSection />
       <Statics />
       <EducationWalkSection />
       <ReviewsCarousel />
+      <PartnersSection />
     </>
   );
 } 
