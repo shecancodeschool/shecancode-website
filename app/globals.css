@@ -36,3 +36,18 @@ body {
 .text-regular-48 {
   font-size: 48px;
 }
+
+
+
+@keyframes movePartners {
+  0% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-movePartners {
+  animation: movePartners 30s linear infinite;
+}
