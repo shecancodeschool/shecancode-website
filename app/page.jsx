@@ -8,6 +8,7 @@ import CourseList from "@/components/CourseList";
 import EducationWalkSection from "@/components/EducationWalk";
 import ReviewsCarousel from "@/components/review/reviewCaresoul";
 import PartnersSection from "@/components/Partners";
+import Faq from "@/components/faq/fap";
 
 
 const page = () => {
@@ -21,6 +22,7 @@ const page = () => {
       <EducationWalkSection />
       <ReviewsCarousel />
       <PartnersSection />
+      <Faq />
     </>
   );
 } 

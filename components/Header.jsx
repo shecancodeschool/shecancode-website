@@ -42,10 +42,10 @@ function Header() {
               <li>Home</li>
             </Link>
             <Link href="/courses">
-              <li>Courses</li>
+              <li>About us</li>
             </Link>
             <Link href="/community">
-              <li>Community</li>
+              <li>What we do</li>
             </Link>
             <Link href="/careers">
               <li>Careers</li>
