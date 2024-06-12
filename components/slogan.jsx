@@ -4,7 +4,7 @@ import community from "../public/community.svg"
 import train from "../public/train.svg"
 import employ from "../public/employ.svg"
 
-const slogan = () => {
+const Slogan = () => {
   return (
     <>
      <div className='w-full max-w-3/4 flex flex-wrap justify-evenly items-center bg-slog text-black py-5'>
@@ -31,4 +31,4 @@ const slogan = () => {
   )
 }
 
-export default slogan
+export default Slogan
