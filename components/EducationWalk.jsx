@@ -2,9 +2,9 @@ import Image from 'next/image';
 
 const EducationWalkSection = () => {
     return (
-        <div className="bg-white max-w-7xl  mx-auto px-4 md:px-12 md:py-3 py-1 md:mt-16 mt-8 md:mb-14 mb-7 gap-24 flex flex-col lg:flex-row  font">
+        <div className=" max-w-full mx-auto px-6 md:px-[52px]  md:py-3 py-1 md:mt-[113px] mt-8 md:mb-14 mb-7  gap-24 flex flex-col lg:flex-row  justify-center font">
             {/* Image div */}
-            <div className="w-[456.43px] h-[474px]  md:flex hidden gap-4 flex-col rounded bg-[#6AACE8]/10 items-center relative">
+            <div className=" h-[474px]  md:flex hidden gap-4 flex-col rounded bg-[#6AACE8]/10 items-center relative">
                 <div className="relative -right-20  -top-2  ">
                     <Image
                         src="/education-1.jpg"
@@ -14,7 +14,7 @@ const EducationWalkSection = () => {
                         className="rounded-md relative z-10"
                     />
                 </div>
-                <div className="relative  -left-24 -bottom-1 lg:order-2 lg:ml-6 w-full lg:w-auto">
+                <div className="relative  -left-16 -bottom-1 lg:order-2 lg:ml-6 w-full lg:w-auto">
                     <Image
                         src="/education-2.png"
                         alt="Laptop and hands"
@@ -25,11 +25,11 @@ const EducationWalkSection = () => {
                 </div>
             </div>
             {/* Text div */}
-            <div className="w-full lg:w-1/2  lg:mt-0 flex flex-col justify-center items-start">
-                <h2 className="md:text-[48px] text-3xl font-semibold text-[#0B2B4E] mb-5 md:mb-12 leading-[3rem]">
+            <div className=" lg:mt-0 flex flex-col justify-center items-start">
+                <h2 className="md:text-[48px] text-3xl font-semibold text-[#317ACC] mb-5 md:mb-12 leading-[3rem]">
                     Let Your Education Do <br></br> The Walking
                 </h2>
-                <ul>
+                <ul className='flex flex-col gap-[20px] '>
                     <li className="flex items-center mb-4 cursor-pointer">
                         <div className="bg-[#DDFFFF] p-3 hover:bg-[#011225] transition hover:duration-300 rounded-full mr-4">
                             <svg
@@ -42,7 +42,7 @@ const EducationWalkSection = () => {
                                 <path d="M21 3h-7a2.98 2.98 0 00-2 .78A2.98 2.98 0 0010 3H3a1 1 0 00-1 1v15a1 1 0 001 1h5.758c.526 0 1.042.214 1.414.586l1.121 1.121c.009.009.021.012.03.021.086.079.182.149.294.196h.002a.996.996 0 00.762 0h.002c.112-.047.208-.117.294-.196.009-.009.021-.012.03-.021l1.121-1.121A2.015 2.015 0 0115.242 20H21a1 1 0 001-1V4a1 1 0 00-1-1zM8.758 18H4V5h6c.552 0 1 .449 1 1v12.689A4.032 4.032 0 008.758 18zM20 18h-4.758c-.799 0-1.584.246-2.242.689V6c0-.551.448-1 1-1h6v13z" />
                             </svg>
                         </div>
-                        <span className="text-gray-700 md:text-[22px] font-medium">Free computer, Videos and kits</span>
+                        <span className="text-gray-700 md:text-[30px] font-medium">Free computer, Videos and kits</span>
                     </li>
                     <li className="flex items-center mb-4  cursor-pointer">
                         <div className="bg-[#DDFFFF] p-3 hover:bg-[#011225] transition hover:duration-300   rounded-full mr-4">
@@ -58,7 +58,7 @@ const EducationWalkSection = () => {
                                 <path d="M7.5 3a.5.5 0 01.5.5v5.21l3.248 1.856a.5.5 0 01-.496.868l-3.5-2A.5.5 0 017 9V3.5a.5.5 0 01.5-.5z" />
                             </svg>
                         </div>
-                        <span className="text-gray-700 md:text-[22px] font-medium">Learn at your own pace</span>
+                        <span className="text-gray-700 md:text-[30px] font-medium">Learn at your own pace</span>
                     </li>
                     <li className="flex items-center mb-4  cursor-pointer">
                         <div className="bg-[#DDFFFF] p-3  hover:bg-[#011225] transition hover:duration-300  rounded-full mr-4">
@@ -72,7 +72,7 @@ const EducationWalkSection = () => {
                                 <path d="M20 5h-8.586L9.707 3.293A.997.997 0 009 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z" />
                             </svg>
                         </div>
-                        <span className="text-gray-700 md:text-[22px] font-medium">Collaborate with different learners around the globe</span>
+                        <span className="text-gray-700 md:text-[30px] font-medium">Collaborate with different learners around the globe</span>
                     </li>
                     <li className="flex items-center mb-4  cursor-pointer">
                         <div className="bg-[#DDFFFF] p-3 hover:bg-[#011225] transition hover:duration-300  rounded-full mr-4">
@@ -92,7 +92,7 @@ const EducationWalkSection = () => {
                                 <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
                             </svg>
                         </div>
-                        <span className="text-gray-700 md:text-[22px] font-medium">Top instructors around the globe</span>
+                        <span className="text-gray-700 md:text-[30px] font-medium">Top instructors around the globe</span>
                     </li>
                 </ul>
             </div>

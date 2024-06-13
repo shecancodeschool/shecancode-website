@@ -86,15 +86,16 @@ const CourseList = () => {
   };
 
   return (
-    <div className=" px-6 md:px-12 md:py-3 py-1 md:mt-16 mt-8 md:mb-14 mb-7">
-      <div className="flex justify-between items-center mb-12">
-        <h2 className="text-[#0B2B4E] font-semibold text-lg md:text-[45px] text-[24px] font">Favourite Courses</h2>
-        <a href="/all-courses" className="text-[#0B2B4E] md:text-[20px] font-k2d">See all</a>
+    <div className=" max-w-full mx-auto px-6 md:px-[52px] md:py-3 py-1 md:mt-16 mt-8 md:mb-14 mb-7">
+      <div className='flex flex-col gap-[39px]'>
+      <div className="flex justify-between items-center">
+        <h2 className="text-[#317ACC] font-semibold text-lg md:text-[45px] text-[24px] font">Favourite Courses</h2>
+        <a href="/all-courses" className="text-[#317ACC] md:text-[26px] font-k2d">See all</a>
       </div>
-      {/* <div className="flex flex-wrap justify-center gap-8"> */}
+      <div className="slider-container">
         <Slider ref={sliderRef} {...settings}>
         {courses.map((course, i) => (
-          <div key={i} className='px-2'>
+          <div key={i} className='mr-6'>
           <CourseCard
             key={i}
             title={course.title}
@@ -105,18 +106,19 @@ const CourseList = () => {
           </div>
         ))}
         </Slider>
-      {/* </div> */}
-      <div className="flex justify-end md:mt-12 md:mr-12  right-0 left-0">
-        <button className="mr-2 bg-btn1 p-5 rounded-full" onClick={() => sliderRef.current.slickPrev()}>
+      </div>
+      <div className="flex justify-start gap-[10px]  right-0 left-0">
+        <button className="mr-0 bg-[#669CD9] p-5 rounded-full" onClick={() => sliderRef.current.slickPrev()}>
           <svg viewBox="0 0 1024 1024" fill="#ffffff" height="1em" width="1em">
             <path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z" />
           </svg>
         </button>
-        <button className='mr-2 bg-btn1 p-5 rounded-full' onClick={() => sliderRef.current.slickNext()}>
+        <button className='mr-0 bg-[#669CD9] p-5 rounded-full' onClick={() => sliderRef.current.slickNext()}>
           <svg viewBox="0 0 1024 1024" fill="#ffffff" height="1em" width="1em">
             <path d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z" />
           </svg>
         </button>
+      </div>
       </div>
     </div>
   );

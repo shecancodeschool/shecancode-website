@@ -39,8 +39,8 @@ export default function Faq() {
         <div className="relative h-screen isolate flex flex-col justify-end overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full bg-opacity-70 bg-[#011225]"></div>
             <Image src={Im} alt="SheCanCODE_grad" className="inset-0 h-full w-full object-cover" />
-            <div className='absolute md:inset-0 flex flex-col md:mt-4 mt-6 justify-center items-center place-content-center gap-14 text-white p-4 md:p-0'>
-                <div className="bg-[#267BD9] mt-10 md:mt-0 rounded-lg shadow-lg my-12 w-full max-w-5xl px-10 md:px-20 py-6 md:py-12">
+            <div className='absolute md:inset-0 flex flex-col md:mt-16 mt-6 justify-center items-center place-content-center gap-14 text-white p-4 md:p-0'>
+                <div className="bg-[#267BD9] mt-10 md:mt-0 rounded-xl shadow-lg my-12 w-full max-w-5xl px-10 md:px-20 py-6 md:py-12">
                     <h2 className="text-xl md:text-[38px] font font-bold mb-12">Do you have questions?</h2>
                     <Accordion items={faqs} />
                 </div>

@@ -60,15 +60,24 @@ const PartnersSection = () => {
 
   return (
     <div className="px-4 md:px-14 md:py-3 py-1 md:mt-24 mt-8 md:my-16 mb-7 md:text-center">
-      <h2 className="md:text-[50px] text-[#0B2B4E] text-3xl font-semibold font md:mt-16">Our Partners</h2>
+      <h2 className="md:text-[50px] text-[#317ACC] text-3xl font-semibold font md:mt-16">Our Partners</h2>
+      <h2 className="md:text-[28px] text-[#317ACC] text-3xl font md:mt-16">Our apprentices have increased productivity in some of the best companies</h2>
       <div className=" slider-container pl-10 mt-32 ">
-        <Slider {...settings}>
-          {logos.map((logo, index) => (
-            <div key={index} className='w-full h-full' onMouseDown={handleMouseDown}>
-              <Image src={logo.src} alt={logo.alt} width={120} height={50} />
-            </div>
-          ))}
-        </Slider>
+      <Slider {...settings}>
+      {logos.map((logo, index) => (
+        <div key={index} className='w-full h-full flex justify-center items-center' onMouseDown={handleMouseDown}>
+          <div className='w-[120px] h-[100px] relative'>
+            <Image 
+              src={logo.src} 
+              alt={logo.alt} 
+              layout='fill' 
+              objectFit='center' 
+              className='object-fit' 
+            />
+          </div>
+        </div>
+      ))}
+    </Slider>
       </div>
     </div>
   );

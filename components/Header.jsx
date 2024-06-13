@@ -5,6 +5,7 @@ import Image from 'next/image'
 import logo from "../public/SCC_Logo.png"
 import { ButtonOne } from "./Buttons"
 import { BiMenuAltRight } from "react-icons/bi";
+import LogoImage from "../public/logo/logo1.png"
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,26 +33,32 @@ function Header() {
 
   return (
     <>
-      <div className={`fixed z-50 w-full flex justify-between items-center px-4 md:px-16 md:py-3 py-1 transition-colors duration-300 ${scrolled ? 'bg-[#111E37] bg-opacity-100' : 'bg-[#111E37] bg-opacity-50'} text-white`}>
+      <div className={`fixed z-50 w-full flex justify-between items-center px-4 md:px-[50px] md:py-3 py-1 transition-colors duration-300 ${scrolled ? 'bg-[#111E37] bg-opacity-100' : 'bg-[#111E37] bg-opacity-0'} text-white`}>
         <div>
-          <Image src={logo} width={80} height={60} />
+          <Image src={LogoImage} width={82.21} height={60} />
         </div>
         <div className='hidden md:flex'>
-          <ul className='w-full flex justify-between items-center  gap-x-12 mt-2 font'>
+          <ul className='w-full flex justify-between items-center  gap-[30px]  font'>
             <Link href="/home">
-              <li>Home</li>
+              <li className='text-[17px] font-semibold'>Home</li>
             </Link>
             <Link href="/courses">
-              <li>About us</li>
+              <li className='text-[17px] font-semibold'>About us</li>
             </Link>
             <Link href="/community">
-              <li>What we do</li>
+              <li className='text-[17px] font-semibold'>What we do</li>
             </Link>
             <Link href="/careers">
-              <li>Careers</li>
+              <li className='text-[17px] font-semibold'>Careers</li>
             </Link>
             <Link href="/news">
-              <li>News</li>
+              <li className='text-[17px] font-semibold'>News and Events</li>
+            </Link>
+            <Link href="/news">
+              <li className='text-[17px] font-semibold'>Our teams</li>
+            </Link>
+            <Link href="/news">
+              <li className='text-[17px] font-semibold'>Contact us</li>
             </Link>
           </ul>
         </div>
@@ -78,7 +85,13 @@ function Header() {
               <li onClick={toggleMenu}>Careers</li>
             </Link>
             <Link href="/news">
-              <li onClick={toggleMenu}>News</li>
+              <li onClick={toggleMenu}>News and Events</li>
+            </Link>
+            <Link href="/news">
+              <li onClick={toggleMenu}>Our teams</li>
+            </Link>
+            <Link href="/news">
+              <li onClick={toggleMenu}>Contact us</li>
             </Link>
             <ButtonOne text="Enroll now" onClick={toggleMenu} />
           </ul>
