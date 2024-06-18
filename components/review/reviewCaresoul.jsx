@@ -45,10 +45,10 @@ const ReviewsCarousel = () => {
 
     return (
         <div className="px-4 md:px-14 md:py-3 py-1 mt-8 md:my-7 ">
-            <h2 className="md:text-[50px] text-3xl md:text-center font-bold text-[#317ACC] font my-6 md:my-24">Reviews</h2>
+            <h2 className="md:text-[50px] text-4xl md:text-center font-bold text-[#317ACC] font my-6 md:my-24">Reviews</h2>
             <div className='max-w-[86rem] mx-auto flex flex-col md:flex-row gap-3 justify-between'>
                 <div className='flex flex-col justify-center md:basis-1/3'>
-                    <h2 className="text-[30px] md:text-[44px] max-w-xs font-bold text-[#0B2B4E] font mb-8">What Our <span className="text-blue-500">Students</span> Say About Us</h2>
+                    <h2 className="text-[35px] md:text-[44px] max-w-xs font-bold text-[#0B2B4E] font mb-8">What Our <span className="text-blue-500">Students</span> Say About Us</h2>
                     <div className="flex md:justify-start justify-end md:mt-8">
                         <button className="mr-2 border border-[#0B2B4E] p-5 rounded-full" onClick={scrollLeft}>
                             <svg viewBox="0 0 1024 1024" fill="##0B2B4E" height="1em" width="1em">

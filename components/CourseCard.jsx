@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const CourseCard = ({ title, description, image, link }) => {
   return (
-    <div className="group relative overflow-hidden rounded-lg w-full md:w-[220px] lg:w-[250px] xl:w-[300px] h-[432px] cursor-pointer">
+    <div className="group relative overflow-hidden rounded-lg md:mr-1 mr-4 md:w-[220px] lg:w-[250px] xl:w-[300px] h-[432px] cursor-pointer">
       <img
         src={image}
         alt={title}

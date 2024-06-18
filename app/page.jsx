@@ -19,9 +19,9 @@ const page = () => {
       <HomeSloganSection />
       <Statics />
       <EducationWalkSection />
-      <ReviewsCarousel />
+       <ReviewsCarousel />
       <PartnersSection />
-      <Faq />
+      <Faq /> 
     </>
   );
 } 

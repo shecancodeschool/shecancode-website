@@ -8,12 +8,12 @@ import success from "../public/success.svg"
 
 const Statics = () => {
   return (
-    <div className='px-4 md:py-1 py-1 md:mt-[113px] mt-8  mb-7 max-w-[1336px] mx-auto flex flex-col justify-center place-content-center gap-[62px]'>
+    <div className='px-4 md:py-1 py-1 md:mt-[113px] mt-8  mb-7 max-w-[1336px] mx-auto flex flex-col justify-center place-content-center gap-[54px]'>
       <div className='flex justify-center'>
         <p className='md:text-center text-3xl font md:text-[42px] max-w-4xl md:leading-[3rem] font-semibold text-[#317ACC]'>Market-aligned Courses Curated for Your Career Success</p>
       </div>
       <div className='flex justify-center'>
-        <p className='md:text-center font md:text-[23px] max-w-6xl  text-black/65'>The quality of our programs and their impact on learners is a direct reflection of who we are
+        <p className='md:text-center font text-xl md:text-[23px] max-w-6xl  text-black/65'>The quality of our programs and their impact on learners is a direct reflection of who we are
           and our ability to consistently meet the objectives we set for our students.
         </p>
       </div>
