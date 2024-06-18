@@ -86,8 +86,8 @@ const CourseList = () => {
   };
 
   return (
-    <div className=" max-w-full mx-auto px-6 md:px-[52px] md:py-3 py-1 md:mt-16 mt-8 md:mb-14 mb-7">
-      <div className='flex flex-col gap-[39px]'>
+    <div className="px-6 md:px-[52px] md:py-3 py-1 md:mt-16 mt-8 md:mb-14 mb-7">
+      <div className=' max-w-[86rem] mx-auto flex flex-col gap-[39px]'>
       <div className="flex justify-between items-center">
         <h2 className="text-[#317ACC] font-semibold text-lg md:text-[45px] text-[24px] font">Favourite Courses</h2>
         <a href="/all-courses" className="text-[#317ACC] md:text-[26px] font-k2d">See all</a>

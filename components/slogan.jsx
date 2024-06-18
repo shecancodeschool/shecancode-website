@@ -13,19 +13,19 @@ const Slogan = () => {
             <div className=' bg-btn1 p-3 rounded-full'>
               <Image src={community} alt="Community" height={30} width={30} />
             </div>
-            <p className='md:text-[24px]  text-[#317ACC]'>Community</p>
+            <p className='md:text-[24px]  text-black/65'>Community</p>
           </div>
           <div className='md:w-[225px] flex flex-col xs:flex-row justify-center items-center gap-[16px] '>
             <div className='p-3 bg-btn1 rounded-full'>
               <Image src={train} alt="Train" height={30} width={30} />
             </div>
-            <p className='md:text-[24px] text-[#317ACC]'>Train</p>
+            <p className='md:text-[24px] text-black/65'>Train</p>
           </div>
           <div className='md:w-[225px] flex flex-col xs:flex-row justify-center items-center gap-[16px] '>
             <div className='p-3 bg-btn1 rounded-full'>
               <Image src={employ} alt="Employ" height={30} width={30} />
             </div>
-            <p className='md:text-[24px] text-[#317ACC]'>Employ</p>
+            <p className='md:text-[24px] text-black/65'>Employ</p>
           </div>
         </div>
       </div>
