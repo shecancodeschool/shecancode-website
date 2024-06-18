@@ -6,8 +6,8 @@ import graduationImage from '/public/claudia.png';
 const HomeSloganSection = () => {
     return (
         <section
-            className="flex md:my-7  flex-col gap-24 md:flex-row items-center place-content-center bg-gradient-to-r from-green-100 to-blue-100 h-full overflow-hidden"
-            style={{ backgroundImage: 'url("/2.png")', backgroundSize: 'cover' }}>
+            className="flex flex-col gap-24 md:flex-row items-center place-content-center bg-gradient-to-r from-green-100 to-blue-100 h-full overflow-hidden"
+            style={{ backgroundImage: 'url("/educations.png")', backgroundSize: 'cover' }}>
             <div className="z-10  justify-center  md:block hidden">
                 <div className="flex justify-center items-center">
                     <Image
@@ -23,18 +23,18 @@ const HomeSloganSection = () => {
             </div>
 
             <div className="flex md:items-center md:justify-center py-8 md:mt-16 md:pt-7">
-                <div className="flex flex-col gap-6 justify-start  md:items-start place-content-center  md:text-left px-4">
+                <div className="flex flex-col gap-[41px] justify-start  md:items-start place-content-center  md:text-left px-4">
                     <div className="flex flex-col md:gap-2 w-full">
-                        <h1 className="text-[28px] md:text-[52px] font text-[#333333] font-semibold md:mb-4">
-                            We are <span className="text-[#317ACC] relative underline-experts">Experts</span> Learning
+                        <h1 className="text-[28px] md:text-[52px] md:max-w-[609px] font text-[#333333] font-semibold md:mb-4">
+                            We are <span className="text-[#317ACC] relative underline-experts">Experts</span> Learning Institution
                         </h1>
-                        <h1 className="text-[28px]  md:text-[52px] text-[#333333] font font-bold">Institution</h1>
+                        {/* <h1 className="text-[28px]  md:text-[52px] text-[#333333] font font-bold"></h1> */}
                     </div>
-                    <div className="mt-4 md:text-[24px]">
-                        <p className="text-gray-700 max-w-xl font-light font-k2d">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit, bibendum volutpat platea mi, adipiscing eget magna. Eu nulla ut urna venenatis velit et tincidunt. Id vitae velit.</p>
+                    <div className=" md:text-[24px]">
+                        <p className="text-[#317ACC] max-w-xl font-light font-k2d ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit, bibendum volutpat platea mi, adipiscing eget magna. Eu nulla ut urna venenatis velit et tincidunt. Id vitae velit.</p>
                     </div>
                     <div className="flex justify-start">
-                        <button className="bg-[#317ACC] font-k2d text-white py-2 px-8 rounded-md mt-6 transition duration-300 hover:bg-[#255a9e]">
+                        <button className="bg-[#317ACC] md:px-[42px] md:py-[20px] font-k2d text-white py-2 px-8 rounded-md mt-6 transition duration-300 hover:bg-[#255a9e]">
                             Enroll now
                         </button>
                     </div>
