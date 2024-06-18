@@ -33,7 +33,8 @@ function Header() {
 
   return (
     <>
-      <div className={`fixed z-50 w-full flex justify-between items-center px-4 md:px-[50px] md:py-3 py-1 transition-colors duration-300 ${scrolled ? 'bg-[#111E37] bg-opacity-100' : 'bg-[#111E37] bg-opacity-0'} text-white`}>
+      <div className={`fixed z-50 w-full px-4 md:px-[50px] md:py-3 py-1 transition-colors duration-300 ${scrolled ? 'bg-[#111E37] bg-opacity-100' : 'bg-[#111E37] bg-opacity-0'} text-white`}>
+        <div className='max-w-[86rem] mx-auto flex justify-between items-center'>
         <div>
           <Image src={LogoImage} width={82.21} height={60} />
         </div>
@@ -68,6 +69,7 @@ function Header() {
         <div className='md:hidden'>
           <BiMenuAltRight size={30} onClick={toggleMenu} />
         </div>
+      </div>
       </div>
       {menuOpen && (
         <div className='md:hidden fixed top-0 left-0 w-full h-full bg-[#011225] text-white z-40'>

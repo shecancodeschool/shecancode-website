@@ -5,6 +5,7 @@ import logo from "../public/logo.png"
 const Footer = () => {
   return (
     <footer className="bg-[#092748]/95 text-white px-8 md:px-16 py-12 md:py-24 font ">
+      <div className='max-w-[86rem] mx-auto'>
       <div className=" flex flex-col md:flex-row justify-between items-start mb-9 space-y-10  md:space-y-0">
         <div className="flex flex-col items-center justify-center space-y-2 mb-6 mt-6  ">
           <div>
@@ -109,7 +110,7 @@ const Footer = () => {
 
 
         </div>
-        <div className="w-full md:w-1/3 h-48 mb-6 mt-6 overflow-hidden">
+        <div className="w-full md:w-fit h-48 mb-6 mt-6 overflow-hidden">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.553554881119!2d30.072044274050132!3d-1.9306041366678404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca70041075f0d%3A0x8dd8bd686d407d92!2sSheCanCode%20Training%20Center!5e0!3m2!1sfr!2srw!4v1717664442768!5m2!1sfr!2srw" width="350" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
@@ -125,6 +126,7 @@ const Footer = () => {
           <span>|</span>
           <a href="#" className="md:text-sm text-[12px] text-[#CFD3D7] hover:text-white font">Contact us</a>
         </div>
+      </div>
       </div>
     </footer>
   );
