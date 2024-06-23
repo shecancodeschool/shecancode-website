@@ -1,4 +1,4 @@
-import Banner from "@/components/Banner";
+import { Banner } from "@/components/Banner";
 import Statics from "@/components/Statics";
 import React from 'react'
 import HomeSloganSection from "@/components/HomeSloganSection";
