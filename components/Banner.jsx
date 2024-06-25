@@ -54,15 +54,15 @@ export const OurTeamsBanner = () => {
             Meet The Team
           </h3>
           <div className="text-center max-w-4xl mx-auto">
-            <p className="z-10 font md:text-[24px] text-2xl mb-5">
+            <p className="z-10 font md:text-[24px] text-2xl">
               An organization is only as strong as the people who are working
               toward the same
             </p>
-            <p className="z-10 font md:text-[24px] text-2xl mb-5">
+            <p className="z-10 font md:text-[24px] text-2xl">
               purpose. Our clear mission unifies us, and their dedication and
               passion are wha
             </p>
-            <p className="z-10 font md:text-[24px] text-2xl mb-5">
+            <p className="z-10 font md:text-[24px] text-2xl">
               make our organization thrive.
             </p>
           </div>

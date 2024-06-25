@@ -1,4 +1,4 @@
-// import { Banner } from "@/components/Banner";
+import { Banner } from "@/components/Banner";
 import Statics from "@/components/Statics";
 import React from 'react'
 import HomeSloganSection from "@/components/HomeSloganSection";
@@ -8,7 +8,7 @@ import ReviewsCarousel from "@/components/review/reviewCaresoul";
 import PartnersSection from "@/components/Partners";
 import Faq from "@/components/faq/fap";
 import Slogan from "@/components/slogan";
-import { Banner } from "@/components/Banner";
+// import { Banner } from "@/components/Banner";
 
 
 const page = () => {
