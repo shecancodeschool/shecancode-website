@@ -7,9 +7,9 @@ import Slider from 'react-slick';
 
 const PartnersSection = () => {
   const logos = [
-    { src: '/IRO.png', alt: 'IRO logo' },
-    { src: '/mastercard.png', alt: 'Mastercard foundation logo' },
-    { src: '/Klab2.png', alt: 'Klab logo' },
+    { src: '/irologo.png', alt: 'IRO logo' },
+    { src: '/done.png', alt: 'Mastercard foundation logo' },
+    { src: '/kalb.png', alt: 'Klab logo' },
     { src: '/umurava2.png', alt: 'Umurava logo' },
     { src: '/iremboGov.PNG', alt: 'Irembo logo' },
   ];
@@ -72,7 +72,7 @@ const PartnersSection = () => {
               alt={logo.alt} 
               layout='fill' 
               objectFit='center' 
-              className='object-fit' 
+              className='object-contain' 
             />
           </div>
         </div>
