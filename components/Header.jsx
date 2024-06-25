@@ -79,11 +79,11 @@ function Header() {
             <Link href="/home">
               <li onClick={toggleMenu}>Home</li>
             </Link>
-            <Link href="/courses">
-              <li onClick={toggleMenu}>Courses</li>
+            <Link href="/pages/about-us">
+              <li onClick={toggleMenu}>About us</li>
             </Link>
             <Link href="/community">
-              <li onClick={toggleMenu}>Community</li>
+              <li onClick={toggleMenu}>What we do</li>
             </Link>
             <Link href="/careers">
               <li onClick={toggleMenu}>Careers</li>
