@@ -50,7 +50,7 @@ export const OurTeamsBanner = () => {
           className="inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 flex flex-col md:mt-4 mt-10 justify-center items-center place-content-center gap-[56px] text-white p-4 md:p-0">
-          <h3 className="z-10  text-4xl md:text-[50px] lg:text-[50px] xl:text-[50px] text-[20px] font-regular text-center font">
+          <h3 className="z-10  text-4xl md:text-[60px] lg:text-[60px] xl:text-[60px] text-[20px] font-bold text-center font">
             Meet The Team
           </h3>
           <div className="text-center max-w-4xl mx-auto">

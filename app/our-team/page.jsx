@@ -21,7 +21,7 @@ function Page() {
           <OurTeamsBanner />
         </div>
         <div className="w-full flex justify-center items-center">
-          <h1 className="text-blue-400 text-6xl md:text-[50px] lg:text-[50px] xl:text-[30px] text-[20px] font-regular text-center">
+          <h1 className="text-blue-400 text-6xl md:text-[50px] lg:text-[50px] xl:text-[50px] text-[20px] font-regular text-center">
             Our team
           </h1>
         </div>
