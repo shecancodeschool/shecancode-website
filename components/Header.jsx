@@ -57,7 +57,7 @@ function Header() {
               <Link href="/news">
                 <li className='text-[17px] font-semibold'>News and Events</li>
               </Link>
-              <Link href="/news">
+              <Link href="/our-team">
                 <li className='text-[17px] font-semibold'>Our teams</li>
               </Link>
               <Link href="/news">
