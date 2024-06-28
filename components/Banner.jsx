@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import banner_img from "../public/banner_img.png";
-import { ButtonOne, ButtonTwo } from "./Buttons";
+import { ButtonOne, ButtonTwo, CarrersButton } from "./Buttons";
 import OurTeam from "@/public/3.png"
+import Careers from "@/public/careersbn.png"
 
 export const Banner = () => {
   return (
@@ -65,6 +66,58 @@ export const OurTeamsBanner = () => {
             <p className="z-10 font md:text-[24px] text-2xl">
               make our organization thrive.
             </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const CareersBanner = () => {
+  return (
+    <>
+      <div className="relative h-[30rem] isolate flex flex-col justify-end overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full bg-opacity-[5%] bg-[#011225]"></div>
+        <Image
+          src={Careers}
+          alt="SheCanCODE_grad"
+          className="inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 flex flex-col md:mt-4 mt-10 justify-center items-center place-content-center gap-[56px] text-white p-4 md:p-0">
+          <h3 className="z-10  text-4xl md:text-[60px] lg:text-[60px] xl:text-[60px] text-[20px] font-bold text-center font">
+            Make an impact at front
+          </h3>
+          <div className="text-center max-w-4xl mx-auto w-full  h-full max-h-[35%] flex flex-col justify-between">
+            <div className="flex flex-col gap-2">
+             <p className="z-10 font md:text-[24px] text-2xl">Ready to take role where you can make a lasting impact on your team,</p>
+             <p className="z-10 font md:text-[24px] text-2xl">We'd love to have more talented people on board</p>
+            </div>
+            <CarrersButton text="See all open postions"/>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const WwdBanner = () => {
+  return (
+    <>
+      <div className="relative h-[30rem] isolate flex flex-col justify-end overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full bg-opacity-[5%] bg-[#011225]"></div>
+        <Image
+          src={Careers}
+          alt="SheCanCODE_grad"
+          className="inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 flex flex-col md:mt-4 mt-10 justify-center items-center place-content-center gap-[56px] text-white p-4 md:p-0">
+          <h3 className="z-10  text-4xl md:text-[60px] lg:text-[60px] xl:text-[60px] text-[20px] font-bold text-center font">
+            What we do
+          </h3>
+          <div className="text-center max-w-6xl mx-auto w-full  h-full max-h-[30%] flex flex-col">
+             <p className="z-10 font md:text-[24px] text-2xl">Our company offers thorough tech training services that help people and businesses stay ahead in the</p>
+             <p className="z-10 font md:text-[24px] text-2xl">quickly changing world of technology. We are experts in software engineering training and talent</p>
+             <p className="z-10 font md:text-[24px] text-2xl">placement, assisting businesses in locating and hiring qualified personnel</p>
           </div>
         </div>
       </div>
