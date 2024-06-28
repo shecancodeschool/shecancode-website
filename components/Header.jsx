@@ -48,7 +48,7 @@ function Header() {
               <Link href="pages/about-us">
                 <li className='text-[17px] font-semibold'>About us</li>
               </Link>
-              <Link href="/community">
+              <Link href="/what-we-do">
                 <li className='text-[17px] font-semibold'>What we do</li>
               </Link>
               <Link href="/careers">
