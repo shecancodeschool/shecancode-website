@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,9 +21,74 @@
 
 
 body {
-  background: #131212;
-  color: white;
+  background: #ffffff;
+  color: black;
+
   font-family: 'K2D', sans-serif;
 }
 
-.font{font-family: 'K2D', sans-serif;}
+.font{font-family: 'K2D';}
+.text-regular {
+  font-size: 16px;
+}
+.text-regular-30 {
+  font-size: 30px;
+}
+.poppins {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+
+.underline-experts {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-experts::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px; /* Adjust this value as needed */
+  height: 4px; /* Adjust this value as needed */
+  background-color: #22c55e; /* Tailwind's green-500 color */
+  z-index: -1;
+}
+.text-regular-48 {
+  font-size: 48px;
+}
+
+
+
+@keyframes movePartners {
+  0% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-movePartners {
+  animation: movePartners 30s linear infinite;
+}
+
+
+@layer utilities {
+  @variants responsive {
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+  }
+}
