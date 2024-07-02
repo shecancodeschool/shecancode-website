@@ -54,8 +54,8 @@ function Header() {
               <Link href="/careers">
                 <li className='text-[17px] font-semibold'>Careers</li>
               </Link>
-              <Link href="/news">
-                <li className='text-[17px] font-semibold'>News and Events</li>
+              <Link href="pages/job-description">
+                <li className='text-[17px] font-semibold'>Job Description</li>
               </Link>
               <Link href="/news">
                 <li className='text-[17px] font-semibold'>Our teams</li>
@@ -88,13 +88,13 @@ function Header() {
             <Link href="/careers">
               <li onClick={toggleMenu}>Careers</li>
             </Link>
-            <Link href="/news">
-              <li onClick={toggleMenu}>News and Events</li>
+            <Link href="pages/job-description">
+              <li onClick={toggleMenu}>Job Description</li>
             </Link>
             <Link href="/news">
               <li onClick={toggleMenu}>Our teams</li>
             </Link>
-            <Link href="/news">
+            <Link href="pages/contact-us">
               <li onClick={toggleMenu}>Contact us</li>
             </Link>
             <ButtonOne text="Enroll now" onClick={toggleMenu} />
