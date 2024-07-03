@@ -19,9 +19,9 @@ export function OurServiceLeft({
 }) {
   return (
     <>
-      <div className="flex flex-col-reverse w-full md:flex-row">
-        <div className="w-full flex flex-col justify-between gap-10">
-          <h1 className="z-10 text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-bold text-blue-400">
+      <div className="flex flex-col-reverse gap-[70px] w-full md:flex-row">
+        <div className="w-full flex flex-col  gap-[27px]">
+          <h1 className="z-10 text-3xl sm:text-4xl md:text-5xl lg:text-[50px] max-w-xl font-bold text-[#317ACC]">
             {title}
           </h1>
           <div className="flex flex-col gap-1">
@@ -41,7 +41,7 @@ export function OurServiceLeft({
               {text5}
             </p>
           </div>
-          <div className="text-blue-500 w-full max-w-[100%] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div className="text-[#317ACC] w-full max-w-[100%] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5">
             <p>
               <span className="text-blue-950 font-bold mr-2 text-lg sm:text-xl md:text-2xl">
                 -
@@ -82,7 +82,7 @@ export function OurServiceLeft({
         </div>
         <div className="w-full md:max-w-[50%]">
           <div className="w-full h-full flex justify-end self-end">
-            <Image src={srcImg} alt="bootcamp" className="object-contain" />
+            <Image src={srcImg} alt="bootcamp" className="object-contain" width={1000} />
           </div>
         </div>
       </div>
@@ -107,15 +107,15 @@ export function OurServiceRight({
 }) {
   return (
     <>
-      <div className="flex flex-col w-full md:flex-row">
+      <div className="flex flex-col gap-[70px] w-full md:flex-row">
         <div className="w-full md:max-w-[50%] h-full">
-          <div className="w-full h-full flex justify-start self-start">
-            <Image src={srcImg} alt="bootcamp" className="object-contain" />
+          <div className="w-full h-full">
+            <Image src={srcImg} alt="bootcamp" className="object-contain" width={1000}/>
           </div>
         </div>
-        <div className="w-full md:max-w-[50%] flex justify-center items-center">
-          <div className="w-full max-w-[85%] flex flex-col sm:max-w-[100%] justify-between gap-10">
-            <h1 className="z-10 text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-bold text-blue-400">
+        <div className="w-full flex flex-col justify-between">
+          <div className="w-full max-w-[85%] flex flex-col sm:max-w-[100%] gap-[27px]">
+            <h1 className="z-10 text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-bold text-[#317ACC]">
               {title}
             </h1>
             <div className="flex flex-col gap-1">
@@ -135,7 +135,7 @@ export function OurServiceRight({
                 {text5}
               </p>
             </div>
-            <div className="text-blue-500 w-full max-w-[100%] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div className="text-[#317ACC] w-full max-w-[100%] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5">
               <p>
                 <span className="text-blue-950 font-bold mr-2 text-lg sm:text-xl md:text-2xl">
                   -

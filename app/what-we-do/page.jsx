@@ -14,13 +14,13 @@ function page() {
         <div className="w-full">
           <WwdBanner />
         </div>
-        <div className="max-w-[86rem] mx-auto flex flex-col justify-center items-center space-y-20 w-full px-4">
-          <div className="flex flex-col justify-evenly items-center h-52">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-8xl text-blue-500 text-center font-bold">
+        <div className="max-w-[84rem] mx-auto flex flex-col justify-center items-center space-y-20 w-full px-4 sm:px-0">
+          <div className="flex flex-col justify-evenly items-center ">
+            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xl:text-[50px] text-[#317ACC] text-center font-bold">
               Our services
             </h1>
           </div>
-          <div className="w-full flex flex-col space-y-10 pb-20">
+          <div className="w-full flex flex-col gap-[84px] pb-[84px]">
             <div className="flex flex-col sm:flex-row justify-center items-center w-full">
               <OurServiceLeft
                 srcImg={boot}
@@ -82,8 +82,11 @@ function page() {
                 text4="connecting the dots for customers or users, these"
                 text5="are our core principles."
                 skill1="Basic"
+                skill2="Basic"
+                skill4="Problem solve"
                 skill5="Challenges"
                 skill3="Problem solve"
+                skill6="Challenges"
               />
             </div>
           </div>

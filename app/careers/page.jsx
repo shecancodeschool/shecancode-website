@@ -24,17 +24,17 @@ function Page() {
         <div className="w-full">
           <CareersBanner />
         </div>
-        <div className="max-w-[84rem] mx-auto flex flex-col justify-center items-center space-y-20 w-full">
-          <div className="flex flex-col justify-evenly items-center w-full h-80">
-            <h1 className="text-4xl text-blue-300 md:text-[60px] lg:text-[50px] xl:text-[60px] text-[20px] font-bold text-center">
+        <div className="max-w-[84rem] mx-auto p-4 md:p-0 flex flex-col justify-center items-center space-y-20 w-full">
+          <div className="my-5">
+            <h1 className="text-4xl md:my-[67px] my-6 text-[#317ACC] md:text-[60px] lg:text-[50px] xl:text-[60px] text-[36px] font-bold md:text-center">
               How we hire our team
             </h1>
-            <div className="w-full flex flex-col justify-center items-center">
-              <p className="md:text-[24px] text-2xl text-gray-400">
+            <div className="max-w-[850.73px] mx-auto flex  md:justify-center md:items-center">
+              <p className="md:text-[24px] text-2xl text-gray-400 md:text-center">
                 We like to keep things as simple as possible so we can get to
                 what’s really
-              </p>
-              <p className="md:text-[24px] text-2xl text-gray-400">
+              {/* </p> */}
+              {/* <p className="md:text-[24px] text-2xl text-gray-400"> */}
                 important - finding out more about you
               </p>
             </div>
@@ -93,14 +93,13 @@ function Page() {
               />
             </div>
           </div>
-
           <div className="w-full flex flex-col justify-center align-middle gap-5">
-            <h1 className="text-4xl text-blue-300 md:text-[60px] lg:text-[60px] xl:text-[50px] text-[20px] font-bold text-center">
-              Why you Should Join Our
+            <h1 className="text-4xl text-[#317ACC] md:text-[60px] lg:text-[60px] max-w-[637px] mx-auto leading-normal xl:text-[50px] text-[36px] font-bold md:text-center">
+              Why you Should Join Our Awesome Team
             </h1>
-            <h1 className="text-4xl text-blue-300 md:text-[60px] lg:text-[60px] xl:text-[50px] text-[20px] font-bold text-center">
-              Awesome Team
-            </h1>
+            {/* <h1 className="text-4xl text-[#317ACC] md:text-[60px] lg:text-[60px] xl:text-[50px] text-[36px] font-bold md:text-center"> */}
+              
+            {/* </h1> */}
           </div>
           <div className="w-full flex flex-col justify-center items-center">
             <p className="md:text-[24px] text-2xl text-gray-400">
@@ -111,14 +110,14 @@ function Page() {
               of benefits for you.It all starts with the free lunch!
             </p>
           </div>
-          <div className="w-full grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center">
+          <div className="w-full grid gap-[50px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center">
             {CardProps.map((props, index) => (
               <Card key={index} {...props} />
             ))}
           </div>
           <div className="w-full flex flex-col justify-center items-center h-52">
             <div className="w-full h-full flex flex-col gap-10">
-              <h1 className="text-blue-300 text-4xlmd:text-[60px] lg:text-[60px] xl:text-[50px] text-[20px] font-bold">
+              <h1 className="text-[#317ACC] text-4xlmd:text-[60px] lg:text-[60px] xl:text-[50px] text-[20px] font-bold">
                 Open positions
               </h1>
               <div>
@@ -132,7 +131,7 @@ function Page() {
               </div>
             </div>
           </div>
-          <div className="w-full mx-auto p-4 mb-10">
+          <div className="w-full mx-auto pb-12">
             <div className="w-full max-w-[100%] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5">
               <OpenPos position="Front-end trainees" />
               <OpenPos position="Back-end trainee" />

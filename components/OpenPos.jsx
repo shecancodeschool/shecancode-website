@@ -5,9 +5,9 @@ import { IoMdArrowForward } from "react-icons/io";
 function OpenPos({position}) {
   return (
     <>
-     <div className='flex justify-between items-center w-full max-w-[100%] h-28 bg-[#0B2B4E] px-10 rounded-md'>
+     <div className='flex justify-between items-center w-full max-w-[100%] h-24 bg-[#0B2B4E] px-10 rounded-md'>
         <p className='text-white text-xl'>{position}</p>
-        <div className='border p-4 rounded-full bg-white'>
+        <div className='p-4 rounded-full bg-white'>
          <IoMdArrowForward />
         </div>
      </div>
