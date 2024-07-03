@@ -13,7 +13,7 @@ const AboutUsBanner = () => {
                         Get To know more About us
                     </h3>
                     <div className="text-center max-w-6xl mx-auto">
-                        <p className="text-2xl font leading-[28px] md:leading-[36px] text-center text-[#FFFFFF] w-full max-w-[1090px] mx-auto font text-2xl ">
+                        <p className="font leading-[28px] md:leading-[36px] text-center text-[#FFFFFF] w-full max-w-[1090px] mx-auto font text-2xl ">
                             Learn web development and land a job in the tech industry with 1-on-1 guidance from an expert mentor and career coach. This program goes beyond teaching coding skills to career services you need to help you land a high-paying job in the tech industry.
                         </p>
 
