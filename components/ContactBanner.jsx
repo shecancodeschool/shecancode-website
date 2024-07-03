@@ -13,7 +13,7 @@ const ContactBanner = () => {
                         Contact Us
                     </h3>
                     <div className="text-center max-w-6xl mx-auto">
-                        <p className="text-2xl font leading-[28px] md:leading-[28.8px] text-center text-[#FFFFFF] w-full max-w-[1090px] mx-auto font text-2xl ">
+                        <p className=" font leading-[28px] md:leading-[28.8px] text-center text-[#FFFFFF] w-full max-w-[1090px] mx-auto font text-2xl ">
                         Leave here your feedback and let’s us know what  do you think about us 
                         </p>
 

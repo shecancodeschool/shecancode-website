@@ -5,8 +5,10 @@ import React from 'react'
 function page() {
   return (
     <>
-    <ContactBanner />
-    <ContactForm />
+      <div className='bg-[#FAFAFA]'>
+        <ContactBanner />
+        <ContactForm />
+      </div>
     </>
   )
 }

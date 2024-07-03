@@ -45,7 +45,7 @@ function Header() {
               <Link href="/">
                 <li className='text-[17px] font-semibold'>Home</li>
               </Link>
-              <Link href="pages/about-us">
+              <Link href="/pages/about-us">
                 <li className='text-[17px] font-semibold'>About us</li>
               </Link>
               <Link href="/community">
@@ -54,13 +54,13 @@ function Header() {
               <Link href="/careers">
                 <li className='text-[17px] font-semibold'>Careers</li>
               </Link>
-              <Link href="pages/job-description">
+              <Link href="/pages/job-description">
                 <li className='text-[17px] font-semibold'>Job Description</li>
               </Link>
               <Link href="/news">
                 <li className='text-[17px] font-semibold'>Our teams</li>
               </Link>
-              <Link href="pages/contact-us">
+              <Link href="/pages/contact-us">
                 <li className='text-[17px] font-semibold'>Contact us</li>
               </Link>
             </ul>
@@ -79,7 +79,7 @@ function Header() {
             <Link href="/home">
               <li onClick={toggleMenu}>Home</li>
             </Link>
-            <Link href="/pages/about-us">
+            <Link href="/about-us">
               <li onClick={toggleMenu}>About us</li>
             </Link>
             <Link href="/community">
@@ -88,13 +88,13 @@ function Header() {
             <Link href="/careers">
               <li onClick={toggleMenu}>Careers</li>
             </Link>
-            <Link href="pages/job-description">
+            <Link href="/pages/job-description">
               <li onClick={toggleMenu}>Job Description</li>
             </Link>
             <Link href="/news">
               <li onClick={toggleMenu}>Our teams</li>
             </Link>
-            <Link href="pages/contact-us">
+            <Link href="/pages/contact-us">
               <li onClick={toggleMenu}>Contact us</li>
             </Link>
             <ButtonOne text="Enroll now" onClick={toggleMenu} />
