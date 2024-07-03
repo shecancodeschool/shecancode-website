@@ -82,7 +82,7 @@ function Header() {
             <Link href="/pages/about-us">
               <li onClick={toggleMenu}>About us</li>
             </Link>
-            <Link href="/community">
+            <Link href="/what-we-do">
               <li onClick={toggleMenu}>What we do</li>
             </Link>
             <Link href="/careers">
@@ -91,7 +91,7 @@ function Header() {
             <Link href="/news">
               <li onClick={toggleMenu}>News and Events</li>
             </Link>
-            <Link href="/news">
+            <Link href="/our-team">
               <li onClick={toggleMenu}>Our teams</li>
             </Link>
             <Link href="/news">

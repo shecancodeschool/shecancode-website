@@ -25,7 +25,7 @@ function Page() {
             Our team
           </h1>
         </div>
-        <div className=" max-w-[86rem] mx-auto flex justify-center items-center w-full">
+        <div className="max-w-[86rem] mx-auto flex justify-center items-center w-full">
         <div className="w-full max-w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-14 mb-10">
           {peopleProps.map((person, index) => (
             <TeamCard key={index} name={person.name} title={person.title} />

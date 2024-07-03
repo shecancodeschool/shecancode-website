@@ -69,17 +69,17 @@ function Card({ title, text1, text2, text3, text4 }) {
   return (
     <>
      <div className='flex flex-col justify-evenly h-64'>
-        <div className=''>
-            <div className='{`w-full max-w-[20%] ${iconBgColor`}'>{icon && <Image src={icon} alt={title} width={30} height={30} />}</div>
+        <div>
+            <div className='{`w-full ${iconBgColor`}'>{icon && <Image src={icon} alt={title} width={30} height={30} />}</div>
         </div>
         <div>
-            <h1 className='text-blue-500 font-bold text-md'>{title}</h1>
+            <h1 className='text-blue-500 font-bold text-xl'>{title}</h1>
         </div>
         <div>
-            <p>{text1}</p>
-            <p>{text2}</p>
-            <p>{text3}</p>
-            <p>{text4}</p>
+            <p className='text-xl text-gray-700'>{text1}</p>
+            <p className='text-xl text-gray-700'>{text2}</p>
+            <p className='text-xl text-gray-700'>{text3}</p>
+            <p className='text-xl text-gray-700'>{text4}</p>
         </div>
      </div>
     </>
