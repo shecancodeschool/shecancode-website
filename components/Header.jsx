@@ -60,7 +60,7 @@ function Header() {
               <Link href="/our-team">
                 <li className='text-[17px] font-semibold'>Our teams</li>
               </Link>
-              <Link href="/pages/contact-us">
+              <Link href="/contact-us">
                 <li className='text-[17px] font-semibold'>Contact us</li>
               </Link>
             </ul>
