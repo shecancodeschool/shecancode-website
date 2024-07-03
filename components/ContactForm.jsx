@@ -1,40 +1,118 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [successMessage, setSuccessMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const validateForm = () => {
+    let valid = true;
+    const newErrors = {
+      name: '',
+      email: '',
+      message: ''
+    };
+
+    if (!formData.name.trim()) {
+      newErrors.name = 'Please provide your name';
+      valid = false;
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = 'Please provide your email';
+      valid = false;
+    } 
+
+    if (!formData.message.trim()) {
+      newErrors.message = 'Please provide your message';
+      valid = false;
+    }
+
+    setErrors(newErrors);
+    return valid;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      console.log('Form submitted:', formData);
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
+      setSuccessMessage('Thank you for reaching out to us! We will get back to you shortly.');
+      setTimeout(() => setSuccessMessage(''), 3000);
+    } else {
+      console.log('Form has validation errors');
+    }
+  };
+
   return (
     <div className="container mx-auto px-4 py-16 max-w-screen-xl bg-[#FAFAFA]">
-     
       <div className="border-[#B4BEC8] rounded-lg p-6 shadow-lg mx-auto w-full lg:w-[1255px] bg-[#FFFFFF]">
         <div className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-[200px]">
           <div className="space-y-4 lg:ml-16">
             <h3 className="text-[#000000] text-opacity-50 text-[24px] leading-8 mt-10">Leave us a message</h3>
-            <form className="space-y-6">
+            {successMessage && (
+              <div className=" text-green-500 px-4 py-3 rounded relative" role="alert">
+                <strong className="font-bold">{successMessage}</strong>
+              </div>
+            )}
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  className="block w-full lg:w-[572.59px] h-[60.97px] border border-[#B4BEC8] rounded-md shadow-sm py-2 px-3 focus:outline-none text-[16px] text-[#0F001A] mt-8"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  className={`block w-full lg:w-[572.59px] h-[60.97px] border border-[#B4BEC8] rounded-md shadow-sm py-2 px-3 focus:outline-none text-[16px] text-[#0F001A] mt-8 ${errors.name && 'border-red-500'}`}
                   placeholder="First Name Last Name"
                 />
+                {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
               </div>
               <div>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  className="block w-full lg:w-[572.59px] h-[60.97px] border border-[#B4BEC8] rounded-md shadow-sm py-2 px-3 focus:outline-none text-[16px] text-[#878787]"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  className={`block w-full lg:w-[572.59px] h-[60.97px] border border-[#B4BEC8] rounded-md shadow-sm py-2 px-3 focus:outline-none text-[16px] text-[#878787] ${errors.email && 'border-red-500'}`}
                   placeholder="Email Address"
                 />
+                {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
               </div>
               <div>
                 <textarea
                   id="message"
                   name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
                   rows="6"
-                  className="mt-1 block w-full lg:w-[572.59px] border border-[#B4BEC8] rounded-md shadow-sm py-2 px-3 text-[16px] text-[#878787] focus:outline-none"
+                  className={`mt-1 block w-full lg:w-[572.59px] border border-[#B4BEC8] rounded-md shadow-sm py-2 px-3 text-[16px] text-[#878787] focus:outline-none ${errors.message && 'border-red-500'}`}
                   placeholder="Your Message"
                 ></textarea>
+                {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
               </div>
               <div>
                 <button
