@@ -1,11 +1,11 @@
 import React from "react";
-import { WwdBanner } from "@/components/Banner";
-import { OurServiceLeft, OurServiceRight } from "@/components/OurService";
-import boot from "@/public/Rectangle 19.jpg";
-import talent from "@/public/talent.jpg";
-import carrer from "@/public/careersbn.png";
-import bcm from "@/public/bcm-sft.jpg";
-import cfb from "@/public/cfb.jpg";
+import { WwdBanner } from "../../components/Banner";
+import { OurServiceLeft, OurServiceRight } from "../../components/OurService";
+import boot from "../../public/Rectangle 19.jpg";
+import talent from "../../public/talent.jpg";
+import carrer from "../../public/careersbn.png";
+import bcm from "../../public/bcm-sft.jpg";
+import cfb from "../../public/cfb.jpg";
 
 function page() {
   return (

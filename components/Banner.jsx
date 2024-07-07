@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import banner_img from "../public/banner_img.png";
 import { ButtonOne, ButtonTwo, CarrersButton } from "./Buttons";
-import OurTeam from "@/public/3.png";
-import Careers from "@/public/careersbn.png";
+import OurTeam from "../public/3.png";
+import Careers from "../public/careersbn.png";
 
 export const Banner = () => {
   return (

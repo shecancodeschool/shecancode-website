@@ -1,8 +1,8 @@
 import React from "react";
-import { CareersBanner } from "@/components/Banner";
-import Card from "@/components/Card";
-import { HireCards } from "@/components/HireCards";
-import OpenPos from "@/components/OpenPos";
+import { CareersBanner } from "../../components/Banner";
+import Card from "../../components/Card";
+import { HireCards } from "../../components/HireCards";
+import OpenPos from "../../components/OpenPos";
 
 function Page() {
   const CardProps = [

@@ -1,11 +1,11 @@
-import { NewsDetails } from "@/components/Banner";
+import { NewsDetails } from "../../../components/Banner";
 import React from "react";
 import Image from "next/image";
-import sm from "@/public/blog-sm.jpg";
-import md from "@/public/blog-md.jpg";
-import md1 from "@/public/blog-post.png";
-import Blog from "@/components/Blog";
-import Blog1 from "@/public/blog1.jpg";
+import sm from "../../../public/blog-sm.jpg";
+import md from "../../../public/blog-md.jpg";
+import md1 from "../../../public/blog-post.png";
+import Blog from "../../../components/Blog";
+import Blog1 from "../../../public/blog1.jpg";
 
 const page = () => {
   return (

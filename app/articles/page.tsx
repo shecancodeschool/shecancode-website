@@ -1,9 +1,9 @@
-import { WwdBanner } from "@/components/Banner";
-import Blog from "@/components/Blog";
+import { WwdBanner } from "../../components/Banner";
+import Blog from "../../components/Blog";
 import React from "react";
-import Blog1 from "@/public/blog1.jpg";
-import Blog2 from "@/public/blog2.jpg";
-import Blog3 from "@/public/blog3.jpg";
+import Blog1 from "../../public/blog1.jpg";
+import Blog2 from "../../public/blog2.jpg";
+import Blog3 from "../../public/blog3.jpg";
 
 const page = () => {
   return (

@@ -3,14 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiInstagram, FiTwitter } from "react-icons/fi";
 import { SlSocialLinkedin } from "react-icons/sl";
-import profile from "@/public/vc.jpg";
-import jojo from "@/public/jojo.jpg";
-import brice from "@/public/brice.jpg";
-import stella from "@/public/stella.jpg";
-import eric from "@/public/eric.jpg";
-import paccy from "@/public/paccy.jpg";
-import esther from "@/public/esther.jpg";
-import lili from "@/public/lili.jpg";
+import profile from "../public/vc.jpg";
+import jojo from "../public/jojo.jpg";
+import brice from "../public/brice.jpg";
+import stella from "../public/stella.jpg";
+import eric from "../public/eric.jpg";
+import paccy from "../public/paccy.jpg";
+import esther from "../public/esther.jpg";
+import lili from "../public/lili.jpg";
 
 const TeamCard = ({ name, title }) => {
   let linkedinLink = "";

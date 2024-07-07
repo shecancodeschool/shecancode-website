@@ -1,8 +1,8 @@
 import React from 'react'
-import icon1 from "@/public/sec-fu.svg"
-import icon2 from "@/public/lean-op.svg"
-import icon3 from "@/public/skill.svg"
-import icon4 from "@/public/team-w.svg"
+import icon1 from "../public/sec-fu.svg"
+import icon2 from "../public/lean-op.svg"
+import icon3 from "../public/skill.svg"
+import icon4 from "../public/team-w.svg"
 import Image from 'next/image'
 
 function getBackgroundColor(title) {

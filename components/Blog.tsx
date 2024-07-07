@@ -19,7 +19,7 @@ const Blog = ({Blog, date, title, description}) => {
           <p className='text-[20px] max-w-[390.35px] max-h-[90px]'>The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation..........</p>
         </div>
         <div>
-          <Link href={'/news/id'} ><p className='text-[#317ACC] text-[24px] max-h-[36px] max-w-[135.25px]'>Read More</p></Link>
+          <Link href={'/articles/${id}'} ><p className='text-[#317ACC] text-[24px] max-h-[36px] max-w-[135.25px]'>Read More</p></Link>
         </div>
      </div>
     </>
