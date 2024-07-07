@@ -12,7 +12,10 @@ function page() {
     <>
       <div className="w-full flex flex-col gap-10">
         <div className="w-full">
-          <WwdBanner />
+          <WwdBanner 
+           heading= "What we do"
+           paragraph="Our company offers thorough tech training services that help people and businesses stay ahead in the quickly changing world of technology. We are experts in software engineering training and talent placement, assisting businesses in locating and hiring qualified personnel" 
+          />
         </div>
         <div className="max-w-[84rem] mx-auto flex flex-col justify-center items-center space-y-20 w-full px-4 sm:px-0">
           <div className="flex flex-col justify-evenly items-center ">
