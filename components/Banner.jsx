@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import banner_img from "../public/banner_img.png";
 import { ButtonOne, ButtonTwo, CarrersButton } from "./Buttons";
 import OurTeam from "@/public/3.png"
@@ -27,9 +28,11 @@ export const Banner = () => {
             </p>
           </div>
           <div className="w-full flex justify-center items-center gap-5">
+            <Link href="/student-application">
             <button className="bg-btn1 md:px-[33px] md:py-[19px] py-2 px-6 rounded-[12px] md:text-[30px] text-[15px] border  border-btn1 font ">
               Enroll Now
             </button>
+            </Link>
             <button className="border border-white md:px-[33px] md:py-[19px] py-2 px-6 rounded-[12px] md:text-[30px] text-[15px] font hover:bg-white hover:text-blue-950 hover:border-white transition-all duration-400 ease-in-out  hover:shadow-lg hover:transform">
               Get started
             </button>
