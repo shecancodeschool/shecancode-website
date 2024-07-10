@@ -1,6 +1,6 @@
 // components/CourseDetails.jsx
 import Image from 'next/image';
-import courseImage from '../public/image8.png';
+import courseImage from '../public/image 8.png';
 import ExpandableTabs from './ExpandableTabs';
 import CourseDetailFaQ from './CourseDetailFaQ';
 import icon1 from "../public/icon1.png";
@@ -39,12 +39,13 @@ const CourseDetails = () => {
     ];
 
     return (
-        <div className=" flex flex-col p-8 max-w-screen-lg ml-10">
+        <div className=" max-w-[84rem] mx-auto flex mt-[67px]">
+            <div>
             {/* First Section */}
             <div className="flex flex-col gap-20 md:flex-row md:mb-8 ">
-                <div className=" w-[711px] h-[682px] md:pr-8">
-                    <h1 className="w-[722px] h-[140px] font-semibold max-w-xl font text-[40px] text-[#317ACC] mb-4">Covers pretty much everything you need to know about UX</h1>
-                    <p className="mb-4 font font-normal text-[24px] text-[#615A63] leading-[38.2px]">
+                <div className=" md:w-[711px] md:h-[682px] md:pr-8">
+                    <h1 className="md:w-[722px] md:h-[140px] font-semibold max-w-xl font md:text-[40px] text-[24px] text-[#317ACC] mb-4">Covers pretty much everything you need to know about UX</h1>
+                    <p className="mb-4 font font-normal md:text-[24px] text-[#615A63] leading-[38.2px]">
                         This course will teach you everything you need to know about UX, including design, content, and coding. And you'll learn from the ground up, so it doesn't matter how much experience you have when you start.
                     </p>
                     <p className="mb-8 font font-normal text-[24px] text-[#615A63] leading-[38.2px]">
@@ -104,8 +105,8 @@ const CourseDetails = () => {
             <div className="flex flex-col w-[1335px] h-[666px] gap-[84px] md:flex-row items-center md:items-start md:mb-8 mt-8 ">
                 <Image src={courseImage} alt="Course" className="rounded-lg mb-4  w-[691px] h-[666px] md:mr-8" />
                 <div className="">
-                    <h2 className="w-[526px] h-[70px] font-semibold max-w-xl font text-[40px] text-[#317ACC] leading-[50px] mb-4">Course Prerequisites</h2>
-                    <ol className="list-decimal list-inside space-y-2 font font-normal text-[24px] text-[#000000]">
+                    <h2 className=" font-semibold max-w-xl font text-[40px] text-[#317ACC] leading-[50px] mb-4">Course Prerequisites</h2>
+                    <ol className="list-decimal list-inside space-y-2 font font-normal text-[24px] text-[#000000]/60">
                         <li>All applicants must be 18 years and above and provide proof of ID/Passport.</li>
                         <li>Have a working laptop that meets the following baseline specifications: Core i5 7th Gen and upwards, 4GB RAM, and at least 256GB of storage.</li>
                         <li>Be available to take a part-time course for at least 20 to 25 hours on weekdays and attend 1 live lecture.</li>
@@ -115,9 +116,9 @@ const CourseDetails = () => {
                 </div>
             </div>
 
-            <div className="w-[1334px] h-[620px] mt-[80px]">
+            <div className="md:w-[1334px] md:h-[620px] mt-[80px]">
                 <div className="mt-8">
-                    <h2 className="w-[526px] h-[70px] font-semibold max-w-xl font text-[40px] text-[#317ACC] leading-[50px] mt-10">Discover our Modules</h2>
+                    <h2 className="md:w-[526px] md:h-[70px] font-semibold max-w-xl font text-[40px] text-[#317ACC] leading-[50px] mt-10">Discover our Modules</h2>
                     <div className="flex flex-wrap gap-16 font text-[#807A82] text-[14px] items-center">
                         <div>10 Lessons</div>
                         <div>20 Videos</div>
@@ -133,9 +134,10 @@ const CourseDetails = () => {
             </div>
 
             {/* FAQ Section */}
-            <div className="w-[1400px] mb-5">
+            <div className="md:w-[1321px] mb-5">
                 <CourseDetailFaQ faqs={faqData} />
             </div>
+        </div>
         </div>
     );
 };
