@@ -6,7 +6,7 @@ const JobDescriptionForm = () => {
             <div className="max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="space-y-9">
                     <div className="flex flex-col gap-9">
-                        <h1 className="font-bold text-[35px] text-[#317ACC] md:text-5xl lg:text-5xl leading-[52px]">
+                        <h1 className="font-bold text-[24px] text-[#317ACC] md:text-5xl lg:text-5xl leading-[52px]">
                             About the Company
                         </h1>
                         <p className="font-medium text-[24px] text-[#000000]/65 leading-[31.2px]">
@@ -15,7 +15,7 @@ const JobDescriptionForm = () => {
                     </div>
 
                     <div className=" flex flex-col gap-9">
-                        <h1 className="font-bold text-[35px] text-[#317ACC] md:text-5xl lg:text-5xl leading-[52px]">
+                        <h1 className="font-bold text-[24px] text-[#317ACC] md:text-5xl lg:text-5xl leading-[52px]">
                             About the Role
                         </h1>
                         <p className="font-medium text-[24px] text-[#000000]/65 leading-[31.2px]">
@@ -24,7 +24,7 @@ const JobDescriptionForm = () => {
                     </div>
 
                     <div className="flex flex-col gap-9">
-                        <h1 className="font-bold text-[35px] text-[#317ACC] md:text-5xl lg:text-5xl leading-[52px]">
+                        <h1 className="font-bold text-[24px] text-[#317ACC] md:text-5xl lg:text-5xl leading-[52px]">
                             Responsibilities
                         </h1>
                         <ul className="list-disc list-inside font-medium text-[24px] text-[#000000]/65 leading-[31.2px]">
@@ -37,7 +37,7 @@ const JobDescriptionForm = () => {
                     </div>
 
                     <div className="flex flex-col gap-9">
-                        <h1 className="font-bold text-[35px] text-[#317ACC] md:text-5xl lg:text-5xl leading-[52px]">
+                        <h1 className="font-bold text-[24px] text-[#317ACC] md:text-5xl lg:text-5xl leading-[52px]">
                             Requirements
                         </h1>
                         <ul className="list-disc list-inside font-medium text-[24px] text-[#000000]/65 leading-[31.2px]">

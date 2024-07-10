@@ -14,7 +14,9 @@ const CourseCard = ({ title, description, image, link }) => {
       </div>
       <div className="absolute inset-0 flex flex-col justify-end p-4 transition-all duration-500 transform translate-y-full group-hover:translate-y-0">
         <h3 className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-k2d font-light mb-2">{title}</h3>
-        <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-light max-h-48 overflow-hidden">{description}</p>
+      <Link href="/course-detail">
+      <p className="text-white text-sm sm:text-base md:text-lg lg:text-xl font-light max-h-48 overflow-hidden">{description}</p>
+      </Link>
       </div>
     </div>
   )
