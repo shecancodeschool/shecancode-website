@@ -101,7 +101,7 @@ const CourseDetails = () => {
             </div>
 
             {/* Second Section */}
-            <div className="flex flex-col w-[1000px] h-[600px] gap-[84px] md:flex-row items-center md:items-start md:mb-8 mt-8 ">
+            <div className="flex flex-col w-[1335px] h-[666px] gap-[84px] md:flex-row items-center md:items-start md:mb-8 mt-8 ">
                 <Image src={courseImage} alt="Course" className="rounded-lg mb-4  w-[691px] h-[666px] md:mr-8" />
                 <div className="">
                     <h2 className="w-[526px] h-[70px] font-semibold max-w-xl font text-[40px] text-[#317ACC] leading-[50px] mb-4">Course Prerequisites</h2>
