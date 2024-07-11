@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { FaPlay, FaBook, FaTree, FaSitemap, FaTools } from "react-icons/fa";
 
@@ -6,22 +6,22 @@ const TabContent = ({ title, sections }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-300">
+    <div className="relative border-b border-gray-300">
       <button
-        className="w-full flex justify-between items-center p-4 focus:outline-none text-left bg-white hover:bg-gray-100"
+        className="w-full flex justify-between items-center p-4 focus:outline-none text-left bg-white hover:bg-gray-100 md:flex-row flex-col"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="flex items-center">
+        <div className="flex items-center w-full md:w-auto">
           <span className="text-3xl text-[#BCB7BD] mr-4">{isOpen ? "-" : "+"}</span>
           <span className="text-[#615A63] text-[16px] font-medium">{title}</span>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center w-full md:w-auto mt-2 md:mt-0 justify-between md:justify-start">
           <span className="text-[#615A63] text-[16px] font-medium mr-1">{sections.length} Sections</span>
           <span className="text-[#615A63] text-[16px] font-medium">. {sections.reduce((acc, section) => acc + parseInt(section.duration), 0)} minutes</span>
         </div>
       </button>
       {isOpen && (
-        <div className="p-4 bg-[#E0E0E0] space-y-4">
+        <div className="absolute left-0 right-0 top-full p-4 bg-[#E0E0E0] space-y-4 z-10">
           {sections.map((section, index) => (
             <div key={index} className="flex justify-between items-center mb-2">
               <div className="flex items-center">
