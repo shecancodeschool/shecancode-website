@@ -105,13 +105,13 @@ export const CareersBanner = () => {
   );
 };
 
-export const WwdBanner = ({ heading, paragraph }) => {
+export const WwdBanner = ({ heading, paragraph, propImage }) => {
   return (
     <>
       <div className="relative h-[30rem] isolate flex flex-col justify-end overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-opacity-[5%] bg-[#011225]"></div>
         <Image
-          src={Careers}
+          src={propImage}
           alt="SheCanCODE_grad"
           className="inset-0 h-full w-full object-cover"
         />
@@ -120,7 +120,7 @@ export const WwdBanner = ({ heading, paragraph }) => {
             {heading}
           </h3>
           <div className="text-center max-w-6xl mx-auto w-full  h-full max-h-[30%] flex flex-col">
-            <p className="z-10 font md:text-[24px] text-2xl">{paragraph}</p>
+            <p className="z-10 font md:text-[24px] text-[50px]">{paragraph}</p>
           </div>
         </div>
       </div>
@@ -141,21 +141,44 @@ export const NewsDetails = () => {
         <div className="absolute inset-0 flex flex-col md:mt-4 mt-10 justify-center items-center text-white md:p-0">
           <div className="h-[320px] w-full flex flex-col justify-between ">
             <div className="max-w-[80%] flex flex-col justify-between gap-5 ml-[70px]">
-            <p className="text-[20px] text-[#317ACC]">
-              Impact Story
-            </p>
-            <h3 className="text-[36px] max-w-[900px]">
-              Shecancode bootcamp alums names 2024 guggenheum fellows
-            </h3>
-            <p className="text-[24px] max-w-[656px]">
-              Learn how to apply User Experience (UX) principles to your website
-              designs, code a variety of sites, and increase sales !
-            </p>
-            <p>
-              Published By <span>Hirwa</span>
-            </p>
-            <button className="p-5 bg-[#317ACC] py-3 w-[123px]">Read more</button>
+              <p className="text-[20px] text-[#317ACC]">Impact Story</p>
+              <h3 className="text-[36px] max-w-[900px]">
+                Shecancode bootcamp alums names 2024 guggenheum fellows
+              </h3>
+              <p className="text-[24px] max-w-[656px]">
+                Learn how to apply User Experience (UX) principles to your
+                website designs, code a variety of sites, and increase sales !
+              </p>
+              <p>
+                Published By <span>Hirwa</span>
+              </p>
+              <button className="p-5 bg-[#317ACC] py-3 w-[123px]">
+                Read more
+              </button>
             </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const CourseBanner = ({ heading, paragraph, propImage }) => {
+  return (
+    <>
+      <div className="relative h-[30rem] isolate flex flex-col justify-end overflow-hidden md:h-auto">
+        <div className="absolute top-0 left-0 w-full h-full bg-opacity-[5%] bg-[#011225]"></div>
+        <Image
+          src={propImage}
+          alt="SheCanCODE_grad"
+          className="inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 flex flex-col md:mt-4 mt-10 justify-center items-center place-content-center gap-[56px] text-white p-4 md:p-0">
+          <h3 className="z-10 text-4xl md:text-[60px] lg:text-[60px] xl:text-[60px] text-[20px] font-bold text-center font">
+            {heading}
+          </h3>
+          <div className="text-center max-w-6xl mx-auto w-full h-full max-h-[30%] flex flex-col">
+            <p className="z-10 font md:text-[24px] text-[50px]">{paragraph}</p>
           </div>
         </div>
       </div>

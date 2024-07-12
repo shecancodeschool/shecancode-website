@@ -4,6 +4,7 @@ import React from "react";
 import Blog1 from "../../public/blog1.jpg";
 import Blog2 from "../../public/blog2.jpg";
 import Blog3 from "../../public/blog3.jpg";
+import blogbn from "../../public/careersbn.png";
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <div className=" h-full flex flex-col justify-evenly gap-16 bg-[#FAFAFA]">
         <div className="w-full">
           <WwdBanner
+            propImage={blogbn}
             heading="Our blogs and News"
             paragraph="Ready to take role where you can make a lasting impact on your team,
             We'd love to have more talented people on board"

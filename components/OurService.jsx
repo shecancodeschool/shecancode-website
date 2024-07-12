@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import boot from "@/public/Rectangle 19.jpg";
+import boot from "../public/Rectangle 19.jpg";
 
 export function OurServiceLeft({
   title,
