@@ -161,7 +161,7 @@ export const CourseCard = ({ title, text1, months, buttonText }) => {
           </div>
           <div className="flex justify-between items-center pb-5 px-3">
             <p className="text-[#09B451] text-[16.68px] max-w-[102px] max-h-[34px]">{months}</p>
-            <ButtonOne text={buttonText} />
+            <button className="text-white bg-[#317ACC] px-5 py-2 rounded">Enroll Now</button>
           </div>
         </div>
         {/* bottom cards */}
@@ -184,7 +184,7 @@ export const CourseCard = ({ title, text1, months, buttonText }) => {
           </div>
           <div className="flex justify-between items-center pb-5 px-3">
             <p className="text-[#09B451] text-[16.68px] max-w-[102px] max-h-[34px]">{months}</p>
-            <ButtonOne text={buttonText} />
+            <button className="text-white bg-[#317ACC] px-5 py-2 rounded">Enroll Now</button>
           </div>
         </div>
       </div>

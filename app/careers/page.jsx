@@ -21,8 +21,8 @@ function Page() {
           <CareersBanner />
         </div>
         <div className="max-w-[84rem] mx-auto p-4 md:p-0 flex flex-col justify-center items-center space-y-20 w-full">
-          <div className="my-5">
-            <h1 className="text-4xl md:my-[67px] my-6 text-[#317ACC] md:text-[60px] lg:text-[50px] xl:text-[60px] text-[36px] font-bold md:text-center">
+          <div>
+            <h1 className="text-4xl md:my-[50px] md:mb-[67px] text-[#317ACC] md:text-[60px] lg:text-[50px] xl:text-[60px] text-[36px] font-bold md:text-center">
               How we hire our team
             </h1>
             <div className="max-w-[850.73px] mx-auto flex  md:justify-center md:items-center">
