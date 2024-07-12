@@ -1,11 +1,11 @@
 import React from "react";
-import { WwdBanner } from "@/components/Banner";
-import { OurServiceLeft, OurServiceRight } from "@/components/OurService";
-import boot from "@/public/Rectangle 19.jpg";
-import talent from "@/public/talent.jpg";
-import carrer from "@/public/careersbn.png";
-import bcm from "@/public/bcm-sft.jpg";
-import cfb from "@/public/cfb.jpg";
+import { WwdBanner } from "../../components/Banner";
+import { OurServiceLeft, OurServiceRight } from "../../components/OurService";
+import boot from "../../public/Rectangle 19.jpg";
+import talent from "../../public/talent.jpg";
+import carrer from "../../public/careersbn.png";
+import bcm from "../../public/bcm-sft.jpg";
+import cfb from "../../public/cfb.jpg";
 
 function page() {
   return (
@@ -13,6 +13,7 @@ function page() {
       <div className="w-full flex flex-col gap-10">
         <div className="w-full">
           <WwdBanner 
+           propImage={carrer}
            heading= "What we do"
            paragraph="Our company offers thorough tech training services that help people and businesses stay ahead in the quickly changing world of technology. We are experts in software engineering training and talent placement, assisting businesses in locating and hiring qualified personnel" 
           />

@@ -5,7 +5,7 @@ export const ButtonOne = ({ text }) => {
   return (
     <>
      <div>
-      <button className='bg-btn1 px-[24px] py-[12px] font rounded text-[16px]' >{ text }</button>
+      <button className='bg-btn1 px-[24px] py-[12px] font rounded text-[16px] text-white' >{ text }</button>
      </div>
     </>
   )
@@ -27,5 +27,15 @@ export const CarrersButton = ({text}) => {
         <IoIosArrowDown/>
       </button>
     </div>
+  )
+}
+
+export const CourseButton = ({ text }) => {
+  return (
+    <>
+     <div>
+      <button className='bg-btn1 max-h-[36px] max-w-[99px] font rounded text-[16px] text-white' >{ text }</button>
+     </div>
+    </>
   )
 }

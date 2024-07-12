@@ -1,6 +1,6 @@
 import React from "react";
-import TeamCard from "@/components/TeamCard";
-import { OurTeamsBanner } from "@/components/Banner";
+import TeamCard from "../../components/TeamCard";
+import { OurTeamsBanner } from "../../components/Banner";
 
 function Page() {
   const peopleProps = [
