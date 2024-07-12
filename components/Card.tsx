@@ -1,9 +1,14 @@
-import React from 'react'
-import icon1 from "@/public/sec-fu.svg"
-import icon2 from "@/public/lean-op.svg"
-import icon3 from "@/public/skill.svg"
-import icon4 from "@/public/team-w.svg"
-import Image from 'next/image'
+import React from "react";
+import icon1 from "../public/sec-fu.svg";
+import icon2 from "../public/lean-op.svg";
+import icon3 from "../public/skill.svg";
+import icon4 from "../public/team-w.svg";
+import Image from "next/image";
+import crs1 from "../public/crs1.jpg";
+import crs2 from "../public/crs2.png";
+import crs3 from "../public/crs3.jpg";
+import crs4 from "../public/crs4.jpg";
+import { ButtonOne } from "./Buttons";
 
 function getBackgroundColor(title) {
   switch (title) {
@@ -21,69 +26,161 @@ function getBackgroundColor(title) {
 }
 
 function Card({ title, text1, text2, text3, text4 }) {
-    let icon;
-    let iconBgColor;
-    switch (title) {
-      case "Secured Future":
-        text1 = "Lorem Ipsum is simply dummy";
-        text2 = "text of the printing and ";
-        text3 = "typesetting industry. Lorem";
-        text4 = "Ipsum has been  the industry";
-        icon = icon1;
-        iconBgColor = "bg-red-300"; 
-        break;
-      case "Learning Opportunity":
-        text1 = "Lorem Ipsum is simply dummy";
-        text2 = "text of the printing and ";
-        text3 = "typesetting industry. Lorem";
-        text4 = "Ipsum has been  the industry";
-        icon = icon2;
-        iconBgColor = "bg-green-300";
-        break;
-      case "Upgrade Skills":
-        text1 = "Lorem Ipsum is simply dummy";
-        text2 = "text of the printing and ";
-        text3 = "typesetting industry. Lorem";
-        text4 = "Ipsum has been  the industry";
-        icon = icon3;
-        iconBgColor = "bg-blue-300";
-        break;
-      case "Team work":
-        text1 = "Lorem Ipsum is simply dummy";
-        text2 = "text of the printing and ";
-        text3 = "typesetting industry. Lorem";
-        text4 = "Ipsum has been  the industry";
-        text4 = "Ipsum has been  the industry";
-        icon = icon4;
-        iconBgColor = "bg-yellow-300";
-        break;
-      default:
-        title="";
-        text1 = "";
-        text2 = "";
-        text3 = "";
-        text4 = "";
-        icon = null;
-        iconBgColor = "bg-gray-300";
-    }
+  let icon;
+  let iconBgColor;
+  switch (title) {
+    case "Secured Future":
+      text1 = "Lorem Ipsum is simply dummy";
+      text2 = "text of the printing and ";
+      text3 = "typesetting industry. Lorem";
+      text4 = "Ipsum has been  the industry";
+      icon = icon1;
+      iconBgColor = "bg-red-300";
+      break;
+    case "Learning Opportunity":
+      text1 = "Lorem Ipsum is simply dummy";
+      text2 = "text of the printing and ";
+      text3 = "typesetting industry. Lorem";
+      text4 = "Ipsum has been  the industry";
+      icon = icon2;
+      iconBgColor = "bg-green-300";
+      break;
+    case "Upgrade Skills":
+      text1 = "Lorem Ipsum is simply dummy";
+      text2 = "text of the printing and ";
+      text3 = "typesetting industry. Lorem";
+      text4 = "Ipsum has been  the industry";
+      icon = icon3;
+      iconBgColor = "bg-blue-300";
+      break;
+    case "Team work":
+      text1 = "Lorem Ipsum is simply dummy";
+      text2 = "text of the printing and ";
+      text3 = "typesetting industry. Lorem";
+      text4 = "Ipsum has been  the industry";
+      text4 = "Ipsum has been  the industry";
+      icon = icon4;
+      iconBgColor = "bg-yellow-300";
+      break;
+    default:
+      title = "";
+      text1 = "";
+      text2 = "";
+      text3 = "";
+      text4 = "";
+      icon = null;
+      iconBgColor = "bg-gray-300";
+  }
   return (
     <>
-     <div className='flex flex-col justify-evenly h-64'>
+      <div className="flex flex-col justify-evenly h-64">
         <div>
-            <div className='{`w-full ${iconBgColor`}'>{icon && <Image src={icon} alt={title} width={60} height={60} />}</div>
+          <div className="{`w-full ${iconBgColor`}">
+            {icon && <Image src={icon} alt={title} width={60} height={60} />}
+          </div>
         </div>
         <div>
-            <h1 className='text-[#317ACC] font-bold text-xl'>{title}</h1>
+          <h1 className="text-[#317ACC] font-bold text-xl">{title}</h1>
         </div>
         <div>
-            <p className='text-[20px] font-thin text-black/50 text-justify md:text-left'>{text1}</p>
-            <p className='text-[20px] font-light text-black/50'>{text2}</p>
-            <p className='text-[20px] font-light text-black/50'>{text3}</p>
-            <p className='text-[20px] font-light text-black/50'>{text4}</p>
+          <p className="text-[20px] font-thin text-black/50 text-justify md:text-left">
+            {text1}
+          </p>
+          <p className="text-[20px] font-light text-black/50">{text2}</p>
+          <p className="text-[20px] font-light text-black/50">{text3}</p>
+          <p className="text-[20px] font-light text-black/50">{text4}</p>
         </div>
-     </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default Card
+export default Card;
+
+export const CourseCard = ({ title, text1, months, buttonText }) => {
+  let icon;
+  let iconBgColor;
+  switch (title) {
+    case "Product Management Basic - Course":
+      icon = crs1;
+      text1 =
+        "Product Management Masterclass, you will learn with Sarah Johnson - Head of Product Customer Platform Gojek Indonesia.";
+      months = "4 Months";
+      buttonText = "Enroll Now";
+      iconBgColor = "bg-white";
+      break;
+    case "BM Data Science Professional Certificate":
+      text1 =
+        "Product Management Masterclass, you will learn with Sarah Johnson - Head of Product Customer Platform Gojek Indonesia.";
+      icon = crs2;
+      months = "4 Months";
+      buttonText = "Enroll Now";
+      iconBgColor = "bg-white";
+      break;
+    case "The Science of Well-Being":
+      text1 =
+        "Product Management Masterclass, you will learn with Sarah Johnson - Head of Product Customer Platform Gojek Indonesia.";
+      icon = crs3;
+      months = "4 Months";
+      buttonText = "Enroll Now";
+      iconBgColor = "bg-white";
+    case "Python for Everybody Specialization":
+      text1 =
+        "Product Management Masterclass, you will learn with Sarah Johnson - Head of Product Customer Platform Gojek Indonesia.";
+      icon = crs3;
+      months = "4 Months";
+      buttonText = "Enroll Now";
+      iconBgColor = "bg-white";
+      break;
+    default:
+      title = "";
+      text1 = "";
+      icon = null;
+      iconBgColor = "";
+  }
+  return (
+    <>
+      <div className="flex flex-col">
+        <div className="flex flex-col justify-between h-[442px] w-[296px]">
+          <div className="w-[334px] h-[218px]">
+            <div className="{`w-full ${iconBgColor`}">
+              {icon && <Image src={icon} alt="course-img" />}
+            </div>
+          </div>
+          <div>
+            <h1 className="text-[#317ACC] font-bold text-[20px]">{title}</h1>
+          </div>
+          <div>
+            <p className="text-[11px] font-thin text-black/50 text-justify md:text-left">
+              {text1}
+            </p>
+          </div>
+          <div className="flex flex-col gap-5 mb-5">
+            <p className="text-[#09B451] text-[16.68px]">{months}</p>
+            <ButtonOne text={buttonText} />
+          </div>
+        </div>
+        {/* bottom cards */}
+        <div className="flex flex-col justify-between h-[442px] w-[296px]">
+          <div className="w-[334px] h-[218px]">
+            <div className="{`w-full ${iconBgColor`}">
+              {icon && <Image src={icon} alt="course-img" />}
+            </div>
+          </div>
+          <div>
+            <h1 className="text-[#317ACC] font-bold text-[20px]">{title}</h1>
+          </div>
+          <div>
+            <p className="text-[11px] font-thin text-black/50 text-justify md:text-left">
+              {text1}
+            </p>
+          </div>
+          <div className="flex flex-col gap-5 mb-5">
+            <p className="text-[#09B451] text-[16.68px]">{months}</p>
+            <ButtonOne text={buttonText} />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};

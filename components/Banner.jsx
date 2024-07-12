@@ -105,13 +105,13 @@ export const CareersBanner = () => {
   );
 };
 
-export const WwdBanner = ({ heading, paragraph }) => {
+export const WwdBanner = ({ heading, paragraph, propImage }) => {
   return (
     <>
       <div className="relative h-[30rem] isolate flex flex-col justify-end overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-opacity-[5%] bg-[#011225]"></div>
         <Image
-          src={Careers}
+          src={propImage}
           alt="SheCanCODE_grad"
           className="inset-0 h-full w-full object-cover"
         />
@@ -120,7 +120,7 @@ export const WwdBanner = ({ heading, paragraph }) => {
             {heading}
           </h3>
           <div className="text-center max-w-6xl mx-auto w-full  h-full max-h-[30%] flex flex-col">
-            <p className="z-10 font md:text-[24px] text-2xl">{paragraph}</p>
+            <p className="z-10 font md:text-[24px] text-[50px]">{paragraph}</p>
           </div>
         </div>
       </div>
