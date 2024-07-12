@@ -54,11 +54,14 @@ function Header() {
               <Link href="/careers">
                 <li className='text-[17px] font-semibold'>Careers</li>
               </Link>
-              <Link href="/newandtime">
-                <li className='text-[17px] font-semibold'>News and blogs</li>
+              <Link href="/news-and-events">
+                <li className='text-[17px] font-semibold'>News and events</li>
+              </Link>
+              <Link href="/course-detail">
+                <li className='text-[17px] font-semibold'>Courses</li>
               </Link>
               <Link href="/our-team">
-                <li className='text-[17px] font-semibold'>Our teams</li>
+                <li className='text-[17px] font-semibold'>Our team</li>
               </Link>
               <Link href="/contact-us">
                 <li className='text-[17px] font-semibold'>Contact us</li>
@@ -88,13 +91,16 @@ function Header() {
             <Link href="/careers">
               <li onClick={toggleMenu}>Careers</li>
             </Link>
-            <Link href="/pages/job-description">
-              <li onClick={toggleMenu}>Job Description</li>
+            <Link href="/news-and-events">
+              <li onClick={toggleMenu}>News and events</li>
             </Link>
+            <Link href="/course-detail">
+                <li onClick={toggleMenu}>Courses</li>
+              </Link>
             <Link href="/our-team">
-              <li onClick={toggleMenu}>Our teams</li>
+              <li onClick={toggleMenu}>Our team</li>
             </Link>
-            <Link href="/pages/contact-us">
+            <Link href="/contact-us">
               <li onClick={toggleMenu}>Contact us</li>
             </Link>
             <ButtonOne text="Enroll now" onClick={toggleMenu} />

@@ -1,8 +1,15 @@
 import React from 'react'
+import PrivacyPolicyBanner from '@/components/PrivacyPolicyBanner'
+import PrivacyPolicyForm from '@/components/PrivacyPolicyForm'
+
 
 const page = () => {
   return (
-    <div>page</div>
+    <>
+    <PrivacyPolicyBanner />
+    <PrivacyPolicyForm />
+
+    </>
   )
 }
 
