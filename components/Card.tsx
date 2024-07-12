@@ -140,7 +140,7 @@ export const CourseCard = ({ title, text1, months, buttonText }) => {
   return (
     <>
      <div className="flex flex-col">
-        <div className="flex flex-col justify-between h-[442px] w-[296px] shadow-md mb-[67px]">
+        <div className="flex flex-col justify-between h-[442px] w-[296px] shadow-md mb-[67px] rounded">
           <div className="w-[334px] h-[218px]">
             <div className="absolute bg-[#FF1F00]/70 flex justify-center items-center rounded-tl-md">
               <p className="text-[12px] text-white px-5 py-3">Open Now</p>

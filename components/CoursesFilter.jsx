@@ -1,9 +1,9 @@
 import React from 'react'
 
-const CoursesFilter = ({text}) => {
+const CoursesFilter = ({text, bgText, Text}) => {
   return (
     <>
-      <div className='p-2 border border-[#C4C4C4] text-[15px] text-[#818C96] rounded max-h-[40px]'>
+      <div className={`p-2 text-[#C4C4C4] border border-[#C4C4C4] rounded max-h-[40px] cursor-pointer ${bgText} ${Text}`}>
         {text}
       </div>
     </>

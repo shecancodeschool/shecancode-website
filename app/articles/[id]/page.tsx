@@ -22,7 +22,7 @@ const page = () => {
                 <Image src={md} alt="blog image" />
               </div>
               <div className="flex flex-col gap-10">
-                <p className="text-[24px]">
+                <p className="text-[24px] text-[#495057]">
                   Seamlessly syndicate cutting-edge architectures rather than
                   collaborative collaboration and idea-sharing. Proactively
                   incubate visionary interfaces whereas premium benefits.
@@ -38,7 +38,7 @@ const page = () => {
                   network just in time customer service without real-time
                   scenarios.
                 </p>
-                <p className="text-[24px]">
+                <p className="text-[24px] text-[#495057]">
                   Synergistically drive e-business leadership with unique
                   synergy. Compellingly seize market positioning ROI and
                   bricks-and-clicks e-markets. Proactively myocardinate timely
@@ -50,7 +50,7 @@ const page = () => {
                 </p>
               </div>
               <div>
-                <p className="text-[24px]">
+                <p className="text-[24px] text-[#495057]">
                   Efficiently empower seamless meta-services with impactful
                   opportunities. Distinctively transition virtual outsourcing
                   with focused e-tailers.
@@ -63,7 +63,7 @@ const page = () => {
                 </h2>
               </div>
               <div>
-                <p className="text-[24px]">
+                <p className="text-[24px] text-[#495057]">
                   Compellingly enhance seamless resources through competitive
                   content. Continually actualize 24/365 alignments for
                   resource-leveling platforms. Energistically enhance high
@@ -77,7 +77,7 @@ const page = () => {
                 <Image src={md1} alt="blog-image" />
               </div>
               <div>
-                <p className="text-[24px]">
+                <p className="text-[24px] text-[#495057]">
                   Seamlessly syndicate cutting-edge architectures rather than
                   collaborative collaboration and idea-sharing. Proactively
                   incubate visionary interfaces whereas premium benefits.
@@ -95,7 +95,7 @@ const page = () => {
                 </p>
               </div>
               <div>
-                <p className="text-[24px]">
+                <p className="text-[24px] text-[#495057]">
                   Synergistically drive e-business leadership with unique
                   synergy. Compellingly seize market positioning ROI and
                   bricks-and-clicks e-markets. Proactively myocardinate timely
@@ -107,7 +107,7 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="max-w-[406px]">
+            <div className="max-w-[406px] md:block hidden">
               <h2 className="text-[#317ACC] text-[20px] mb-5">Recent posts</h2>
               <div className="w-full h-full flex flex-col gap-10">
                 <Blog

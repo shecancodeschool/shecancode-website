@@ -1,4 +1,4 @@
-import { WwdBanner } from "../../components/Banner";
+import { BlogBanner } from "../../components/Banner";
 import Blog from "../../components/Blog";
 import React from "react";
 import Blog1 from "../../public/blog1.jpg";
@@ -11,7 +11,7 @@ const page = () => {
     <>
       <div className=" h-full flex flex-col justify-evenly gap-16 bg-[#FAFAFA]">
         <div className="w-full">
-          <WwdBanner
+          <BlogBanner
             propImage={blogbn}
             heading="Our blogs and News"
             paragraph="Ready to take role where you can make a lasting impact on your team,
@@ -21,56 +21,26 @@ const page = () => {
         <div className="max-w-[86rem] mx-auto flex flex-col justify-center items-center space-y-20 w-full mb-[5rem]">
           <div className="w-full">
             <div>
-              <h1 className="text-[50px] w-[91%] font-bold mb-10 text-[#317ACC]">
+              <h1 className="text-[40px] md:text-[50px] font-bold mb-10 text-[#317ACC]">
                 Discover Trending News
               </h1>
             </div>
-            <div className="flex w-full justify-between">
-              <Blog
-                Blog={Blog1}
-                title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"
-                date="APRIL 9, 2022  "
-                description="The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation.........."
-              />
-              <Blog
-                Blog={Blog2}
-                title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"
-                date="APRIL 9, 2022"
-                description="The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation.........."
-              />
-              <Blog
-                Blog={Blog3}
-                title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"
-                date="APRIL 9, 2022"
-                description="The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation.........."
-              />
+            <div className="flex flex-wrap justify-between md:flex-row md:justify-between sm:w-full sm:justify-center sm:items-center">
+              <Blog Blog={Blog1} title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"/>
+              <Blog Blog={Blog2} title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"/>
+              <Blog Blog={Blog3} title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"/>
             </div>
           </div>
           <div className="w-full">
             <div>
-              <h1 className="text-[50px] w-[91%] font-bold mb-10 text-[#317ACC]">
+              <h1 className="text-[40px] md:text-[50px] font-bold mb-10 text-[#317ACC]">
                 Newest posts
               </h1>
             </div>
-            <div className="flex w-full justify-between">
-              <Blog
-                Blog={Blog1}
-                title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"
-                date="APRIL 9, 2022  "
-                description="The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation.........."
-              />
-              <Blog
-                Blog={Blog2}
-                title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"
-                date="APRIL 9, 2022"
-                description="The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation.........."
-              />
-              <Blog
-                Blog={Blog3}
-                title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"
-                date="APRIL 9, 2022"
-                description="The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation.........."
-              />
+            <div className="flex flex-wrap justify-between md:flex-row md:justify-between sm:w-full sm:justify-center sm:items-center">
+              <Blog Blog={Blog1} title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"/>
+              <Blog Blog={Blog2} title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"/>
+              <Blog Blog={Blog3} title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"/>
             </div>
           </div>
         </div>
