@@ -29,14 +29,21 @@ export const Banner = () => {
           </div>
           <div className="w-full flex justify-center items-center gap-5">
             <Link href="/student-application">
-            <button className="bg-btn1 md:px-[33px] md:py-[19px] py-2 px-6 rounded-[12px] md:text-[30px] text-[15px] border  border-btn1 font ">
-              Enroll Now
-            </button>
+              <button className="bg-btn1 md:px-[33px] md:py-[19px] py-2 px-6 rounded-[12px] md:text-[30px] text-[15px] border  border-btn1 font ">
+                Enroll Now
+              </button>
             </Link>
             <button className="border border-white md:px-[33px] md:py-[19px] py-2 px-6 rounded-[12px] md:text-[30px] text-[15px] font hover:bg-white hover:text-blue-950 hover:border-white transition-all duration-400 ease-in-out  hover:shadow-lg hover:transform">
               Get started
             </button>
           </div>
+        </div>
+        <div className="bg-[#011225]/70 absolute w-full">
+          <div className="max-w-[84rem] mx-auto p-6">
+            <div className="text-[#09B451] text-[24px]">Open application </div>
+            <div className="text-white text-[24px]">Master software development skills in summer training program for secondary school students. Read more</div>
+          </div>
+
         </div>
       </div>
     </>
@@ -92,10 +99,10 @@ export const CareersBanner = () => {
           </h3>
           <div className="text-center max-w-4xl mx-auto w-full  h-full max-h-[35%] flex flex-col justify-between">
             <div className="flex flex-col gap-2">
-             <p className="z-10 font md:text-[24px] text-2xl">Ready to take role where you can make a lasting impact on your team,</p>
-             <p className="z-10 font md:text-[24px] text-2xl">We'd love to have more talented people on board</p>
+              <p className="z-10 font md:text-[24px] text-2xl">Ready to take role where you can make a lasting impact on your team,</p>
+              <p className="z-10 font md:text-[24px] text-2xl">We'd love to have more talented people on board</p>
             </div>
-            <CarrersButton text="See all open postions"/>
+            <CarrersButton text="See all open postions" />
           </div>
         </div>
       </div>
@@ -118,9 +125,9 @@ export const WwdBanner = () => {
             What we do
           </h3>
           <div className="text-center max-w-6xl mx-auto w-full  h-full max-h-[30%] flex flex-col">
-             <p className="z-10 font md:text-[24px] text-2xl">Our company offers thorough tech training services that help people and businesses stay ahead in the</p>
-             <p className="z-10 font md:text-[24px] text-2xl">quickly changing world of technology. We are experts in software engineering training and talent</p>
-             <p className="z-10 font md:text-[24px] text-2xl">placement, assisting businesses in locating and hiring qualified personnel</p>
+            <p className="z-10 font md:text-[24px] text-2xl">Our company offers thorough tech training services that help people and businesses stay ahead in the</p>
+            <p className="z-10 font md:text-[24px] text-2xl">quickly changing world of technology. We are experts in software engineering training and talent</p>
+            <p className="z-10 font md:text-[24px] text-2xl">placement, assisting businesses in locating and hiring qualified personnel</p>
           </div>
         </div>
       </div>
