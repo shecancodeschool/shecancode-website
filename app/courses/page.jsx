@@ -1,5 +1,5 @@
 import React from "react";
-import { WwdBanner } from "../../components/Banner";
+import { CourseBanner } from "../../components/Banner";
 import crs from "../../public/course-img-bn.jpg";
 import CoursesFilter from "../../components/CoursesFilter";
 import { CourseCard } from "../../components/Card";
@@ -15,10 +15,13 @@ const page = () => {
   return (
     <>
       <div>
-        <WwdBanner propImage={crs} paragraph="Grow up your skills by online courses with SheCanCode" />
+        <CourseBanner propImage={crs} paragraph="Grow up your skills by online courses with SheCanCode" />
       </div>
       <div className="max-w-[84rem] mx-auto p-4 md:p-0">
-        <div className="flex justify-center items-center gap-[24px] py-10 flex-wrap md:flex-nowrap">
+        <div className="flex justify-center items-center mt-[67.04px]">
+          <h1 className="text-[#317ACC] font-bold text-[48px]">Popular Courses</h1>
+        </div>
+        <div className="flex justify-center items-center gap-[24px] py-10 flex-wrap md:flex-nowrap mb-[24px]">
           <CoursesFilter text="All Programme" />
           <CoursesFilter text="UI / UX Design" />
           <CoursesFilter text="Progam Design" />
@@ -26,7 +29,7 @@ const page = () => {
           <CoursesFilter text="Progam Design" className="hidden md:block" />
           <CoursesFilter text="Progam Design" className="hidden md:block" />
         </div>
-        <div className=" w-full flex justify-evenly gap-12 flex-wrap md:flex-row">
+        <div className=" w-full flex justify-evenly gap-[41px] flex-wrap md:flex-row bg-[#FEFEFE] rounded-md">
           {CourseProps.map((props, index) => (
             <CourseCard key={index} {...props} />
           ))}

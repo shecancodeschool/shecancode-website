@@ -29,3 +29,13 @@ export const CarrersButton = ({text}) => {
     </div>
   )
 }
+
+export const CourseButton = ({ text }) => {
+  return (
+    <>
+     <div>
+      <button className='bg-btn1 max-h-[36px] max-w-[99px] font rounded text-[16px] text-white' >{ text }</button>
+     </div>
+    </>
+  )
+}
