@@ -80,8 +80,12 @@ const JobApplicationForm = () => {
     };
 
     const handleFileChange = (e) => {
-        const { name, files } = e.target;
-        setFormData((prevFormData) => ({ ...prevFormData, [name]: files[0] }));
+        const { name, value, type, files } = e.target;
+        if (type === 'file') {
+          setFormData({ ...formData, [name]: files[0] });
+        } else {
+          setFormData({ ...formData, [name]: value });
+        }
     };
 
     return (
@@ -98,7 +102,7 @@ const JobApplicationForm = () => {
                             name="firstName"
                             value={formData.firstName}
                             onChange={handleInputChange}
-                            className="w-full py-2 border border-gray-300 rounded-md"
+                            className="w-full py-2 p-2 border border-gray-300 rounded-md"
                         />
                         {errors.firstName && <p className="text-red-500">{errors.firstName}</p>}
                     </div>
@@ -109,7 +113,7 @@ const JobApplicationForm = () => {
                             name="lastName"
                             value={formData.lastName}
                             onChange={handleInputChange}
-                            className="w-full py-2 border border-gray-300 rounded-md"
+                            className="w-full py-2 p-2 border border-gray-300 rounded-md"
                         />
                         {errors.lastName && <p className="text-red-500">{errors.lastName}</p>}
                     </div>
@@ -120,7 +124,7 @@ const JobApplicationForm = () => {
                             name="email"
                             value={formData.email}
                             onChange={handleInputChange}
-                            className="w-full py-2 border border-gray-300 rounded-md"
+                            className="w-full py-2 p-2 border border-gray-300 rounded-md"
                         />
                         {errors.email && <p className="text-red-500">{errors.email}</p>}
                     </div>
@@ -131,7 +135,7 @@ const JobApplicationForm = () => {
                             name="phoneNumber"
                             value={formData.phoneNumber}
                             onChange={handleInputChange}
-                            className="w-full py-2 border border-gray-300 rounded-md"
+                            className="w-full py-2 p-2 border border-gray-300 rounded-md"
                         />
                         {errors.phoneNumber && <p className="text-red-500">{errors.phoneNumber}</p>}
                     </div>
@@ -142,7 +146,7 @@ const JobApplicationForm = () => {
                             name="linkedIn"
                             value={formData.linkedIn}
                             onChange={handleInputChange}
-                            className="w-full py-2 border border-gray-300 rounded-md"
+                            className="w-full py-2 p-2 border border-gray-300 rounded-md"
                         />
                         {errors.linkedIn && <p className="text-red-500">{errors.linkedIn}</p>}
                     </div>
@@ -153,15 +157,17 @@ const JobApplicationForm = () => {
                             <div className="relative flex items-center">
                                 <input
                                     type="file"
-                                    id="file"
-                                    className="absolute opacity-0 w-full h-full cursor-pointer " onChange={handleFileChange}
+                                    name="resume"
+                                    onChange={handleFileChange }
+                                    className="absolute opacity-0 w-full h-full cursor-pointer "
                                 />
 
                                 <label
                                     htmlFor="file"
-                                    className="w-full bg-white border border-gray-300 rounded-md flex items-center cursor-pointer"
+                                    className="w-full bg-white border  border-gray-300 rounded-md flex items-center cursor-pointer"
                                 >
-                                    <span className="flex-grow py-2 px-3 text-[#000000]/65 font text-[14px]">Select a file</span>
+                                    <span className="flex-grow py-2 p-2 px-3 text-[#000000]/65 font text-[14px]">Select a file</span>
+                                    {formData.resume && <span className="text-sm">{formData.resume.name}</span>}
                                     <div className="bg-gray-200 border-l border-gray-300 px-4 py-2">Browse</div>
                                 </label>
                             </div>
@@ -175,9 +181,10 @@ const JobApplicationForm = () => {
                             {/* <label className="block mb-1 text-lg text-[#32536A]">Cover letter</label> */}
                             <div className="relative flex items-center">
                                 <input
-                                    type="file"
-                                    id="file"
-                                    className="absolute opacity-0 w-full h-full cursor-pointer " onChange={handleFileChange}
+                                      type="file"
+                                      name="coverLetter"
+                                      onChange={handleFileChange }
+                                      className="absolute opacity-0 w-full h-full cursor-pointer "
                                 />
 
                                 <label
@@ -185,6 +192,7 @@ const JobApplicationForm = () => {
                                     className="w-full bg-white border border-gray-300 rounded-md flex items-center cursor-pointer"
                                 >
                                     <span className="flex-grow py-2 px-3 text-[#000000]/65 font text-[14px]">Select a file</span>
+                                    {formData.coverLetter && <span className="text-sm">{formData.coverLetter.name}</span>}
                                     <div className="bg-gray-200 border-l border-gray-300 px-4 py-2">Browse</div>
                                 </label>
                             </div>

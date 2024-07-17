@@ -40,6 +40,7 @@ const StudentApplicationForm = () => {
     currentOccupation: ''
   });
 
+
   const [errors, setErrors] = useState({});
   const [successMessage, setSuccessMessage] = useState('');
 
@@ -51,6 +52,8 @@ const StudentApplicationForm = () => {
       setFormData({ ...formData, [name]: value });
     }
   };
+
+
   const validate = () => {
     let tempErrors = {};
     if (!formData.firstName) tempErrors.firstName = "First name is required";
@@ -77,12 +80,11 @@ const StudentApplicationForm = () => {
     if (validate()) {
       setSuccessMessage('Form submitted successfully!');
       console.log('Form Data: ', formData);
-      // Submit form data to server or perform other actions
+ 
     } else {
       setSuccessMessage('');
     }
   };
-
   return (
     <div className="max-w-3xl mx-auto p-6 rounded-lg">
       <h2 className="font text-[30px] font-semibold mb-6 text-[#6AACE8]">Personal information</h2>
@@ -91,36 +93,36 @@ const StudentApplicationForm = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
             <label className="block  text-[20px] text-[#0B2B4E]">First Name</label>
-            <input type="text" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="John" value={formData.firstName}
+            <input type="text" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="John"  name="firstName" value={formData.firstName}
               onChange={handleChange} />
             {errors.firstName && <span className="text-red-500 text-sm">{errors.firstName}</span>}
           </div>
           <div>
             <label className="block text-[20px] text-[#0B2B4E]">Last Name</label>
-            <input type="text" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Smith"  value={formData.lastName}
+            <input type="text" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Smith"  name="lastName" value={formData.lastName}
               onChange={handleChange} />
-                {errors.lastName && <span className="text-red-500 text-sm">{errors.lastName}</span>}
+            {errors.lastName && <span className="text-red-500 text-sm">{errors.lastName}</span>}
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
             <label className="block text-[20px] text-[#0B2B4E]">Email</label>
-            <input type="email" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="xxxxxxx@gmail.com"  value={formData.email}
+            <input type="email" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="xxxxxxx@gmail.com" name="email" value={formData.email}
               onChange={handleChange} />
-                {errors.email && <span className="text-red-500 text-sm">{errors.email}</span>}
+            {errors.email && <span className="text-red-500 text-sm">{errors.email}</span>}
           </div>
           <div>
             <label className="block text-[20px] text-[#0B2B4E]">Phone Number</label>
-            <input type="tel" className="w-full p-2 border border-gray-300 rounded mt-1"  value={formData.phoneNumber}
+            <input type="tel" className="w-full p-2 border border-gray-300 rounded mt-1" name="phoneNumber" value={formData.phoneNumber}
               onChange={handleChange} />
-                 {errors.phoneNumber && <span className="text-red-500 text-sm">{errors.phoneNumber}</span>}
+            {errors.phoneNumber && <span className="text-red-500 text-sm">{errors.phoneNumber}</span>}
           </div>
-       
+
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
             <label className="block text-[20px] text-[#0B2B4E]">Gender</label>
-            <select className="w-full p-2 border border-gray-300 rounded mt-1 " value={formData.gender}
+            <select className="w-full p-2 border border-gray-300 rounded mt-1 " name="gender" value={formData.gender}
               onChange={handleChange}>
               <option value="">Select a gender</option>
               <option value="male">Male</option>
@@ -130,9 +132,9 @@ const StudentApplicationForm = () => {
           </div>
           <div>
             <label className="block text-[20px] text-[#0B2B4E]">Age</label>
-            <input type="number" className="w-full p-2 border border-gray-300 rounded mt-1"  value={formData.age}
+            <input type="number" className="w-full p-2 border border-gray-300 rounded mt-1" name="age" value={formData.age}
               onChange={handleChange} />
-               {errors.age && <span className="text-red-500 text-sm">{errors.age}</span>}
+            {errors.age && <span className="text-red-500 text-sm">{errors.age}</span>}
           </div>
         </div>
 
@@ -141,30 +143,36 @@ const StudentApplicationForm = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
             <label className="block text-[20px] text-[#0B2B4E]">School name or institute</label>
-            <input type="text" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter school name"  value={formData.schoolName}
-            onChange={handleChange} />
-              {errors.schoolName && <span className="text-red-500 text-sm">{errors.schoolName}</span>}
+            <input type="text" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter school name" name="schoolName" value={formData.schoolName}
+              onChange={handleChange} />
+            {errors.schoolName && <span className="text-red-500 text-sm">{errors.schoolName}</span>}
           </div>
           <div className="w-full max-w-md">
             <label className="block">{labelWithIcon("Certificate", "Please provide certificates from the bootcamp you have attended.")}</label>
             <div className="relative flex items-center">
               <input
                 type="file"
-                id="file"
-                className="absolute opacity-0 w-full h-full cursor-pointer "  onChange={handleChange} 
+                name="certificate"
+
+                onChange={handleChange}
+                className="absolute opacity-0 w-full h-full cursor-pointer "
               />
-               
+
               <label
                 htmlFor="file"
                 className="w-full bg-white border border-gray-300 rounded-md flex items-center cursor-pointer"
               >
+
                 <span className="flex-grow py-2 px-3 text-[#000000]/65 font text-[14px]">Select a file</span>
+                {formData.certificate && <span className="text-sm">{formData.certificate.name}</span>}
+
                 <div className="bg-gray-200 border-l border-gray-300 px-4 py-2">Browse</div>
               </label>
             </div>
+
             {errors.certificate && <span className="text-red-500 text-sm">{errors.certificate}</span>}
           </div>
-       
+
         </div>
 
         {/* Documents */}
@@ -175,15 +183,17 @@ const StudentApplicationForm = () => {
             <div className="relative flex items-center">
               <input
                 type="file"
-                id="file"
-                className="absolute opacity-0 w-full h-full cursor-pointer" onChange={handleChange}
+                name="resume"
+                onChange={handleChange}
+                className="absolute opacity-0 w-full h-full cursor-pointer "
               />
-         
+
               <label
                 htmlFor="file"
                 className="w-full bg-white border border-gray-300 rounded-md flex items-center cursor-pointer"
               >
                 <span className="flex-grow py-2 px-3 text-[#000000]/65 font text-[14px]">Select a file</span>
+                {formData.resume && <span className="text-sm">{formData.resume.name}</span>}
                 <div className="bg-gray-200 border-l border-gray-300 px-4 py-2">Browse</div>
               </label>
             </div>
@@ -194,20 +204,22 @@ const StudentApplicationForm = () => {
             <div className="relative flex items-center">
               <input
                 type="file"
-                id="file"
-                className="absolute opacity-0 w-full h-full cursor-pointer"
+                name="copyOfId"
+                onChange={handleChange}
+                className="absolute opacity-0 w-full h-full cursor-pointer "
               />
               <label
                 htmlFor="file"
                 className="w-full bg-white border border-gray-300 rounded-md flex items-center cursor-pointer" onChange={handleChange}
               >
                 <span className="flex-grow py-2 px-3 text-[#000000]/65 font text-[14px]">Select a file</span>
+                {formData.copyOfId && <span className="text-sm">{formData.copyOfId.name}</span>}
                 <div className="bg-gray-200 border-l border-gray-300 px-4 py-2">Browse</div>
               </label>
             </div>
             {errors.copyOfId && <span className="text-red-500 text-sm">{errors.copyOfId}</span>}
           </div>
-         
+
         </div>
 
         {/* Other Information */}
@@ -215,35 +227,35 @@ const StudentApplicationForm = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <div>
             <label className="block text-[20px] text-[#0B2B4E]">Github link</label>
-            <input type="url" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter Link"  value={formData.githubLink}
+            <input type="url" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter Link" name="githubLink" value={formData.githubLink}
               onChange={handleChange} />
-             {errors.githubLink && <span className="text-red-500 text-sm">{errors.githubLink}</span>}  
+            {errors.githubLink && <span className="text-red-500 text-sm">{errors.githubLink}</span>}
           </div>
           <div>
             <label className="block text-[20px] text-[#0B2B4E]">Linkedin link</label>
-            <input type="url" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter Link"  value={formData.linkedinLink}
-              onChange={handleChange}/>
-               {errors.linkedinLink && <span className="text-red-500 text-sm">{errors.linkedinLink}</span>}
+            <input type="url" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter Link" name="linkedinLink" value={formData.linkedinLink}
+              onChange={handleChange} />
+            {errors.linkedinLink && <span className="text-red-500 text-sm">{errors.linkedinLink}</span>}
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div>
             <label className="block text-[20px] text-[#0B2B4E]">Profile link</label>
-            <input type="url" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter Link"   value={formData.profileLink}
-            onChange={handleChange} />
-             {errors.profileLink && <span className="text-red-500 text-sm">{errors.profileLink}</span>}
+            <input type="url" className="w-full p-2 border border-gray-300 rounded mt-1" placeholder="Enter Link" name="profileLink" value={formData.profileLink}
+              onChange={handleChange} />
+            {errors.profileLink && <span className="text-red-500 text-sm">{errors.profileLink}</span>}
           </div>
           <div>
             <label className="block text-[20px] text-[#0B2B4E]">Current Occupation</label>
-            <input type="text" className="w-full p-2 border border-gray-300 rounded mt-1"   value={formData.currentOccupation}
-            onChange={handleChange} />
-             {errors.currentOccupation && <span className="text-red-500 text-sm">{errors.currentOccupation}</span>}
+            <input type="text" className="w-full p-2 border border-gray-300 rounded mt-1" name="currentOccupation" value={formData.currentOccupation}
+              onChange={handleChange} />
+            {errors.currentOccupation && <span className="text-red-500 text-sm">{errors.currentOccupation}</span>}
           </div>
         </div>
 
         {/* Submit Button */}
         <button className="w-[236px] h-[54px] bg-[#317ACC] font font-normal text-[#FFFFFF] text-[18px] p-2 rounded-[8px] mt-4">Apply Now</button>
-       
+
         {/* Success Message */}
         {successMessage && <div className="text-green-500 text-sm mt-4">{successMessage}</div>}
       </form>

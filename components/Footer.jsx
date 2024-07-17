@@ -118,8 +118,8 @@ const Footer = () => {
 
         </div>
         <hr className="border-white" />
-        <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col md:flex-row  justify-between items-center mt-4">
-          <p className="text-sm text-[#CFD3D7] font">&copy; 2015 SheCanCode School. All rights reserved.</p>
+        <div className="flex flex-col md:flex-row justify-between items-start mb-9 space-y-10 md:space-y-0 mt-4">
+          <p className=" text-[#CFD3D7] md:text-sm text-[12px] font">&copy; 2015 SheCanCode School. All rights reserved.</p>
           <div className="flex space-x-4">
             <ul className="flex space-x-4 list-none p-0 m-0">
               <li>
