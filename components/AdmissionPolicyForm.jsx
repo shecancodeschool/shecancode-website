@@ -8,7 +8,7 @@ const AdmissionPolicy = () => {
 
     return (
         <div className="max-w-[84rem] mx-auto mt-[67px] p-4">
-            <div className="flex flex-col md:flex-row h-full">
+            <div className="flex flex-col-reverse md:flex-row h-full">
                 <div className="flex-1 w-full mb-12 md:pr-8">
                     <h1 className="max-w-5xl font font-medium text-[46px] leading-[59.8px] mb-6 text-[#317ACC]">
                         SheCanCode Admissions Policy

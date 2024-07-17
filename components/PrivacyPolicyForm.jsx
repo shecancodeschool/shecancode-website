@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
     
     return (
         <div className="max-w-[84rem] mx-auto mt-[67px] p-4">
-            <div className="flex flex-col md:flex-row h-full">
+            <div className="flex flex-col-reverse md:flex-row h-full">
                 <div className="flex-1 md:w-[886px] mb-12 md:pr-8">
                     <h1 className="max-w-5xl font font-medium text-[24px] md:text-[46px] leading-[1.4] md:leading-[59.8px] mb-6 text-[#317ACC] ">
                         This Privacy Policy will help you better understand how we collect, use, and share your personal information.
