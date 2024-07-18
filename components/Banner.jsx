@@ -38,10 +38,12 @@ export const Banner = () => {
             </button>
           </div>
         </div>
-        <div className="bg-[#011225]/70 absolute w-full">
+        <div className="bg-[#011225]/70 absolute w-full ">
           <div className="max-w-[84rem] mx-auto p-6">
             <div className="text-[#09B451] text-[24px]">Open application </div>
-            <div className="text-white text-[24px]">Master software development skills in summer training program for secondary school students. Read more</div>
+            <div className="text-white text-[24px]">Master software development skills in summer training program for secondary school students.
+              <Link href={'#'} className="text-[#6AACE8]">Read more</Link>
+              </div>
           </div>
 
         </div>
