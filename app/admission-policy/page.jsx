@@ -1,5 +1,5 @@
-import AdmissionPolicyBanner from '@/components/AdmissionPolicyBanner'
-import AdmissionPolicy from '@/components/AdmissionPolicyForm'
+import AdmissionPolicyBanner from '../../components/AdmissionPolicyBanner'
+import AdmissionPolicy from '../../components/AdmissionPolicyForm'
 import React from 'react'
 
 function page() {

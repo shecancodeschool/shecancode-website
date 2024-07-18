@@ -1,6 +1,6 @@
 import React from 'react'
-import PrivacyPolicyBanner from '@/components/PrivacyPolicyBanner'
-import PrivacyPolicyForm from '@/components/PrivacyPolicyForm'
+import PrivacyPolicyBanner from '../../components/PrivacyPolicyBanner'
+import PrivacyPolicyForm from '../../components/PrivacyPolicyForm'
 
 
 const page = () => {

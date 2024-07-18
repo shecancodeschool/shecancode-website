@@ -54,10 +54,10 @@ function Header() {
               <Link href="/careers">
                 <li className='text-[17px] font-semibold'>Careers</li>
               </Link>
-              <Link href="/news-and-events">
-                <li className='text-[17px] font-semibold'>News and events</li>
+              <Link href="/articles">
+                <li className='text-[17px] font-semibold'>News and blogs</li>
               </Link>
-              <Link href="/course-detail">
+              <Link href="/courses">
                 <li className='text-[17px] font-semibold'>Courses</li>
               </Link>
               <Link href="/our-team">
@@ -94,9 +94,12 @@ function Header() {
             <Link href="/news-and-events">
               <li onClick={toggleMenu}>News and events</li>
             </Link>
-            <Link href="/course-detail">
-                <li onClick={toggleMenu}>Courses</li>
-              </Link>
+            <Link href="/articles">
+              <li onClick={toggleMenu}>News and blogs</li>
+            </Link>
+            <Link href="/courses">
+              <li onClick={toggleMenu}>Courses</li>
+            </Link>
             <Link href="/our-team">
               <li onClick={toggleMenu}>Our team</li>
             </Link>

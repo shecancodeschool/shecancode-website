@@ -1,22 +1,17 @@
 import React from "react";
-import Link from 'next/link'
-import { CareersBanner } from "@/components/Banner";
-import Card from "@/components/Card";
-import { HireCards } from "@/components/HireCards";
-import OpenPos from "@/components/OpenPos";
+import { CareersBanner } from "../../components/Banner";
+import Card from "../../components/Card";
+import { HireCards } from "../../components/HireCards";
+import OpenPos from "../../components/OpenPos";
+import Link from "next/link";
+
 
 function Page() {
   const CardProps = [
-    { title: "Secured Future", text1: "", text2: "", text3: "", text4: "" },
-    {
-      title: "Learning Opportunity",
-      text1: "",
-      text2: "",
-      text3: "",
-      text4: "",
-    },
-    { title: "Upgrade Skills", text1: "", text2: "", text3: "", text4: "" },
-    { title: "Team work", text1: "", text2: "", text3: "", text4: "" },
+    { title: "Secured Future"},
+    { title: "Learning Opportunity"},
+    { title: "Upgrade Skills"},
+    { title: "Team work"},
   ];
 
   return (
@@ -34,8 +29,6 @@ function Page() {
               <p className="md:text-[24px] text-2xl text-gray-400 md:text-center">
                 We like to keep things as simple as possible so we can get to
                 what’s really
-              {/* </p> */}
-              {/* <p className="md:text-[24px] text-2xl text-gray-400"> */}
                 important - finding out more about you
               </p>
             </div>
@@ -98,9 +91,6 @@ function Page() {
             <h1 className="text-4xl text-[#317ACC] md:text-[60px] lg:text-[60px] max-w-[637px] mx-auto leading-normal xl:text-[50px] text-[36px] font-bold md:text-center">
               Why you Should Join Our Awesome Team
             </h1>
-            {/* <h1 className="text-4xl text-[#317ACC] md:text-[60px] lg:text-[60px] xl:text-[50px] text-[36px] font-bold md:text-center"> */}
-              
-            {/* </h1> */}
           </div>
           <div className="w-full flex flex-col justify-center items-center">
             <p className="md:text-[24px] text-2xl text-gray-400">
@@ -134,7 +124,7 @@ function Page() {
           </div>
           <div className="w-full mx-auto pb-12">
             <div className="w-full max-w-[100%] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5">
-             <Link href="/job-application">
+             <Link href="/job-description">
              <OpenPos position="Front-end trainees" />
              </Link>
               <OpenPos position="Back-end trainee" />

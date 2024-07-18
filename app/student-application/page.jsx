@@ -1,6 +1,6 @@
 import React from 'react'
-import StudentApplicationForm from '@/components/StudentApplicationForm'
-import StudentApplicationBanner from '@/components/StudentApplicationBanner'
+import StudentApplicationForm from '../../components/StudentApplicationForm'
+import StudentApplicationBanner from '../../components/StudentApplicationBanner'
 
 
 

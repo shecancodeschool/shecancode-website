@@ -1,6 +1,6 @@
 import React from 'react'
-import LearnersExpectationsBanner from '@/components/LearnersExpectationsBanner'
-import LearnersExpectationsForm from '@/components/LearnersExpectationsForm'
+import LearnersExpectationsBanner from '../../components/LearnersExpectationsBanner'
+import LearnersExpectationsForm from '../../components/LearnersExpectationsForm'
 
 
 

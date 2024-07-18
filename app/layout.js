@@ -1,13 +1,14 @@
 "use client"
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
-// import DashboardFooter from "@/components/DashboardFooter";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import EducationWalkSection from "../components/EducationWalk";
+import OurPartnersSection from "../components/Partners";
 import Head from "next/head";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useEffect } from "react";
-import Header from "@/components/Header";
 
 
 const metadata = {
@@ -28,16 +29,17 @@ export default function RootLayout({ children }) {
   }, [router]);
 
   return (
-    <>
+  
       <html lang="en">
-      <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
-        <link rel="icon" href="./logo/logo1.png" type="image/png"/>
+      {/* <Head> */}
+      <head>
+        <title>Shecancode</title>
+      <link rel="icon" href="/logo/logo1.png" type="image/png"/>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='' />
         <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet" />
-      </Head>
+      </head>
+      {/* </Head> */}
       <body className="">
         {isDashboard?null:<Header />}
        <div>
@@ -46,6 +48,5 @@ export default function RootLayout({ children }) {
        {isDashboard?null:<Footer />}
       </body>
     </html>
-    </>
   );
 }

@@ -1,5 +1,5 @@
-import ContactBanner from '@/components/ContactBanner'
-import ContactForm from '@/components/ContactForm'
+import ContactBanner from '../../components/ContactBanner'
+import ContactForm from '../../components/ContactForm'
 import React from 'react'
 
 function page() {

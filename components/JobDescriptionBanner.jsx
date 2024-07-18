@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import bannerImage from "../public/about-us-banner.png";
+import Link from 'next/link';
 
 const JobDescriptionBanner = () => {
     return (
@@ -50,9 +51,11 @@ const JobDescriptionBanner = () => {
                                 </div>
                             </div>
                         </div>
+                        <Link href={'/job-application'}>
                         <button className="w-full md:w-[283px] font h-[57px] px-4 py-2 bg-[#317ACC] text-[#FFFFFF] font-[400] text-[18px] rounded">
                             Apply Now
                         </button>
+                        </Link>
                     </div>
                 </div>
             </div>

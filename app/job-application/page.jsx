@@ -1,14 +1,13 @@
 import React from 'react'
-import JobApplicationForm from '@/components/JobApplicationForm'
-import JobDescriptionBanner from '@/components/JobDescriptionBanner'
+import JobDescriptionBanner from '../../components/JobDescriptionBanner'
+import JobApplicationForm  from '../../components/JobApplicationForm'
 
 
 const page = () => {
   return (
     <>
-    <JobDescriptionBanner />
-    <JobApplicationForm />
-
+      <JobDescriptionBanner />
+      <JobApplicationForm />
     </>
   )
 }
