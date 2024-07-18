@@ -15,7 +15,7 @@ const page = () => {
   return (
     <>
       <div>
-        <CourseBanner propImage={crs} paragraph="Grow up your skills by online courses with SheCanCode" />
+        <CourseBanner propImage={crs} heading="Grow up your skills by online courses with SheCanCode" />
       </div>
       <div className="max-w-[84rem] mx-auto p-4 md:p-0">
         <div className="flex justify-center items-center mt-[67.04px]">

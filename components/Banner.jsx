@@ -35,6 +35,16 @@ export const Banner = () => {
             </button>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 w-full h-[135px] bg-opacity-[80%] bg-[#011225]">
+          <div className="max-w-[86rem] mx-auto flex flex-col justify-center h-full">
+            <p className="text-[#09B451] text-[24px]">Open application</p>
+            <p className="text-white text-[24px]">
+              Master software development skills in summer training program for
+              secondary school students.
+              <span className="text-[#6AACE8]"> Read more</span>
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
@@ -131,16 +141,16 @@ export const WwdBanner = ({ heading, paragraph, propImage }) => {
 export const NewsDetails = () => {
   return (
     <>
-      <div className="relative h-[30rem] isolate flex flex-col justify-end overflow-hidden">
+      <div className="relative h-[35rem] isolate flex flex-col justify-end overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-opacity-[5%] bg-[#011225]"></div>
         <Image
           src={Careers}
           alt="SheCanCODE_grad"
           className="inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 flex flex-col md:mt-4 mt-10 justify-center items-center text-white md:p-0">
-          <div className="h-[320px] w-full flex flex-col justify-between ">
-            <div className="max-w-[80%] flex flex-col justify-between gap-5 ml-[70px]">
+        <div className="absolute max-w-[86rem] mx-auto inset-0 flex flex-col md:mt-4 mt-10 justify-center items-center text-white md:p-0">
+          <div className="h-[320px] w-full flex flex-col justify-between">
+            <div className="w-full  md:p-0 flex flex-col justify-between gap-5">
               <p className="text-[20px] text-[#317ACC]">Impact Story</p>
               <h3 className="text-[36px] max-w-[900px]">
                 Shecancode bootcamp alums names 2024 guggenheum fellows
@@ -174,12 +184,9 @@ export const CourseBanner = ({ heading, paragraph, propImage }) => {
           className="inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 flex flex-col md:mt-4 mt-10 justify-center items-center place-content-center gap-[56px] text-white p-4 md:p-0">
-          <h3 className="z-10 text-4xl md:text-[60px] lg:text-[60px] xl:text-[60px] text-[20px] font-bold text-center font">
+          <h3 className="z-10 text-[50px] md:text-[40px] lg:text-[50px] xl:text-[60px] max-w-[60%] font-bold text-center font">
             {heading}
           </h3>
-          <div className="text-center max-w-6xl mx-auto w-full h-full max-h-[30%] flex flex-col">
-            <p className="z-10 font md:text-[24px] text-[50px]">{paragraph}</p>
-          </div>
         </div>
       </div>
     </>
