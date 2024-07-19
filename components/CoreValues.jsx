@@ -32,7 +32,7 @@ const CoreValues = () => {
               <Image src={IconCollaboration} alt="Collaboration Icon" className="w-14 h-16" />
               <span className="text-2xl md:text-[35px] font-bold text-[#317ACC]">Collaboration</span>
             </div>
-            <p className="mt-4 text-[#848383] text-2xl  font leading-[25.2px] md:text-lg lg:text-[24px] text-justify ">
+            <p className="mt-4 text-[#848383] text-[20px]  font leading-[25.2px] md:text-lg lg:text-[20px] text-justify ">
               Collaboration is the process of two or more people or organizations working together to complete a task or achieve a goal.
             </p>
           </div>
@@ -46,7 +46,7 @@ const CoreValues = () => {
               <Image src={IconTransparency} alt="Transparency Icon" className="w-14 h-16" />
               <h2 className="text-2xl md:text-[35px] font-bold text-[#317ACC]">Transparency</h2>
             </div>
-            <p className="mt-4 text-[#848383] text-2xl font leading-[25.2px] md:text-lg lg:text-[24px] text-justify ">
+            <p className="mt-4 text-[#848383] text-[20px] font leading-[25.2px] md:text-lg lg:text-[20px] text-justify ">
               Transparency, as used in science, is operating in such a way that it is easy for others to see what actions are performed.
             </p>
           </div>
@@ -63,7 +63,7 @@ const CoreValues = () => {
               <Image src={IconTransparency} alt="Transparency Icon" className="w-14 h-16" />
               <h2 className="text-2xl md:text-[35px]  font-bold text-[#317ACC]">Trust</h2>
             </div>
-            <p className="mt-4 text-[#848383] text-2xl font leading-[25.2px] md:text-lg lg:text-[24px] text-justify ">
+            <p className="mt-4 text-[#848383]  font leading-[25.2px] md:text-lg lg:text-[20px] text-justify ">
               Trust will help us foster a positive and productive environment that delivers value to our users and customers.
             </p>
           </div>
@@ -74,7 +74,7 @@ const CoreValues = () => {
               <Image src={IconTrust} alt="Exemplary Icon" className="w-12 h-12" />
               <h2 className="text-xl md:text-[35px] font-bold text-[#317ACC]">Exemplary</h2>
             </div>
-            <p className="mt-4 text-[#848383] text-2xl font leading-[25.2px] md:text-lg lg:text-[24px] text-justify ">
+            <p className="mt-4 text-[#848383] text-[20px] font leading-[25.2px] md:text-lg lg:text-[20px] text-justify ">
               Trust will help us foster a positive and productive environment that delivers value to our users and customers.
             </p>
           </div>

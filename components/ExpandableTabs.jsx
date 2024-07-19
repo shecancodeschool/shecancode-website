@@ -6,7 +6,7 @@ const TabContent = ({ title, sections }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative border-b border-gray-300">
+    <div className=" border-b border-gray-300">
       <button
         className="w-full flex justify-between items-center p-4 focus:outline-none text-left bg-white hover:bg-gray-100 md:flex-row flex-col"
         onClick={() => setIsOpen(!isOpen)}
@@ -16,12 +16,12 @@ const TabContent = ({ title, sections }) => {
           <span className="text-[#615A63] text-[16px] font-medium">{title}</span>
         </div>
         <div className="flex items-center w-full md:w-auto mt-2 md:mt-0 justify-between md:justify-start">
-          <span className="text-[#615A63] text-[16px] font-medium mr-1">{sections.length} Sections</span>
-          <span className="text-[#615A63] text-[16px] font-medium">. {sections.reduce((acc, section) => acc + parseInt(section.duration), 0)} minutes</span>
+          <span className="text-[#615A63] text-[10px] md:text-[16px] font-medium mr-1">{sections.length} Sections</span>
+          <span className="text-[#615A63] text-[10px] md:text-[16px] font-medium">. {sections.reduce((acc, section) => acc + parseInt(section.duration), 0)} minutes</span>
         </div>
       </button>
       {isOpen && (
-        <div className="absolute left-0 right-0 top-full p-4 bg-[#E0E0E0] space-y-4 z-10">
+        <div className="left-0 right-0 top-full p-4 bg-[#E0E0E0] space-y-4 z-10">
           {sections.map((section, index) => (
             <div key={index} className="flex justify-between items-center mb-2">
               <div className="flex items-center">
@@ -80,7 +80,13 @@ const ExpandableTabs = () => {
     },
     {
       title: "Information Architecture: Creating a Solid Foundation Part 03",
-      sections: [],
+      sections: [
+        { title: "Exercise: Turning Information Priority into an IA Model", duration: "6 minutes", demo: "#" },
+        { title: "IA Models: Which One’s Right for My Site?", duration: "8 minutes" },
+        { title: "Hierarchical Tree IA Model", duration: "15 minutes" },
+        { title: "Combining IA Models", duration: "20 minutes" },
+        { title: "Tools for Creating IA Models", duration: "40 minutes" },
+      ]
     },
   ];
 

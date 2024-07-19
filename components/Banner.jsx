@@ -167,13 +167,13 @@ export const NewsDetails = () => {
           alt="SheCanCODE_grad"
           className="inset-0 h-full w-full object-cover"
         />
-        <div className="absolute max-w-[86rem] mx-auto inset-0 flex flex-col md:mt-4 mt-10 justify-center items-center text-white md:p-0">
-          <div className="h-[320px] w-full flex flex-col justify-between">
+        <div className="absolute max-w-[83rem] mx-auto inset-0 flex flex-col md:mt-4 mt-10 justify-center items-center text-white md:p-0">
+          <div className="h-[320px] w-full flex flex-col p-4 md:p-0 justify-between">
             <div className="w-full md:p-0 flex flex-col justify-between gap-5">
-              <p className="text-[18px] text-[#317ACC] md:text-[20px]">
+              <p className="text-[14px] text-[#317ACC] md:text-[20px]">
                 Impact Story
               </p>
-              <h3 className="text-[32px] max-w-[900px] md:text-[36px]">
+              <h3 className="text-[24px] max-w-[900px] md:text-[36px]">
                 Shecancode bootcamp alums names 2024 guggenheum fellows
               </h3>
               <p className="text-[20px] max-w-[656px] md:text-[24px]">

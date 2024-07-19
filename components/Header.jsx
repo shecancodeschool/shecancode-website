@@ -112,7 +112,9 @@ function Header() {
             <Link href="/contact-us">
               <li onClick={toggleMenu}>Contact us</li>
             </Link>
-            <ButtonOne text="Enroll now" onClick={toggleMenu} />
+            <Link href={'/student-application'}>
+               <ButtonOne text="Enroll now" onClick={toggleMenu} />
+            </Link>
           </ul>
         </div>
       )}

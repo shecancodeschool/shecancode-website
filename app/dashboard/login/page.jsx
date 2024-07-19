@@ -1,7 +1,13 @@
 import React from 'react'
+import SignIn from '../../../components/AdminSignin'
 
-export default function page() {
+function page() {
   return (
-    <div>Login</div>
+    <>
+    <SignIn />
+     
+    </>
   )
 }
+
+export default page

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import bannerImage from "../public/CourseDetailsBanner.png";
 import { BiDotsVertical } from 'react-icons/bi';
+import Link from 'next/link';
 
 const CourseDetailBanner = () => {
     return (
@@ -28,9 +29,11 @@ const CourseDetailBanner = () => {
                         <p className="text-[#E0E0E0]">$400</p>
                     </div>
                     <div className='mt-[27px]'>
+                        <Link href={"/student-application"}>
                         <button className=" md:w-[283px] font h-[57px] px-4 md:py-2 bg-[#317ACC] text-[#FFFFFF]  md:text-[18px] rounded mt-2">
                             Apply Now
                         </button>
+                        </Link>
                     </div>
                 </div>
             </div>
