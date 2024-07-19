@@ -13,7 +13,7 @@ const CourseDetails = () => {
         {
             id: 1,
             question: "Do I need to take both the UX and UI programs to learn about both disciplines?",
-            answer: ""
+            answer: "Yes, you can select a monthly payment plan of $550.00 a month for 10 months and $1,400.00 upfront. Note: You will be required to pay the full duration of the payment plan even if you finish the program before the payment plan ends. Still doesn’t work for you? Book a call with a Career Advisor and see if you are eligible for a custom payment plan."
         },
         {
             id: 2,
@@ -23,17 +23,17 @@ const CourseDetails = () => {
         {
             id: 3,
             question: "What’s the “catch” for the job guarantee?",
-            answer: ""
+            answer: "Yes, you can select a monthly payment plan of $550.00 a month for 10 months and $1,400.00 upfront. Note: You will be required to pay the full duration of the payment plan even if you finish the program before the payment plan ends. Still doesn’t work for you? Book a call with a Career Advisor and see if you are eligible for a custom payment plan."
         },
         {
             id: 4,
             question: "What kind of job can I get after the program?",
-            answer: ""
+            answer: "Yes, you can select a monthly payment plan of $550.00 a month for 10 months and $1,400.00 upfront. Note: You will be required to pay the full duration of the payment plan even if you finish the program before the payment plan ends. Still doesn’t work for you? Book a call with a Career Advisor and see if you are eligible for a custom payment plan."
         },
         {
             id: 5,
             question: "What if I have a question that isn’t answered here?",
-            answer: ""
+            answer: "Yes, you can select a monthly payment plan of $550.00 a month for 10 months and $1,400.00 upfront. Note: You will be required to pay the full duration of the payment plan even if you finish the program before the payment plan ends. Still doesn’t work for you? Book a call with a Career Advisor and see if you are eligible for a custom payment plan."
         },
     ];
 

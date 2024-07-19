@@ -5,8 +5,8 @@ const JobDescriptionForm = () => {
         <div className="flex justify-center py-12 px-4 sm:px-6 lg:px-8 w-full">
             <div className="max-w-[1440px] w-full mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="space-y-9">
-                    <div className="flex flex-col gap-9">
-                        <h1 className="font-bold text-[24px] text-[#317ACC] md:text-5xl lg:text-5xl leading-[52px]">
+                    <div className="flex flex-col gap-[27px]">
+                        <h1 className="font-semibold text-[24px] text-[#317ACC]  leading-[52px]">
                             About the Company
                         </h1>
                         <p className="font-medium text-[24px] text-[#000000]/65 leading-[31.2px]">
@@ -14,8 +14,8 @@ const JobDescriptionForm = () => {
                         </p>
                     </div>
 
-                    <div className=" flex flex-col gap-9">
-                        <h1 className="font-bold text-[24px] text-[#317ACC] md:text-5xl lg:text-5xl leading-[52px]">
+                    <div className=" flex flex-col gap-[27px]">
+                        <h1 className="font-semibold text-[24px] text-[#317ACC]  leading-[52px]">
                             About the Role
                         </h1>
                         <p className="font-medium text-[24px] text-[#000000]/65 leading-[31.2px]">
@@ -23,8 +23,8 @@ const JobDescriptionForm = () => {
                         </p>
                     </div>
 
-                    <div className="flex flex-col gap-9">
-                        <h1 className="font-bold text-[24px] text-[#317ACC] md:text-5xl lg:text-5xl leading-[52px]">
+                    <div className="flex flex-col gap-[27px]">
+                        <h1 className="font-semibold text-[24px] text-[#317ACC]  leading-[52px]">
                             Responsibilities
                         </h1>
                         <ul className="list-disc list-inside font-medium text-[24px] text-[#000000]/65 leading-[31.2px]">
@@ -36,8 +36,8 @@ const JobDescriptionForm = () => {
                         </ul>
                     </div>
 
-                    <div className="flex flex-col gap-9">
-                        <h1 className="font-bold text-[24px] text-[#317ACC] md:text-5xl lg:text-5xl leading-[52px]">
+                    <div className="flex flex-col gap-[27px]">
+                        <h1 className="font-semibold text-[24px] text-[#317ACC]  leading-[52px]">
                             Requirements
                         </h1>
                         <ul className="list-disc list-inside font-medium text-[24px] text-[#000000]/65 leading-[31.2px]">
@@ -49,14 +49,14 @@ const JobDescriptionForm = () => {
                         </ul>
                     </div>
 
-                    <div className="flex flex-col gap-9">
+                    <div className="flex flex-col gap-[27px]">
                         <p className="font-medium text-[24px] text-[#000000]/65 leading-[31.2px]">
                             If you are passionate about YouTube and have a proven track record of success, we would love to hear from you. Please apply with your resume and a cover letter that highlights your experience and qualifications for this role to hr@igirerwanda.org
                         </p>
                         <p className="font-medium text-[24px] text-[#000000]/65 leading-[31.2px]">
                             We are an equal opportunity employer and welcome all qualified candidates to apply.
                         </p>
-                        <p className="font-bold text-[32px] text-[#317ACC] leading-[41.6px]">
+                        <p className="font-medium text-[24px] text-[#000000]/65 leading-[31.2px]">
                             Get to know us and join our team
                         </p>
                     </div>
