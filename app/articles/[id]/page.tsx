@@ -113,20 +113,14 @@ const page = () => {
                 <Blog
                   Blog={Blog1}
                   title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"
-                  date="APRIL 9, 2022  "
-                  description="The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation.........."
                 />
                 <Blog
                   Blog={Blog1}
                   title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"
-                  date="APRIL 9, 2022  "
-                  description="The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation.........."
                 />
                 <Blog
                   Blog={Blog1}
                   title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"
-                  date="APRIL 9, 2022  "
-                  description="The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation.........."
                 />
               </div>
             </div>

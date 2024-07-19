@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Blog = ({Blog, date, title, description}) => {
+const Blog = ({Blog,title}) => {
   return (
     <>
      <div className='flex flex-col justify-between h-[690px] w-[400.25px] md:items-centre'>
