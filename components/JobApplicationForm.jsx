@@ -96,7 +96,7 @@ const JobApplicationForm = () => {
                 <p className="text-lg mb-4 text-gray-500">Tell us more about you so we can get back to you with more info.</p>
                 <form className="space-y-4" onSubmit={handleSubmit}>
                     <div>
-                        <label className="block mb-1 text-lg text-[#32536A]">First Name</label>
+                        <label className="block mb-1 text-[24px] text-[#32536A]">First Name</label>
                         <input
                             type="text"
                             name="firstName"
@@ -107,7 +107,7 @@ const JobApplicationForm = () => {
                         {errors.firstName && <p className="text-red-500">{errors.firstName}</p>}
                     </div>
                     <div>
-                        <label className="block mb-1 text-lg text-[#32536A]">Last Name</label>
+                        <label className="block mb-1 text-[24px] text-[#32536A]">Last Name</label>
                         <input
                             type="text"
                             name="lastName"
@@ -118,7 +118,7 @@ const JobApplicationForm = () => {
                         {errors.lastName && <p className="text-red-500">{errors.lastName}</p>}
                     </div>
                     <div>
-                        <label className="block mb-1 text-lg text-[#32536A]">Email</label>
+                        <label className="block mb-1 text-[24px] text-[#32536A]">Email</label>
                         <input
                             type="email"
                             name="email"
@@ -129,7 +129,7 @@ const JobApplicationForm = () => {
                         {errors.email && <p className="text-red-500">{errors.email}</p>}
                     </div>
                     <div>
-                        <label className="block mb-1 text-lg text-[#32536A]">Phone Number</label>
+                        <label className="block mb-1 text-[24px] text-[#32536A]">Phone Number</label>
                         <input
                             type="tel"
                             name="phoneNumber"
@@ -140,7 +140,7 @@ const JobApplicationForm = () => {
                         {errors.phoneNumber && <p className="text-red-500">{errors.phoneNumber}</p>}
                     </div>
                     <div>
-                        <label className="block mb-1 text-lg text-[#32536A]">LinkedIn Link</label>
+                        <label className="block mb-1 text-[24px] text-[#32536A]">LinkedIn Link</label>
                         <input
                             type="url"
                             name="linkedIn"
@@ -151,7 +151,7 @@ const JobApplicationForm = () => {
                         {errors.linkedIn && <p className="text-red-500">{errors.linkedIn}</p>}
                     </div>
                     <div>
-                        <label className="block mb-1 text-lg">{labelWithIcon("Resume", "Please upload your resume.")}</label>
+                        <label className="block mb-1 text-[24px]">{labelWithIcon("Upload your Resume [PDF or Document]", "Please upload your resume.")}</label>
                         <div className="">
                             {/* <label className="block mb-1 text-lg text-[#32536A]">Resume</label> */}
                             <div className="relative flex items-center">
@@ -176,7 +176,7 @@ const JobApplicationForm = () => {
                         {errors.resume && <p className="text-red-500">{errors.resume}</p>}
                     </div>
                     <div>
-                        <label className="block mb-1 text-lg">{labelWithIcon("Upload your Cover Letter", "Please upload your cover letter.")}</label>
+                        <label className="block mb-1 text-[24px]">{labelWithIcon("Upload your Cover Letter [PDF or Document]", "Please upload your cover letter.")}</label>
                         <div className="">
                             {/* <label className="block mb-1 text-lg text-[#32536A]">Cover letter</label> */}
                             <div className="relative flex items-center">
@@ -217,7 +217,7 @@ const JobApplicationForm = () => {
                     Get to know us and join our team. We’d love to have more talented people on board. Check out our open positions!
                 </p>
                 <div className="space-y-4">
-                    <div className="text-[#32536A] text-lg">
+                    <div className="text-[#32536A] text-[24px]">
                         <Link href="/graphic-designer">
                             <li className="flex items-center justify-between cursor-pointer">
                                 <span>Graphic Designer</span>
@@ -237,7 +237,7 @@ const JobApplicationForm = () => {
                             </li>
                         </Link>
                     </div>
-                    <div className="text-[#32536A] text-lg">
+                    <div className="text-[#32536A] text-[24px]">
                         <Link href="/front-end-engineer">
                             <li className="flex items-center justify-between cursor-pointer">
                                 <span>Front-end Engineer</span>
@@ -257,7 +257,7 @@ const JobApplicationForm = () => {
                             </li>
                         </Link>
                     </div>
-                    <div className="text-[#32536A] text-lg">
+                    <div className="text-[#32536A] text-[24px]">
                         <Link href="/back-end-engineer">
                             <li className="flex items-center justify-between cursor-pointer">
                                 <span>Back-end Engineer</span>
