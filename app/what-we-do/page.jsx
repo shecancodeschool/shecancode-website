@@ -20,7 +20,7 @@ function page() {
         </div>
         <div className="max-w-[84rem] mx-auto flex flex-col justify-center items-center space-y-20 w-full px-4 sm:px-0">
           <div className="flex flex-col justify-evenly items-center ">
-            <h1 className="text-4xl sm:text-[50px] md:mt-[67px] md:mb-[67px] md:text-[50px] lg:text-[50px] xl:text-[50px] text-[#317ACC] text-center font-bold">
+            <h1 className="text-4xl sm:text-[50px] md:mt-[30px] md:mb-[67px] md:text-[50px] lg:text-[50px] xl:text-[50px] text-[#317ACC] text-center font-bold">
               Our Services
             </h1>
           </div>

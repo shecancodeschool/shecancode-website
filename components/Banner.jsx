@@ -36,17 +36,14 @@ export const Banner = () => {
             </button>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 w-full h-[135px] bg-opacity-[80%] bg-[#011225]">
-          <div className="max-w-[86rem] mx-auto flex flex-col justify-center h-full">
-            <p className="text-[#09B451] text-[24px] sm:hidden">
-              Open application
-            </p>{" "}
-            <p className="text-white text-[24px]">
-              Master software development skills in summer training program for
-              secondary school students.
-              <Link href={'#'}><span className="text-[#6AACE8]"> Read more</span></Link>
-            </p>
+        <div className="bg-[#011225]/70 absolute w-full ">
+          <div className="max-w-[84rem] mx-auto p-6">
+            <div className="text-[#09B451]  text-[20px] md:text-[24px]">Open application </div>
+            <div className="text-white text-[20] md:text-[24px]">Master software development skills in summer training program for secondary school students.
+              <Link href={'#'} className="text-[#6AACE8]">Read more</Link>
+              </div>
           </div>
+
         </div>
       </div>
     </>
