@@ -17,7 +17,7 @@ const page = () => {
         {/* SINGLE BLOG VIEW */}
         <div className="w-full ">
           <div className="max-w-[86rem] mx-auto flex justify-between w-full mb-[5rem]">
-            <div className="max-w-[838px] flex flex-col gap-10">
+            <div className="max-w-[838px] flex flex-col gap-10 mt-1">
               <div>
                 <Image src={md} alt="blog image" />
               </div>

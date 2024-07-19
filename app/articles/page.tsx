@@ -9,7 +9,7 @@ import blogbn from "../../public/careersbn.png";
 const page = () => {
   return (
     <>
-      <div className=" h-full flex flex-col justify-evenly gap-16 bg-[#FAFAFA]">
+      <div className=" h-full flex flex-col gap-9 justify-evenly bg-[#FAFAFA]">
         <div className="w-full">
           <BlogBanner
             propImage={blogbn}
@@ -18,7 +18,7 @@ const page = () => {
             We'd love to have more talented people on board"
           />
         </div>
-        <div className="max-w-[86rem] mx-auto flex flex-col justify-center items-center space-y-20 w-full mb-[5rem]">
+        <div className="max-w-[83rem] mx-auto flex flex-col justify-center items-center space-y-20 w-full my-[67px]">
           <div className="w-full">
             <div>
               <h1 className="text-[40px] md:text-[50px] font-bold mb-10 text-[#317ACC]">
