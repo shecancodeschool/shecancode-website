@@ -9,6 +9,7 @@ import crs2 from "../public/crs2.png";
 import crs3 from "../public/crs3.jpg";
 import crs4 from "../public/crs4.jpg";
 import { ButtonOne } from "./Buttons";
+import Link from "next/link";
 
 function getBackgroundColor(title) {
   switch (title) {
@@ -140,7 +141,7 @@ export const CourseCard = ({ title, text1, months, buttonText }) => {
   return (
     <>
      <div className="flex flex-col">
-        <div className="flex flex-col justify-between h-[442px] w-[296px] shadow-md mb-[67px]">
+        <div className="flex flex-col justify-between h-[442px] w-[296px] shadow-md mb-[67px] rounded">
           <div className="w-[334px] h-[218px]">
             <div className="absolute bg-[#FF1F00]/70 flex justify-center items-center rounded-tl-md">
               <p className="text-[12px] text-white px-5 py-3">Open Now</p>
@@ -159,32 +160,9 @@ export const CourseCard = ({ title, text1, months, buttonText }) => {
           </div>
           <div className="flex justify-between items-center pb-5 px-3">
             <p className="text-[#09B451] text-[16.68px] max-w-[102px] max-h-[34px]">{months}</p>
-            <button className='bg-btn1 px-[20px] py-[7px] font rounded text-[12px] text-white' >{ buttonText }</button>
+            <Link href={"/course-detail"}><button className='bg-btn1 px-[20px] py-[7px] font rounded text-[12px] text-white' >{ buttonText }</button></Link>
           </div>
         </div>
-        {/* bottom cards */}
-        {/* <div className="flex flex-col justify-between h-[442px] w-[296px] shadow-md mb-[67px]">
-          <div className="w-[334px] h-[218px]">
-            <div className="absolute bg-[#FF1F00] flex justify-center items-center rounded-tl-md">
-              <p className="text-[12px] text-white px-5 py-3">Open Now</p>
-            </div>
-            <div className="{`w-full ${iconBgColor`}">
-              {icon && <Image src={icon} alt="course-img" className="rounded-t-md"/>}
-            </div>
-          </div>
-          <div className="px-3">
-            <h1 className="text-[#317ACC] font-bold text-[20px]">{title}</h1>
-          </div>
-          <div>
-            <p className="text-[11px] font-thin text-black/50 text-justify md:text-left px-3">
-              {text1}
-            </p>
-          </div>
-          <div className="flex justify-between items-center pb-5 px-3">
-            <p className="text-[#09B451] text-[16.68px] max-w-[102px] max-h-[34px]">{months}</p>
-            <button className='bg-btn1 px-[20px] py-[7px] font rounded text-[12px] text-white' >{ buttonText }</button>
-          </div>
-        </div> */}
       </div>
     </>
   );

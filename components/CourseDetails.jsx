@@ -13,7 +13,7 @@ const CourseDetails = () => {
         {
             id: 1,
             question: "Do I need to take both the UX and UI programs to learn about both disciplines?",
-            answer: ""
+            answer: "Yes, you can select a monthly payment plan of $550.00 a month for 10 months and $1,400.00 upfront. Note: You will be required to pay the full duration of the payment plan even if you finish the program before the payment plan ends. Still doesn’t work for you? Book a call with a Career Advisor and see if you are eligible for a custom payment plan."
         },
         {
             id: 2,
@@ -23,17 +23,17 @@ const CourseDetails = () => {
         {
             id: 3,
             question: "What’s the “catch” for the job guarantee?",
-            answer: ""
+            answer: "Yes, you can select a monthly payment plan of $550.00 a month for 10 months and $1,400.00 upfront. Note: You will be required to pay the full duration of the payment plan even if you finish the program before the payment plan ends. Still doesn’t work for you? Book a call with a Career Advisor and see if you are eligible for a custom payment plan."
         },
         {
             id: 4,
             question: "What kind of job can I get after the program?",
-            answer: ""
+            answer: "Yes, you can select a monthly payment plan of $550.00 a month for 10 months and $1,400.00 upfront. Note: You will be required to pay the full duration of the payment plan even if you finish the program before the payment plan ends. Still doesn’t work for you? Book a call with a Career Advisor and see if you are eligible for a custom payment plan."
         },
         {
             id: 5,
             question: "What if I have a question that isn’t answered here?",
-            answer: ""
+            answer: "Yes, you can select a monthly payment plan of $550.00 a month for 10 months and $1,400.00 upfront. Note: You will be required to pay the full duration of the payment plan even if you finish the program before the payment plan ends. Still doesn’t work for you? Book a call with a Career Advisor and see if you are eligible for a custom payment plan."
         },
     ];
 
@@ -91,23 +91,23 @@ const CourseDetails = () => {
                     </div>
                 </div>
 
-                <div className="md:w-[1334px] md:h-[620px] mt-8 md:mt-[80px]">
+                <div className="md:w-[1334px] mt-8 md:mt-[80px]">
                     <div className="mt-8">
                         <h2 className="font-semibold text-[24px] md:text-[40px] text-[#317ACC] leading-tight">Discover our Modules</h2>
                         <div className="flex flex-wrap gap-4 md:gap-16 text-[#807A82] text-[14px] md:text-[16px] items-center mt-4">
-                            <div>10 Lessons</div>
+                            <div >10 Lessons</div>
                             <div>20 Videos</div>
                             <div>20 Articles</div>
                             <div>18 Assignments</div>
                             <div>24h 32m Completion Time</div>
-                            <button className="mt-4 md:mt-0 text-[#3758B2] font-semibold text-[14px] md:text-[16px] ml-auto">Expand All Lessons</button>
+                            <button className="mt-4 md:mt-0 text-[#3758B2] hidden md:block font-semibold text-[14px] md:text-[16px] ml-auto">Expand All Lessons</button>
                         </div>
                     </div>
                     <ExpandableTabs />
                 </div>
 
                 {/* FAQ Section */}
-                <div className="md:w-[1321px] mt-8 md:mt-10">
+                <div className="md:w-[1321px] mt-8 md:mt-1 md:mb-[67px]">
                     <CourseDetailFaQ faqs={faqData} />
                 </div>
             </div>

@@ -12,7 +12,7 @@ const FAQItem = ({ faq }) => {
       >
         <div className="flex items-center">
           <span className="text-[16px] font-bold mr-4 text-[#317ACC]">{faq.id < 10 ? `0${faq.id}.` : `${faq.id}.`}</span>
-          <span className="font-medium leading-[38.2px] text-[#4B444D] text-[20px] sm:text-[24px]">{faq.question}</span>
+          <span className="font-medium leading-[38.2px] text-[#4B444D] text-[16px] sm:text-[24px]">{faq.question}</span>
         </div>
         <div>
           <span className="text-[32px] text-[#317ACC] ml-auto">{isOpen ? '-' : '+'}</span>
@@ -20,7 +20,7 @@ const FAQItem = ({ faq }) => {
       </button>
       {isOpen && faq.answer && (
         <div className="p-4 text-left">
-          <p className="text-[16px] sm:text-[20px] leading-[32px] text-[#4B444D] font-normal">{faq.answer}</p>
+          <p className="text-[16px] md:text-[20px] leading-[32px] text-[#4B444D] font-normal">{faq.answer}</p>
         </div>
       )}
     </div>
@@ -30,7 +30,7 @@ const FAQItem = ({ faq }) => {
 const CourseDetailFaQ = ({ faqs }) => {
   return (
     <div className="mt-10 text-left px-4">
-      <h2 className="text-[32px] sm:text-[40px] max-w-xl font-semibold text-left text-[#317ACC] mb-6">Still having a doubt? Let’s be more clearer!</h2>
+      <h2 className="text-[24px] sm:text-[40px] max-w-xl font-semibold text-left text-[#317ACC] mb-6">Still having a doubt? Let’s be more clearer!</h2>
       {faqs.map((faq) => (
         <FAQItem key={faq.id} faq={faq} />
       ))}

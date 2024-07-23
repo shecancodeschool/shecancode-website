@@ -100,13 +100,21 @@ function Header() {
             <Link href="/courses">
               <li onClick={toggleMenu}>Courses</li>
             </Link>
+            <Link href="/articles">
+              <li onClick={toggleMenu}>News and blogs</li>
+            </Link>
+            <Link href="/courses">
+              <li onClick={toggleMenu}>Courses</li>
+            </Link>
             <Link href="/our-team">
               <li onClick={toggleMenu}>Our team</li>
             </Link>
             <Link href="/contact-us">
               <li onClick={toggleMenu}>Contact us</li>
             </Link>
-            <ButtonOne text="Enroll now" onClick={toggleMenu} />
+            <Link href={'/student-application'}>
+               <ButtonOne text="Enroll now" onClick={toggleMenu} />
+            </Link>
           </ul>
         </div>
       )}

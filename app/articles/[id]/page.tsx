@@ -11,18 +11,18 @@ const page = () => {
   return (
     <>
       <div className=" h-full flex flex-col justify-evenly gap-16 bg-[#FAFAFA]">
-        <div className="w-full">
+        <div className="">
           <NewsDetails />
         </div>
         {/* SINGLE BLOG VIEW */}
         <div className="w-full ">
-          <div className="max-w-[86rem] mx-auto flex justify-between w-full mb-[5rem]">
-            <div className="max-w-[838px] flex flex-col gap-10">
+          <div className="max-w-[83rem] p-4 md:p-0 mx-auto flex justify-between w-full mb-[5rem]">
+            <div className="max-w-[838px] flex flex-col gap-10 mt-1">
               <div>
                 <Image src={md} alt="blog image" />
               </div>
               <div className="flex flex-col gap-10">
-                <p className="text-[24px]">
+                <p className=" text-justify md:text-[24px] text-[#495057]">
                   Seamlessly syndicate cutting-edge architectures rather than
                   collaborative collaboration and idea-sharing. Proactively
                   incubate visionary interfaces whereas premium benefits.
@@ -38,7 +38,7 @@ const page = () => {
                   network just in time customer service without real-time
                   scenarios.
                 </p>
-                <p className="text-[24px]">
+                <p className=" text-justify md:text-[24px] text-[#495057]">
                   Synergistically drive e-business leadership with unique
                   synergy. Compellingly seize market positioning ROI and
                   bricks-and-clicks e-markets. Proactively myocardinate timely
@@ -50,20 +50,20 @@ const page = () => {
                 </p>
               </div>
               <div>
-                <p className="text-[24px]">
+                <p className=" text-justify md:text-[24px] text-[#495057]">
                   Efficiently empower seamless meta-services with impactful
                   opportunities. Distinctively transition virtual outsourcing
                   with focused e-tailers.
                 </p>
               </div>
               <div>
-                <h2 className="text-[35px] text-[#317ACC]">
+                <h2 className=" text-justify md:text-[35px] text-[#317ACC]">
                   “ Monotonectally seize superior mindshare rather than
                   efficient technology. ”
                 </h2>
               </div>
               <div>
-                <p className="text-[24px]">
+                <p className=" text-justify md:text-[24px] text-[#495057]">
                   Compellingly enhance seamless resources through competitive
                   content. Continually actualize 24/365 alignments for
                   resource-leveling platforms. Energistically enhance high
@@ -77,7 +77,7 @@ const page = () => {
                 <Image src={md1} alt="blog-image" />
               </div>
               <div>
-                <p className="text-[24px]">
+                <p className=" text-justify md:text-[24px] text-[#495057]">
                   Seamlessly syndicate cutting-edge architectures rather than
                   collaborative collaboration and idea-sharing. Proactively
                   incubate visionary interfaces whereas premium benefits.
@@ -95,7 +95,7 @@ const page = () => {
                 </p>
               </div>
               <div>
-                <p className="text-[24px]">
+                <p className=" text-justify md:text-[24px] text-[#495057]">
                   Synergistically drive e-business leadership with unique
                   synergy. Compellingly seize market positioning ROI and
                   bricks-and-clicks e-markets. Proactively myocardinate timely
@@ -107,26 +107,20 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="max-w-[406px]">
+            <div className="max-w-[406px] md:block hidden">
               <h2 className="text-[#317ACC] text-[20px] mb-5">Recent posts</h2>
               <div className="w-full h-full flex flex-col gap-10">
                 <Blog
                   Blog={Blog1}
                   title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"
-                  date="APRIL 9, 2022  "
-                  description="The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation.........."
                 />
                 <Blog
                   Blog={Blog1}
                   title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"
-                  date="APRIL 9, 2022  "
-                  description="The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation.........."
                 />
                 <Blog
                   Blog={Blog1}
                   title="SEVEN YALE SCHOOL OF ART ALUMS NAMED 2022 GUGGENHEIM FELLOWS"
-                  date="APRIL 9, 2022  "
-                  description="The Yale School of Art is pleased to announce that alumni  Guggenheim Memorial Foundation.........."
                 />
               </div>
             </div>
