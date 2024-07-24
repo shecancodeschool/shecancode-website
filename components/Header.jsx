@@ -40,37 +40,37 @@ function Header() {
               <Image src={LogoImage} width={82.21} height={60} />
             </Link>
           </div>
-          <div className='hidden md:flex'>
-            <ul className='w-full flex justify-between items-center  gap-[30px]  font'>
+          <div className='hidden lg:flex'>
+            <ul className='w-full flex justify-between items-center space-x-8 font'>
               <Link href="/">
-                <li className='text-[17px] font-semibold'>Home</li>
+                <li className='text-base font-semibold'>Home</li>
               </Link>
               <Link href="/about-us">
-                <li className='text-[17px] font-semibold'>About us</li>
+                <li className='text-base font-semibold'>About us</li>
               </Link>
               <Link href="/what-we-do">
-                <li className='text-[17px] font-semibold'>What we do</li>
+                <li className='text-base font-semibold'>What we do</li>
               </Link>
               <Link href="/careers">
-                <li className='text-[17px] font-semibold'>Careers</li>
+                <li className='text-base font-semibold'>Careers</li>
               </Link>
               <Link href="/articles">
-                <li className='text-[17px] font-semibold'>News and blogs</li>
+                <li className='text-base font-semibold'>News and blogs</li>
               </Link>
               <Link href="/courses">
-                <li className='text-[17px] font-semibold'>Courses</li>
+                <li className='text-base font-semibold'>Courses</li>
               </Link>
               <Link href="/our-team">
-                <li className='text-[17px] font-semibold'>Our team</li>
+                <li className='text-base font-semibold'>Our team</li>
               </Link>
               <Link href="/contact-us">
-                <li className='text-[17px] font-semibold'>Contact us</li>
+                <li className='text-base font-semibold'>Contact us</li>
               </Link>
             </ul>
           </div>
-          <div className='hidden md:block'>
+          {/* <div className='hidden md:block'>
             <ButtonOne text="Enroll now" />
-          </div>
+          </div> */}
           <div className='md:hidden'>
             <BiMenuAltRight size={30} onClick={toggleMenu} />
           </div>
@@ -112,9 +112,9 @@ function Header() {
             <Link href="/contact-us">
               <li onClick={toggleMenu}>Contact us</li>
             </Link>
-            <Link href={'/student-application'}>
+            {/* <Link href={'/student-application'}>
                <ButtonOne text="Enroll now" onClick={toggleMenu} />
-            </Link>
+            </Link> */}
           </ul>
         </div>
       )}
