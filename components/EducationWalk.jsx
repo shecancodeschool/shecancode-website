@@ -3,7 +3,7 @@ import Image from 'next/image';
 const EducationWalkSection = () => {
     return (
         <div className="w-full px-6 md:px-12 py-3 md:py-8 mt-8 md:mt-28 mb-7 md:mb-14">
-            <div className="max-w-[86rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+            <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
                 {/* Image grid */}
                 <div className=" h-[474px]  md:flex hidden gap-4 flex-col rounded bg-[#6AACE8]/10 items-center relative">
                     <div className="relative -right-28  -top-7  ">

@@ -89,7 +89,7 @@ const JobApplicationForm = () => {
     };
 
     return (
-        <div className="max-w-[86rem] mx-auto flex flex-col lg:flex-row lg:gap-7 p-4 lg:space-x-4">
+        <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row lg:gap-7 p-4 lg:space-x-4">
             {/* Job Application Form */}
             <div className="w-full lg:w-1/2 p-6">
                 <h2 className="text-3xl text-[#317ACC] font-semibold mb-2">Job Application</h2>

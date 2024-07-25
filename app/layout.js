@@ -1,15 +1,11 @@
 "use client"
-import { Inter } from "next/font/google";
+
 import "./globals.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import EducationWalkSection from "../components/EducationWalk";
-import OurPartnersSection from "../components/Partners";
-import Head from "next/head";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useEffect } from "react";
-
 
 const metadata = {
   title: "Shecancode bootcamp",
@@ -29,7 +25,6 @@ export default function RootLayout({ children }) {
   }, [router]);
 
   return (
-
     <html lang="en">
       {/* <Head> */}
       <head>

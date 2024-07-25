@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import banner_img from "../public/banner_img.png";
 import { CarrersButton } from "./Buttons";
 import OurTeam from "../public/3.png";
 import Careers from "../public/careersbn.png";
@@ -25,7 +24,7 @@ export const Banner = () => {
     <>
       <div className="relative h-screen isolate flex flex-col justify-end bg-[url('/banner_img.png')] object-cover">
         {/* Overflow  */}
-        <div className="absolute top-0 left-0 w-full h-full bg-opacity-[80%] bg-[#011225]">
+        <div className="absolute top-0 left-0 right-0 w-full h-full bg-opacity-[80%] bg-[#011225]">
 
           {/* Banner content  */}
           <div className="absolute inset-0 flex flex-col justify-center items-center place-content-center gap-8 md:gap-8 text-white p-4 md:p-0">
@@ -56,17 +55,18 @@ export const Banner = () => {
                   </div>
                 ))}
               </div>
-              <div className="m-auto px-4">
+              <div className="m-auto px-4 max-w-screen-xl">
                 <p className="flex gap-4 py-4 flex-wrap">
                   <span className="font-extrabold">New Application Open</span>
                   <span className="text-sm md:text-base">
                     A New Full-stack Software Development Course by SheCanCODE Bootcamp is open for applicants
-                    <Link href={'/course-detail'} className="text-[#6AACE8] block">Learn more</Link>
+                    <Link href={'/course-detail'} className="text-[#6AACE8] inline"> Learn more</Link>
                   </span>
                 </p>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </>
