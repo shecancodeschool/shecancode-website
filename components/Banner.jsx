@@ -43,7 +43,6 @@ export const Banner = () => {
               <Link href={'#'} className="text-[#6AACE8]">Read more</Link>
               </div>
           </div>
-
         </div>
       </div>
     </>
