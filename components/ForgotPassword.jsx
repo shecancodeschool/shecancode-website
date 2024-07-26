@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import LoginImg from "../public/LoginImg.png";
 import LogoImage from "../public/logo/logo1.png";
+import Link from 'next/link';
 
 function ForgotPassword() {
     const [email, setEmail] = useState('');
@@ -77,12 +78,14 @@ function ForgotPassword() {
                                         </div>
                                     </div>
                                     <div>
-                                        <button
+                                       <Link href="/dashboard/reset-password">
+                                       <button
                                             type="submit"
                                             className="relative flex justify-center w-full px-4 py-2 text-white bg-[#317ACC] rounded-md"
                                         >
                                             CONTINUE
                                         </button>
+                                       </Link>
                                     </div>
                                 </form>
                             </div>
