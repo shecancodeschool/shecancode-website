@@ -66,101 +66,101 @@ const AddNewJob = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4 sm:p-6 lg:p-8">
-      <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg p-8">
-        <h2 className="text-[17px] text-[#317ACC] leading-[16px] font font-semibold mb-6">Add New Job</h2>
+    <div className="w-[90%] flex rounded-lg flex-col bg-white p-10">
+      <div className="flex flex-col place-content-center mb-2 py-5 border-b-2">
+        <h2 className="text-[17px] text-[#317ACC] leading-[16px] font-semibold mb-6">Add New Job</h2>
         <form className="space-y-6" onSubmit={handleSubmit}>
-          <div className="md:flex md:space-x-6">
-            <div className="flex-1">
+          <div className="grid grid-cols-2 gap-6">
+            <div>
               <input
                 type="text"
                 name="jobName"
                 value={formData.jobName}
                 onChange={handleInputChange}
                 placeholder="Job Name"
-                className="mt-1 text-[10px] text-[#222B45] block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                className="mt-1 block w-full text-[14px] text-[#222B45] border border-gray-300 rounded-md shadow-sm py-2 px-3"
               />
               {errors.jobName && <p className="text-red-500">{errors.jobName}</p>}
             </div>
-            <div className="flex-1">
+            <div>
               <input
                 type="text"
                 name="jobLocation"
                 value={formData.jobLocation}
                 onChange={handleInputChange}
                 placeholder="Job Location"
-                className="mt-1 block text-[10px] text-[#222B45]  font w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                className="mt-1 block w-full text-[14px] text-[#222B45] border border-gray-300 rounded-md shadow-sm py-2 px-3"
               />
               {errors.jobLocation && <p className="text-red-500">{errors.jobLocation}</p>}
             </div>
           </div>
-          <div className="md:flex md:space-x-6">
-            <div className="flex-1">
+          <div className="grid grid-cols-2 gap-6">
+            <div>
               <input
                 type="text"
                 name="jobType"
                 value={formData.jobType}
                 onChange={handleInputChange}
                 placeholder="Job Type"
-                className="mt-1 block text-[10px] text-[#222B45] font w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                className="mt-1 block w-full text-[14px] text-[#222B45] border border-gray-300 rounded-md shadow-sm py-2 px-3"
               />
               {errors.jobType && <p className="text-red-500">{errors.jobType}</p>}
             </div>
-            <div className="flex-1">
+            <div>
               <input
                 type="text"
                 name="salary"
                 value={formData.salary}
                 onChange={handleInputChange}
                 placeholder="Salary"
-                className="mt-1 block text-[10px] text-[#222B45]  font w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                className="mt-1 block w-full text-[14px] text-[#222B45] border border-gray-300 rounded-md shadow-sm py-2 px-3"
               />
               {errors.salary && <p className="text-red-500">{errors.salary}</p>}
             </div>
           </div>
-          <div className="md:flex md:space-x-6">
-            <div className="flex-1">
+          <div className="grid grid-cols-2 gap-6">
+            <div>
               <input
                 type="text"
                 name="jobDuration"
                 value={formData.jobDuration}
                 onChange={handleInputChange}
                 placeholder="Job Duration"
-                className="mt-1 block text-[10px] text-[#222B45]  font w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                className="mt-1 block w-full text-[14px] text-[#222B45] border border-gray-300 rounded-md shadow-sm py-2 px-3"
               />
               {errors.jobDuration && <p className="text-red-500">{errors.jobDuration}</p>}
             </div>
-            <div className="flex-1">
+            <div>
               <input
                 type="text"
                 name="jobRequired"
                 value={formData.jobRequired}
                 onChange={handleInputChange}
                 placeholder="Job Required"
-                className="mt-1 block w-full text-[10px] text-[#222B45] font  border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                className="mt-1 block w-full text-[14px] text-[#222B45] border border-gray-300 rounded-md shadow-sm py-2 px-3"
               />
               {errors.jobRequired && <p className="text-red-500">{errors.jobRequired}</p>}
             </div>
           </div>
-          <div className="md:flex md:space-x-6">
-            <div className="flex-1">
+          <div className="grid grid-cols-2 gap-6">
+            <div>
               <textarea
                 name="responsibility"
                 value={formData.responsibility}
                 onChange={handleInputChange}
                 placeholder="Responsibility"
-                className="mt-1 block w-full text-[10px] font text-[#222B45]  border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                className="mt-1 block w-full text-[14px] text-[#222B45] border border-gray-300 rounded-md shadow-sm py-2 px-3"
                 rows="3"
               ></textarea>
               {errors.responsibility && <p className="text-red-500">{errors.responsibility}</p>}
             </div>
-            <div className="flex-1">
+            <div>
               <textarea
                 name="about"
                 value={formData.about}
                 onChange={handleInputChange}
                 placeholder="About"
-                className="mt-1 block w-full font text-[10px] text-[#222B45]  border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                className="mt-1 block w-full text-[14px] text-[#222B45] border border-gray-300 rounded-md shadow-sm py-2 px-3"
                 rows="3"
               ></textarea>
               {errors.about && <p className="text-red-500">{errors.about}</p>}
@@ -172,31 +172,31 @@ const AddNewJob = () => {
               value={formData.requirements}
               onChange={handleInputChange}
               placeholder="Requirements"
-              className="mt-1 block text-[10px] text-[#222B45]  font w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
+              className="mt-1 block w-full text-[14px] text-[#222B45] border border-gray-300 rounded-md shadow-sm py-2 px-3"
               rows="3"
             ></textarea>
             {errors.requirements && <p className="text-red-500">{errors.requirements}</p>}
           </div>
-          <div className="md:flex md:space-x-6">
-            <div className="flex-1">
+          <div className="grid grid-cols-2 gap-6">
+            <div>
               <input
                 type="text"
                 name="enrolled"
                 value={formData.enrolled}
                 onChange={handleInputChange}
                 placeholder="ExpiredAt"
-                className="mt-1 block text-[10px] text-[#222B45]  font w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                className="mt-1 block w-full text-[14px] text-[#222B45] border border-gray-300 rounded-md shadow-sm py-2 px-3"
               />
               {errors.enrolled && <p className="text-red-500">{errors.enrolled}</p>}
             </div>
-            <div className="flex-1">
+            <div>
               <input
                 type="text"
                 name="reportingTo"
                 value={formData.reportingTo}
                 onChange={handleInputChange}
                 placeholder="Reporting to"
-                className="mt-1 block text-[10px] font text-[#222B45]  w-full border border-gray-300 rounded-md shadow-sm py-2 px-3"
+                className="mt-1 block w-full text-[14px] text-[#222B45] border border-gray-300 rounded-md shadow-sm py-2 px-3"
               />
               {errors.reportingTo && <p className="text-red-500">{errors.reportingTo}</p>}
             </div>
@@ -205,14 +205,14 @@ const AddNewJob = () => {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent  font text-[13px]  font-medium rounded-md text-[#FFFFFF] bg-[#317ACC] "
+                className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#317ACC]"
               >
-                Add New Job
+                Add Job
               </button>
             </div>
           </div>
         </form>
-        {submissionStatus && <p className="mt-4 text-green-500">{submissionStatus}</p>}
+        {submissionStatus && <p className="text-green-500">{submissionStatus}</p>}
       </div>
     </div>
   );

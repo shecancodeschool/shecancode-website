@@ -20,8 +20,8 @@ const Jobs = () => {
             nextDate: '2024-07-30',
         },
         {
-            name: 'John Doe',
-            role: 'Backend Developer',
+            name: 'Hirwa',
+            role: 'Back-end Trainer',
             phone: '987-654-3210',
             email: 'johndoe@example.com',
             date: '2016-11-20',
@@ -50,10 +50,8 @@ const Jobs = () => {
     };
 
     return (
-        <div className="flex flex-col md:flex-row">
-            <aside className="w-full md:w-64 h-screen bg-gray-100 p-6">
-                {/* Sidebar content here */}
-            </aside>
+        <div className="w-[90%] flex rounded-lg flex-col bg-white p-10">
+
             <main className="flex-1 p-4 md:p-6 lg:p-8">
                 <div className="mb-6">
                     <h1 className="text-[24px] font leading-[31.2px] font-bold text-[#317ACC] mb-4">Job Application</h1>
@@ -132,7 +130,7 @@ const Jobs = () => {
                                         <td className="px-6 py-4">{applicant.role}</td>
                                         <td className="px-6 py-4">{applicant.date}</td>
                                         <td className="px-6 py-4">{applicant.status}</td>
-                                        <td className="px-6 py-4 text-right">
+                                        <td className="px-6 py-4 flex  items-center space-x-4">
                                             <button
                                                 className="text-[#8F9BB3] hover:text-[#222B45] focus:outline-none"
                                                 onClick={() => handleViewApplicant(applicant)}
@@ -147,6 +145,17 @@ const Jobs = () => {
                                                     <path d="M510 170C300.4 170 108.2 286.1 42.7 491.6a68.84 68.84 0 000 40.8C108.3 738 300.6 854 510 854c209.7 0 401.8-116 467.3-321.5a68.84 68.84 0 000-40.8C911.7 286 719.4 170 510 170zm0 634c-155.6 0-303.1-87.4-362.6-279.8a32.9 32.9 0 010-19.4C206.9 312.7 354.4 225 510 225c155.6 0 303.1 87.4 362.6 279.8a32.9 32.9 0 010 19.4C813.1 716.6 665.6 804 510 804z" />
                                                     <path d="M512 426c-47.1 0-85 37.9-85 85s37.9 85 85 85 85-37.9 85-85-37.9-85-85-85z" />
                                                     <path d="M512 346c-91.6 0-166 74.4-166 166s74.4 166 166 166 166-74.4 166-166-74.4-166-166-166zm0 264a98 98 0 110-196 98 98 0 010 196z" />
+                                                </svg>
+                                            </button>
+                                            <button className=" hover:underline text-[14px] font-bold">
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="currentColor"
+                                                    height="20"
+                                                    width="20"
+                                                >
+                                                    <path fill="none" d="M0 0h24v24H0z" />
+                                                    <path d="M17 6h5v2h-2v13a1 1 0 01-1 1H5a1 1 0 01-1-1V8H2V6h5V3a1 1 0 011-1h8a1 1 0 011 1v3zm1 2H6v12h12V8zm-9 3h2v6H9v-6zm4 0h2v6h-2v-6zM9 4v2h6V4H9z" />
                                                 </svg>
                                             </button>
                                         </td>

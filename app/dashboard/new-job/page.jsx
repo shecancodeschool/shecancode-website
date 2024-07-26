@@ -1,12 +1,15 @@
 import React from 'react'
 import AddNewJob from '../../../components/AddJob'
-import UpdateJob from "../../../components/UpdateJob"
+import DashboardLayout from "../../../components/DashboardLayout"
 
 function page() {
   return (
     <>
-    <AddNewJob />
-    
+
+   
+     <DashboardLayout>
+     <AddNewJob />
+      </DashboardLayout>
     </>
   )
 }

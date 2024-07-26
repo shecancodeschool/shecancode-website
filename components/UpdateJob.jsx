@@ -4,7 +4,7 @@ const JobModal = ({ show, onClose, job }) => {
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
       <div className="relative bg-white w-[60%] h-auto rounded-lg shadow-lg p-8 overflow-y-auto transform translate-x-30">
         <h2 className="text-2xl font-bold mb-4">Add new job</h2>
         <form>

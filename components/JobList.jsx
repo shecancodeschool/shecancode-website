@@ -74,10 +74,8 @@ const Jobs = () => {
     };
 
     return (
-        <div className="flex flex-col md:flex-row">
-            <aside className="w-full md:w-64 h-screen bg-gray-100 p-6">
-                {/* Sidebar content here */}
-            </aside>
+        <div className="w-[90%] flex rounded-lg flex-col bg-white p-10">
+            
             <main className="flex-1 p-4 md:p-6 lg:p-8">
                 <div className="mb-6">
                     <h1 className="text-[24px] font leading-[31.2px] font-bold text-[#317ACC] mb-4">List job</h1>
