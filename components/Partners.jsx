@@ -61,7 +61,7 @@ const PartnersSection = () => {
   return (
     <div className="px-4 md:px-14 md:py-3 py-1 md:mt-12 mt-8 md:my-12 mb-7 md:text-center">
       <h2 className="md:text-[50px] text-[#317ACC] text-4xl font-semibold font md:mt-16">Our Partners</h2>
-      <h2 className="md:text-[28px] text-[#333333]/75 text-xl font md:mt-16 mt-5">Our apprentices have increased productivity in some of the best companies</h2>
+      <h2 className="md:text-xl text-[#333333]/75 text-xl font md:mt-16 mt-5">Our apprentices have increased productivity in some of the best companies</h2>
       <div className="max-w-screen-xl mx-auto slider-container pl-10 mt-32 ">
       <Slider {...settings}>
       {logos.map((logo, index) => (

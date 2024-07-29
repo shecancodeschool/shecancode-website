@@ -12,9 +12,24 @@ export const Banner = () => {
 
   useEffect(() => {
     let stats = [
-      { title: "Learners since 2018", number: "700+" },
-      { title: "Employment Rate", number: "80%" },
-      { title: "Graduate Satisfaction Score", number: "92%" },
+      {
+        icon: "https://shecancode-website-dev.vercel.app/student.svg",
+        title: "Learners since 2018",
+        number: 700,
+        sign: "+"
+      },
+      {
+        icon: "https://shecancode-website-dev.vercel.app/success.svg",
+        title: "Employment Rate",
+        number: 80,
+        sign: "%"
+      },
+      {
+        icon: "https://shecancode-website-dev.vercel.app/experience.svg",
+        title: "Graduate Satisfaction Score",
+        number: 92,
+        sign: "%"
+      }
     ];
 
     setStatistics(stats);
@@ -50,7 +65,7 @@ export const Banner = () => {
               <div className="hidden md:flex justify-center items-center border-b">
                 {statistics.map((stat, index) => (
                   <div className="px-12 py-8 flex flex-col text-center gap-2" key={index}>
-                    <span className="font-bold text-3xl text-cyan-400">{stat.number}</span>
+                    <span className="font-bold text-3xl text-cyan-400">{stat.number} {stat.sign}</span>
                     <span className="text-lg">{stat.title}</span>
                   </div>
                 ))}
