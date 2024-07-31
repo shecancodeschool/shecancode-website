@@ -2,14 +2,15 @@ import ReusablePageStructure from "../../components/ReusablePageStructure";
 import DefaultPageBanner from "../../components/DefaultPageBanner";
 import ReusableSection from "../../components/ReusableSection";
 import SectionTitle from "../../components/SectionTitle";
+import { ButtonTwo } from "../../components/Buttons";
 
 const page = () => {
     const bannerData = {
-        title: "Who We Are",
+        title: "The leading channel to get more women in tech.",
         backgroundImage: "https://shecancode-website-dev.vercel.app/banner_img.png",
-        description: "SheCanCode is a leading web development company dedicated to providing exceptional web development and career services to our clients.",
+        description: "Join our community of more than 800 successful women in tech today.",
         hasButton: {
-            text: "Contact Us",
+            label: "SEE AVAILABLE COURSES",
             url: "#"
         }
     };
