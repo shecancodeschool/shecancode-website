@@ -36,14 +36,14 @@ const HomeBanner = (props) => {
                 }
                 <div className="mt-4 mb-8 flex gap-4 flex-wrap">
                     {buttonOne.label &&
-                        <button className="bg-[#317ACC] py-3 px-6 w-full md:w-fit text-white rounded-md hover:bg-[#296494]">
+                        <Link href={buttonOne.location} className="bg-[#317ACC] py-3 px-6 w-full md:w-fit text-white rounded-md hover:bg-[#296494]">
                             {buttonOne.label}
-                        </button>
+                        </Link>
                     }
                     {buttonTwo.label &&
-                        <button className="border-[#317ACC] text-[#317ACC] border-2 py-3 px-6 w-full md:w-fit rounded-md hover:text-white hover:border-white">
+                        <Link href={buttonTwo.location} className="border-[#317ACC] text-[#317ACC] border-2 py-3 px-6 w-full md:w-fit rounded-md hover:text-white hover:border-white">
                             {buttonTwo.label}
-                        </button>
+                        </Link>
                     }
                 </div>
             </div>

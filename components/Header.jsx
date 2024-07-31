@@ -1,39 +1,69 @@
-'use client'
-import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import logo from "../public/SCC_Logo.png"
-import { ButtonOne } from "./Buttons"
+'use strict'; // Use strict mode
+
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import LogoImage from "../public/logo/logo1.png";
 import { BiMenuAltRight } from "react-icons/bi";
-import LogoImage from "../public/logo/logo1.png"
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [hoveredLink, setHoveredLink] = useState(null);
+
+  const handleMouseEnter = (link) => {
+    setHoveredLink(link);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredLink(null);
+  };
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
+  const menuItems = [
+    { label: "Home", href: "/", hasDropdown: false },
+    {
+      label: "About us",
+      href: "/about-us",
+      hasDropdown: true,
+      subMenuItems: [
+        { label: "Our Story", href: "/about-us" },
+        { label: "What we do", href: "/what-we-do" },
+        { label: "Team", href: "/our-team" }
+      ]
+    },
+    { label: "Careers", href: "/careers", hasDropdown: false },
+    {
+      label: "News and blogs",
+      href: "/articles",
+      hasDropdown: true,
+      subMenuItems: [
+        { label: "Latest News", href: "/latest-news" },
+        { label: "Blogs", href: "/blogs" },
+        { label: "Press Releases", href: "/press-releases" }
+      ]
+    },
+    { label: "Courses", href: "/courses", hasDropdown: false },
+    { label: "Test", href: "/best-practice", hasDropdown: false },
+  ];
+
   return (
     <>
-      <div className={`fixed z-50 w-full lg:px-12 md:py-3 py-3 transition-colors duration-300 ${scrolled ? 'bg-[#111E37] bg-opacity-100' : 'bg-[#111E37] bg-opacity-0'} text-white`}>
+      <div className={`fixed z-50 w-full md:py-3 py-3 transition-colors duration-300 ${scrolled ? 'bg-[#111E37] bg-opacity-100' : 'bg-[#111E37] bg-opacity-0'} text-white`}>
         <div className='max-w-screen-xl px-4 md:px-0 mx-auto flex justify-between items-center'>
           <div>
             <Link href={'/'} >
@@ -42,39 +72,36 @@ function Header() {
           </div>
           <div className='hidden lg:flex'>
             <ul className='w-full flex justify-between items-center space-x-8 font'>
-              <Link href="/">
-                <li className='text-base font-semibold'>Home</li>
-              </Link>
-              <Link href="/about-us">
-                <li className='text-base font-semibold'>About us</li>
-              </Link>
-              <Link href="/what-we-do">
-                <li className='text-base font-semibold'>What we do</li>
-              </Link>
-              <Link href="/careers">
-                <li className='text-base font-semibold'>Careers</li>
-              </Link>
-              <Link href="/articles">
-                <li className='text-base font-semibold'>News and blogs</li>
-              </Link>
-              <Link href="/courses">
-                <li className='text-base font-semibold'>Courses</li>
-              </Link>
-              <Link href="/our-team">
-                <li className='text-base font-semibold'>Our team</li>
-              </Link>
-              <Link href="/contact-us">
-                <li className='text-base font-semibold'>Contact us</li>
-              </Link>
-              <Link href="/best-practice">
-                <li className='text-base font-semibold'>Test</li>
-              </Link>
+              {menuItems.map((item, index) => (
+                <li key={index} className='relative group'>
+                  <button
+                    className='text-base font-semibold relative'
+                    onClick={() => {!item.hasDropdown && window.location.replace(item.href)}}
+                    onMouseEnter={() => handleMouseEnter(item.label)}
+                    onMouseLeave={handleMouseLeave}>
+                    {item.label}
+                    {item.hasDropdown && hoveredLink === item.label && (
+                      <div className='absolute w-full top-full left-0 bg-[#011225] text-white z-40'>
+                        <ul className='flex flex-col items-start gap-y-4 ml-10 py-4'>
+                          {item.subMenuItems.map((subItem, subIndex) => (
+                            <li key={subIndex} onClick={handleMouseLeave}>
+                              <Link href={subItem.href}>{subItem.label}</Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </button>
+                </li>
+              ))}
             </ul>
           </div>
-          {/* <div className='hidden md:block'>
-            <ButtonOne text="Enroll now" />
-          </div> */}
-          <div className='md:hidden'>
+          <div className='hidden lg:block'>
+            <Link href="/contact-us" className="bg-[#317ACC] py-2 px-4 w-full md:w-fit text-white rounded-md hover:bg-[#296494]">
+              Contact us
+            </Link>
+          </div>
+          <div className='lg:hidden'>
             <BiMenuAltRight size={30} onClick={toggleMenu} />
           </div>
         </div>
@@ -82,47 +109,19 @@ function Header() {
       {menuOpen && (
         <div className='md:hidden fixed top-0 left-0 w-full h-full bg-[#011225] text-white z-40'>
           <ul className='flex flex-col items-start gap-y-4 ml-10 py-4 mt-20'>
-            <Link href="/">
-              <li onClick={toggleMenu}>Home</li>
-            </Link>
-            <Link href="/about-us">
-              <li onClick={toggleMenu}>About us</li>
-            </Link>
-            <Link href="/what-we-do">
-              <li onClick={toggleMenu}>What we do</li>
-            </Link>
-            <Link href="/careers">
-              <li onClick={toggleMenu}>Careers</li>
-            </Link>
-            <Link href="/news-and-events">
-              <li onClick={toggleMenu}>News and events</li>
-            </Link>
-            <Link href="/articles">
-              <li onClick={toggleMenu}>News and blogs</li>
-            </Link>
-            <Link href="/courses">
-              <li onClick={toggleMenu}>Courses</li>
-            </Link>
-            <Link href="/articles">
-              <li onClick={toggleMenu}>News and blogs</li>
-            </Link>
-            <Link href="/courses">
-              <li onClick={toggleMenu}>Courses</li>
-            </Link>
-            <Link href="/our-team">
-              <li onClick={toggleMenu}>Our team</li>
-            </Link>
-            <Link href="/contact-us">
-              <li onClick={toggleMenu}>Contact us</li>
-            </Link>
-            {/* <Link href={'/student-application'}>
-               <ButtonOne text="Enroll now" onClick={toggleMenu} />
-            </Link> */}
+            {menuItems.map((item, index) => (
+              <li key={index} onClick={toggleMenu}>
+                <Link href={item.href}>{item.label}</Link>
+              </li>
+            ))}
+            <li onClick={toggleMenu}>
+              <Link href="/contact-us">Contact us</Link>
+            </li>
           </ul>
         </div>
       )}
     </>
-  )
+  );
 }
 
 export default Header;
