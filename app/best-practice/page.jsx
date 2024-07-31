@@ -1,6 +1,7 @@
 import ReusablePageStructure from "../../components/ReusablePageStructure";
 import DefaultPageBanner from "../../components/DefaultPageBanner";
 import ReusableSection from "../../components/ReusableSection";
+import SectionTitle from "../../components/SectionTitle";
 
 const page = () => {
     const bannerData = {
@@ -13,6 +14,8 @@ const page = () => {
         }
     };
 
+    const sectionTitle = "More about SheCanCODE";
+
     return (
         <ReusablePageStructure>
             <DefaultPageBanner
@@ -21,7 +24,7 @@ const page = () => {
                 description={bannerData.description}
                 hasButton={bannerData.hasButton}
             />
-            
+            <SectionTitle orientation={"center"} title={sectionTitle} />
             <ReusableSection>
 
             </ReusableSection>

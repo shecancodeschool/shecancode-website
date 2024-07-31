@@ -12,7 +12,7 @@ const DefaultPageBanner = (props) => {
     return (
         <div className='flex flex-col items-center justify-center mx-auto w-full px-3 md:px-12 pt-36 pb-16 md:pb-32 overflow-hidden' style={jssStyles}>
             <div className={`flex flex-col gap-6 items-center justify-center text-white w-full max-w-screen-xl`}>
-                <h1 className="text-3xl md:text-4xl font-extrabold text-center">{title}</h1>
+                <h1 className="text-3xl md:text-5xl font-extrabold text-center">{title}</h1>
                 {description &&
                     <p className="text-lg md:text-xl text-center w-full sm:w-full md:w-2/3">
                         {description}

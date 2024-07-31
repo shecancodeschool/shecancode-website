@@ -66,7 +66,7 @@ function Header() {
               <Link href="/contact-us">
                 <li className='text-base font-semibold'>Contact us</li>
               </Link>
-              <Link href="/best-practices">
+              <Link href="/best-practice">
                 <li className='text-base font-semibold'>Test</li>
               </Link>
             </ul>
