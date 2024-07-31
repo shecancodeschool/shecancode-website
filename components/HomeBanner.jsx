@@ -58,7 +58,7 @@ const HomeBanner = (props) => {
                         ))}
                     </div>
                     <div className="m-auto px-4 max-w-screen-xl">
-                        <p className="flex gap-4 py-4 flex-wrap">
+                        <p className="flex gap-4 pt-4 pb-16 flex-wrap">
                             <span className="font-extrabold">New Application Open</span>
                             <span className="text-sm md:text-base">
                                 A New Full-stack Software Development Course by SheCanCODE Bootcamp is open for applicants
