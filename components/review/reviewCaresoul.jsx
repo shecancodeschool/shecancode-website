@@ -44,14 +44,14 @@ const ReviewsCarousel = () => {
     }
 
     return (
-        <div className="py-1 mt-4 md:mt-40 px-4 md:px-0 w-full m-auto">
-            <div className='flex max-w-screen-xl m-auto flex-col'>
+        <div className="mt-8 lg:mt-40 w-full">
+            <div className='flex max-w-screen-xl px-3 md:px-0 mx-auto flex-col'>
                 <h2 className="text-3xl md:text-4xl w-full font-semibold text-[#317ACC] text-center mb-6">Reviews</h2>
                 <div className='w-full mx-auto flex flex-col md:flex-row gap-3 justify-between'>
                     <div className='flex flex-col justify-center'>
-                        <h2 className="text-center text-2xl md:text-4xl md:text-left font-bold text-[#0B2B4E] font mb-8">What Our Alumni Say About Us</h2>
+                        <h3 className="text-center text-2xl md:text-4xl md:text-left font-bold text-[#0B2B4E] font mb-8">What Our Alumni Say About Us</h3>
                         <div className="flex md:justify-start justify-end md:mt-8">
-                            <button className="mr-2 border border-[#0B2B4E] p-2 md:p-5 rounded-full" onClick={scrollLeft}>
+                            <button className="mr-2 md:mr-0 border border-[#0B2B4E] p-2 md:p-5 rounded-full" onClick={scrollLeft}>
                                 <svg viewBox="0 0 1024 1024" fill="##0B2B4E" height="1em" width="1em">
                                     <path d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 000 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z" />
                                 </svg>
@@ -63,7 +63,7 @@ const ReviewsCarousel = () => {
                             </button>
                         </div>
                     </div>
-                    <div id="content" className="md:w-3/4 carousel p-4 rounded-md flex items-center justify-start overflow-x-auto scroll-smooth no-scrollbar" >
+                    <div className="md:w-3/4 carousel rounded-md flex items-center justify-start overflow-x-auto scroll-smooth no-scrollbar" >
                         {reviews.map((review, index) => (
                             <div key={index} className="px-2">
                                 <ReviewComp imgSrc={review.image} name={review.name} title={review.title} text={review.description} />
