@@ -26,9 +26,9 @@ const HomeBanner = (props) => {
     };
 
     return (
-        <div className='flex flex-col h-screen items-center justify-between mx-auto w-full pt-36 overflow-hidden' style={jssStyles}>
+        <div className='flex flex-col h-screen items-center justify-between mx-auto w-full pt-36 md:pt-48 overflow-hidden' style={jssStyles}>
             <div className={`flex flex-col gap-6 items-center px-4 md:px-12 justify-center text-white w-full max-w-screen-xl`}>
-                <h1 className="text-3xl md:text-5xl font-extrabold text-center">{bannerData.title}</h1>
+                <h1 className="text-3xl mb-8 md:text-5xl font-extrabold text-center">{bannerData.title}</h1>
                 {bannerData.description &&
                     <p className="text-lg md:text-xl text-center w-full sm:w-full md:w-2/3">
                         {bannerData.description}

@@ -33,9 +33,9 @@ const page = () => {
   ];
 
   const bannerData = {
-    title: "Who We Are",
+    title: "The leading channel to get more women in tech",
     backgroundImage: "https://shecancode-website-dev.vercel.app/banner_img.png",
-    description: "SheCanCode is a leading web development company dedicated to providing exceptional web development and career services to our clients.",
+    description: "Join our community of more than 800 successful women in tech today.",
     buttonOne: {
       label: "Explore courses",
       url: "#"
