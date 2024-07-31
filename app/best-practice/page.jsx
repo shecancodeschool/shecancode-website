@@ -26,7 +26,16 @@ const page = () => {
             />
             <SectionTitle orientation={"center"} title={sectionTitle} />
             <ReusableSection>
-
+                <div className="w-full flex">
+                    <div className="text-black">
+                        <h3>Hello World</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eveniet qui ducimus iste dolor nam distinctio nisi aspernatur, vitae repellat architecto eligendi inventore repudiandae cupiditate incidunt officia optio aut iusto?</p>
+                    </div>
+                    <div className="text-black">
+                        <h3>Hello Bro</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eveniet qui ducimus iste dolor nam distinctio nisi aspernatur, vitae repellat architecto eligendi inventore repudiandae cupiditate incidunt officia optio aut iusto?</p>
+                    </div>
+                </div>
             </ReusableSection>
         </ReusablePageStructure>
     )
