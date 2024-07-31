@@ -24,9 +24,9 @@ const HomeBanner = (props) => {
         transition: 'background-image 0.3s ease-in-out',
         willChange: 'background-image',
     };
-
+    
     return (
-        <div className='flex flex-col h-screen items-center justify-between mx-auto w-full pt-36 md:pt-48 overflow-hidden' style={jssStyles}>
+        <div className='flex flex-col min-h-screen items-center justify-between mx-auto w-full pt-36 md:pt-48 overflow-hidden' style={jssStyles}>
             <div className={`flex flex-col gap-6 items-center px-4 md:px-12 justify-center text-white w-full max-w-screen-xl`}>
                 <h1 className="text-3xl mb-8 md:text-5xl font-extrabold text-center">{bannerData.title}</h1>
                 {bannerData.description &&
@@ -34,7 +34,7 @@ const HomeBanner = (props) => {
                         {bannerData.description}
                     </p>
                 }
-                <div className="mt-6 flex gap-4 flex-wrap">
+                <div className="mt-4 mb-8 flex gap-4 flex-wrap">
                     {buttonOne.label &&
                         <button className="bg-[#317ACC] py-3 px-6 w-full md:w-fit text-white rounded-md hover:bg-[#296494]">
                             {buttonOne.label}
@@ -58,7 +58,7 @@ const HomeBanner = (props) => {
                         ))}
                     </div>
                     <div className="m-auto px-4 max-w-screen-xl">
-                        <p className="flex gap-4 pt-4 pb-16 flex-wrap">
+                        <p className="flex gap-4 pt-4 pb-16 md:pb-8 flex-wrap">
                             <span className="font-extrabold">New Application Open</span>
                             <span className="text-sm md:text-base">
                                 A New Full-stack Software Development Course by SheCanCODE Bootcamp is open for applicants

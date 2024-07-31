@@ -38,11 +38,11 @@ const page = () => {
     description: "Join our community of more than 800 successful women in tech today.",
     buttonOne: {
       label: "Explore courses",
-      url: "#"
+      url: "/courses"
     },
     buttonTwo: {
       label: "Hire Talent",
-      url: "#"
+      url: "/contact-us"
     }
   };
 
