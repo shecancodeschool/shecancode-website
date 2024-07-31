@@ -33,8 +33,8 @@ function Header() {
 
   return (
     <>
-      <div className={`fixed z-50 w-full px-4 lg:px-12 md:py-3 py-3 transition-colors duration-300 ${scrolled ? 'bg-[#111E37] bg-opacity-100' : 'bg-[#111E37] bg-opacity-0'} text-white`}>
-        <div className='max-w-screen-xl mx-auto flex justify-between items-center'>
+      <div className={`fixed z-50 w-full lg:px-12 md:py-3 py-3 transition-colors duration-300 ${scrolled ? 'bg-[#111E37] bg-opacity-100' : 'bg-[#111E37] bg-opacity-0'} text-white`}>
+        <div className='max-w-screen-xl px-4 md:px-0 mx-auto flex justify-between items-center'>
           <div>
             <Link href={'/'} >
               <Image src={LogoImage} width={82.21} height={60} />
@@ -66,6 +66,9 @@ function Header() {
               <Link href="/contact-us">
                 <li className='text-base font-semibold'>Contact us</li>
               </Link>
+              <Link href="/best-practices">
+                <li className='text-base font-semibold'>Test</li>
+              </Link>
             </ul>
           </div>
           {/* <div className='hidden md:block'>
@@ -79,7 +82,7 @@ function Header() {
       {menuOpen && (
         <div className='md:hidden fixed top-0 left-0 w-full h-full bg-[#011225] text-white z-40'>
           <ul className='flex flex-col items-start gap-y-4 ml-10 py-4 mt-20'>
-            <Link href="/home">
+            <Link href="/">
               <li onClick={toggleMenu}>Home</li>
             </Link>
             <Link href="/about-us">
