@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import LogoImage from "../public/logo/logo1.png";
 import { BiMenuAltRight } from "react-icons/bi";
+import ShiftingDropDown from "./ShiftingDropDown";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,27 +37,9 @@ function Header() {
 
   const menuItems = [
     { label: "Home", href: "/", hasDropdown: false },
-    {
-      label: "About us",
-      href: "/about-us",
-      hasDropdown: true,
-      subMenuItems: [
-        { label: "Our Story", href: "/about-us" },
-        { label: "What we do", href: "/what-we-do" },
-        { label: "Team", href: "/our-team" }
-      ]
-    },
+    { label: "About us", href: "/about-us", hasDropdown: true, dropdownComponent: <ShiftingDropDown /> },
     { label: "Careers", href: "/careers", hasDropdown: false },
-    {
-      label: "News and blogs",
-      href: "/articles",
-      hasDropdown: true,
-      subMenuItems: [
-        { label: "Latest News", href: "/latest-news" },
-        { label: "Blogs", href: "/blogs" },
-        { label: "Press Releases", href: "/press-releases" }
-      ]
-    },
+    { label: "News and blogs", href: "/articles", hasDropdown: true, dropdownComponent: <ShiftingDropDown /> },
     { label: "Courses", href: "/courses", hasDropdown: false },
     { label: "Test", href: "/best-practice", hasDropdown: false },
   ];
@@ -66,7 +49,7 @@ function Header() {
       <div className={`fixed z-50 w-full md:py-3 py-3 transition-colors duration-300 ${scrolled ? 'bg-[#111E37] bg-opacity-100' : 'bg-[#111E37] bg-opacity-0'} text-white`}>
         <div className='max-w-screen-xl px-4 md:px-0 mx-auto flex justify-between items-center'>
           <div>
-            <Link href={'/'} >
+            <Link href={'/'}>
               <Image src={LogoImage} width={82.21} height={60} />
             </Link>
           </div>
@@ -78,17 +61,12 @@ function Header() {
                     className='text-base font-semibold relative'
                     onClick={() => {!item.hasDropdown && window.location.replace(item.href)}}
                     onMouseEnter={() => handleMouseEnter(item.label)}
-                    onMouseLeave={handleMouseLeave}>
+                    onMouseLeave={handleMouseLeave}
+                  >
                     {item.label}
                     {item.hasDropdown && hoveredLink === item.label && (
-                      <div className='absolute w-full top-full left-0 bg-[#011225] text-white z-40'>
-                        <ul className='flex flex-col items-start gap-y-4 ml-10 py-4'>
-                          {item.subMenuItems.map((subItem, subIndex) => (
-                            <li key={subIndex} onClick={handleMouseLeave}>
-                              <Link href={subItem.href}>{subItem.label}</Link>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className='absolute top-full left-0 w-full'>
+                        {item.dropdownComponent}
                       </div>
                     )}
                   </button>

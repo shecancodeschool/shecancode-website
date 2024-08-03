@@ -3,6 +3,7 @@
 import "./globals.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -36,7 +37,7 @@ export default function RootLayout({ children }) {
       </head>
       {/* </Head> */}
       <body className="">
-        {isDashboard ? null : <Header />}
+        {isDashboard ? null : <Navbar />}
         <div>
           {children}
         </div>
