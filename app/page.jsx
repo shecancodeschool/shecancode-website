@@ -1,5 +1,4 @@
 import HomeBanner from "../components/HomeBanner";
-import Statics from "../components/Statics";
 import React from 'react'
 import HomeSloganSection from "../components/HomeSloganSection";
 import CourseList from "../components/CourseList";
@@ -8,6 +7,7 @@ import ReviewsCarousel from "../components/review/reviewCaresoul";
 import PartnersSection from "../components/Partners";
 import Faq from "../components/faq/fap";
 import Slogan from "../components/slogan";
+import Statistics from "../components/Statics";
 
 
 const page = () => {
@@ -46,6 +46,19 @@ const page = () => {
     }
   };
 
+  const sloganDescriptionData = {
+    image: {
+      source: "blog-sm.jpg",
+      alt: "Graduate"
+    },
+    title: "We're here to help you transform your career",
+    description: "Our mission is to empower women in technology by providing them with the tools and resources they need to succeed. Research on Bruce H. Lipton, Ph.D. an Epigeneticist. Bruce Lipton is an American developmental biologist known for promoting the idea that genes and DNA can be manipulated by a person's beliefs. He is also known for his work on epigenetics.",
+    button: {
+      label: "Enroll now",
+      location: "/courses"
+    },
+  }
+
   return (
     <>
       <HomeBanner
@@ -57,11 +70,11 @@ const page = () => {
         statistics={stats}
       />
       <Slogan />
-      <CourseList />
-      <HomeSloganSection />
-      <Statics />
+      {/* <CourseList /> */}
+      <HomeSloganSection sloganDescriptionData={sloganDescriptionData}/>
+      <Statistics />
       <EducationWalkSection />
-      <ReviewsCarousel />
+      {/* <ReviewsCarousel /> */}
       <PartnersSection />
       <Faq />
     </>

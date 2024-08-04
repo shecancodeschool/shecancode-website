@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=K2D&display=swap" rel="stylesheet" />
       </head>
       {/* </Head> */}
-      <body className="">
+      <body className="flex flex-col justify-start">
         {isDashboard ? null : <Navbar />}
         <div>
           {children}

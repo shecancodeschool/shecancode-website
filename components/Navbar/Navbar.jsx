@@ -28,9 +28,9 @@ const Navbar = () => {
 
   return (
     // <nav className={`${(scrolled && screenSize <= 796) ? 'bg-white bg-opacity-100' : 'bg-white bg-opacity-0 border-none text-white'} w-full max-w-screen-2xl mx-auto z-50 fixed border-b`}>
-    <nav className={`${scrolled && 'bg-white bg-opacity-100'} ${!scrolled && 'bg-white bg-opacity-0 border-none text-white'} w-full max-w-screen-2xl mx-auto z-50 fixed border-b`}>
-      <div className="flex items-center font-medium justify-around">
-        <div className="z-50 p-5 md:w-auto w-full flex justify-between">
+    <nav className={`${scrolled && 'bg-white bg-opacity-100'} ${!scrolled && 'bg-white bg-opacity-0 border-none text-white'} w-full z-50 fixed border-b`}>
+      <div className="flex items-center font-medium justify-around mx-auto max-w-screen-2xl">
+        <div className="z-50 p-4 md:p-0 md:w-auto w-full flex justify-between">
           <Link href={'/'} onClick={() => setOpen(false)}>
             <Image src={LogoImage} alt="" className="h-9 w-auto md:cursor-pointer" />
           </Link>

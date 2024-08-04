@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 // const clientAddress = process.env.NEXT_PUBLIC_ADDRESS;
 
-const Statics = () => {
+const Statistics = () => {
   const [statistics, setStatistics] = useState([]);
 
   useEffect(() => {
@@ -56,4 +56,4 @@ const Statics = () => {
   )
 }
 
-export default Statics;
+export default Statistics;
