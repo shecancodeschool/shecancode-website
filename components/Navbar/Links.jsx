@@ -82,7 +82,11 @@ export const Links = [
                     {
                         name: 'All',
                         link: "/articles"
-                    }
+                    },
+                    {
+                        name: 'Best practices',
+                        link: "/best-practice"
+                    },
                 ]
             },
             {

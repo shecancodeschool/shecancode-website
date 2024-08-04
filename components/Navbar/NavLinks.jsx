@@ -4,7 +4,9 @@ import { useState } from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-const NavLinks = () => {
+const NavLinks = (props) => {
+    const { toggleOpen } = props;
+    
     const [heading, setHeading] = useState("");
     const [subHeading, setSubHeading] = useState("");
 
@@ -31,9 +33,9 @@ const NavLinks = () => {
                                 <div>
                                     <div className="absolute top-20 hidden group-hover:md:block hover:md:block">
                                         <div className="py-3">
-                                            <div className="w-4 h-4 left-3 absolute mt-1 bg-white rotate-45"></div>
+                                            <div className="w-4 h-4 left-3 absolute mt-1 bg-white border-l border-t rotate-45"></div>
                                         </div>
-                                        <div className="bg-white p-3.5 flex gap-10 rounded-sm">
+                                        <div className="bg-white p-3.5 flex gap-10 rounded-sm border">
                                             {link.sublinks.map((sublink, index) => (
                                                 <div key={index}>
                                                     <h1 className="text-lg font-bold text-[#317ACC]">{sublink.Head}</h1>
@@ -43,6 +45,7 @@ const NavLinks = () => {
                                                                 <Link
                                                                     href={subsublink.link}
                                                                     className="hover:text-blue-700"
+                                                                    onClick={toggleOpen}
                                                                 >
                                                                     {subsublink.name}
                                                                 </Link>
@@ -78,6 +81,7 @@ const NavLinks = () => {
                                                     <Link
                                                         href={slinks.link}
                                                         className="hover:text-blue-700"
+                                                        onClick={toggleOpen}
                                                     >
                                                         {slinks.name}
                                                     </Link>
