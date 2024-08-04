@@ -1,110 +1,52 @@
 export const Links = [
     {
-        name: 'Home',
-        link: "/"
-    },
-    {
         name: 'Courses',
         submenu: true,
         sublinks: [
             {
-                Head: "Topwear",
+                Head: "Coding skills",
                 sublink: [
                     {
-                        name: 'Topwear',
-                        link: "/"
+                        name: 'All courses',
+                        link: "/courses"
                     },
                     {
-                        name: 'Bottomwear',
-                        link: "/"
+                        name: 'Frontend developement',
+                        link: "/courses"
                     },
                     {
-                        name: 'Accessories',
-                        link: "/"
+                        name: 'Backend developement',
+                        link: "/courses"
                     },
                     {
-                        name: 'Fragrances',
-                        link: "/"
+                        name: 'Full-stack development',
+                        link: "/courses"
                     },
                     {
-                        name: 'Shoes',
-                        link: "/"
+                        name: 'Java & Spring Framework',
+                        link: "/courses"
+                    },
+                    {
+                        name: 'Mobile app development',
+                        link: "/courses"
                     },
                 ]
             },
             {
-                Head: "Bottomwear",
+                Head: "Soft skills",
                 sublink: [
                     {
-                        name: 'Topwear',
-                        link: "/"
+                        name: 'Presentation skills',
+                        link: "/courses"
                     },
                     {
-                        name: 'Bottomwear',
-                        link: "/"
+                        name: 'Interview readiness',
+                        link: "/courses"
                     },
                     {
-                        name: 'Accessories',
-                        link: "/"
-                    },
-                    {
-                        name: 'Fragrances',
-                        link: "/"
-                    },
-                    {
-                        name: 'Shoes',
-                        link: "/"
-                    },
-                ]
-            },
-            {
-                Head: "Shirtwear",
-                sublink: [
-                    {
-                        name: 'Topwear',
-                        link: "/"
-                    },
-                    {
-                        name: 'Bottomwear',
-                        link: "/"
-                    },
-                    {
-                        name: 'Accessories',
-                        link: "/"
-                    },
-                    {
-                        name: 'Fragrances',
-                        link: "/"
-                    },
-                    {
-                        name: 'Shoes',
-                        link: "/"
-                    },
-                ]
-            },
-            {
-                Head: "Footwear",
-                sublink: [
-                    {
-                        name: 'Topwear',
-                        link: "/"
-                    },
-                    {
-                        name: 'Bottomwear',
-                        link: "/"
-                    },
-                    {
-                        name: 'Accessories',
-                        link: "/"
-                    },
-                    {
-                        name: 'Fragrances',
-                        link: "/"
-                    },
-                    {
-                        name: 'Shoes',
-                        link: "/"
-                    },
+                        name: 'Professional',
+                        link: "/courses"
+                    }
                 ]
             },
         ]
@@ -115,109 +57,84 @@ export const Links = [
         submenu: true,
         sublinks: [
             {
-                Head: "Topwear",
+                Head: "Learn more about us",
                 sublink: [
                     {
-                        name: 'Topwear',
-                        link: "/"
+                        name: 'Our story',
+                        link: "/about-us"
                     },
                     {
-                        name: 'Bottomwear',
-                        link: "/"
-                    },
-                    {
-                        name: 'Accessories',
-                        link: "/"
-                    },
-                    {
-                        name: 'Fragrances',
-                        link: "/"
-                    },
-                    {
-                        name: 'Shoes',
-                        link: "/"
-                    },
-                ]
-            },
-            {
-                Head: "Bottomwear",
-                sublink: [
-                    {
-                        name: 'Topwear',
-                        link: "/"
-                    },
-                    {
-                        name: 'Bottomwear',
-                        link: "/"
-                    },
-                    {
-                        name: 'Accessories',
-                        link: "/"
-                    },
-                    {
-                        name: 'Fragrances',
-                        link: "/"
-                    },
-                    {
-                        name: 'Shoes',
-                        link: "/"
-                    },
-                ]
-            },
-            {
-                Head: "Shirtwear",
-                sublink: [
-                    {
-                        name: 'Topwear',
-                        link: "/"
-                    },
-                    {
-                        name: 'Bottomwear',
-                        link: "/"
-                    },
-                    {
-                        name: 'Accessories',
-                        link: "/"
-                    },
-                    {
-                        name: 'Fragrances',
-                        link: "/"
-                    },
-                    {
-                        name: 'Shoes',
-                        link: "/"
-                    },
-                ]
-            },
-            {
-                Head: "Footwear",
-                sublink: [
-                    {
-                        name: 'Topwear',
-                        link: "/"
-                    },
-                    {
-                        name: 'Bottomwear',
-                        link: "/"
-                    },
-                    {
-                        name: 'Accessories',
-                        link: "/"
-                    },
-                    {
-                        name: 'Fragrances',
-                        link: "/"
-                    },
-                    {
-                        name: 'Shoes',
-                        link: "/"
-                    },
+                        name: 'What we do',
+                        link: "/what-we-do"
+                    }
                 ]
             },
         ]
     },
     {
         name: 'Blog',
-        link: "/"
+        link: "/blogs",
+        submenu: true,
+        sublinks: [
+            {
+                Head: "Events",
+                sublink: [
+                    {
+                        name: 'Cohort 9 Graduation',
+                        link: "/blogs?category=Events&post=Cohort-9-graduation"
+                    },
+                    {
+                        name: 'Cohort 10 Graduation',
+                        link: "/blogs?category=Events&post=Cohort-9-graduation"
+                    }
+                ]
+            },
+            {
+                Head: "Alumni Stories",
+                sublink: [
+                    {
+                        name: 'Best backend class performer',
+                        link: "/blogs?category=Alumni-stories&post=Best-backend-class-performer"
+                    },
+                    {
+                        name: 'Best mobile class performer',
+                        link: "/blogs?category=Alumni-stories&post=Best-mobile-class-performer"
+                    }
+                ]
+            },
+        ]
     },
+    {
+        name: 'Careers',
+        link: "/",
+        submenu: true,
+        sublinks: [
+            {
+                Head: "Hire our alumni",
+                sublink: [
+                    {
+                        name: 'How to hire our allumni',
+                        link: "/blogs?category=Events&post=Cohort-9-graduation"
+                    },
+                    {
+                        name: 'Hire',
+                        link: "/contact-us"
+                    }
+                ]
+            },
+            {
+                Head: "Job vacancies",
+                sublink: [
+                    {
+                        name: 'SheCanCODE Team Specs',
+                        link: "/blogs?category=Alumni-stories&post=Best-backend-class-performer"
+                    },
+                    {
+                        name: 'View jobs',
+                        link: "/careers"
+                    }
+                ]
+            },
+        ]
+    }
 ];

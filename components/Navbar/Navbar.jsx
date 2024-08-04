@@ -9,8 +9,9 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
   return (
-    <nav className="bg-white">
+    <nav className="bg-white w-full max-w-screen-2xl mx-auto">
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <Image src={LogoImage} alt="" className="h-9 w-auto md:cursor-pointer" />
@@ -18,7 +19,7 @@ const Navbar = () => {
             {open ? <IoCloseSharp /> : <IoMenuSharp />}
           </div>
         </div>
-        <ul className="md:flex hidden uppercase items-center gap-8">
+        <ul className="md:flex hidden items-center gap-8">
           <li>
             <Link href="/" className="py-7 px-3 inline-block">
               Home

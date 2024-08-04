@@ -23,7 +23,7 @@ const NavLinks = () => {
                                 <span className="text-xl md:mt-1 md:hidden inline">
                                     {heading === link.name ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
                                 </span>
-                                <span className="text-xl md:mt-1 md:ml-2 md:block hidden group-hover:rotate-180 group-hover:-mt-2">
+                                <span className="text-xl md:mt-1 md:ml-2 md:block hidden group-hover:rotate-180">
                                     <MdKeyboardArrowDown />
                                 </span>
                             </h1>
