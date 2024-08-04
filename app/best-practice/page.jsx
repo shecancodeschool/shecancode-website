@@ -1,7 +1,7 @@
 import ReusablePageStructure from "../../components/ReusablePageStructure";
 import DefaultPageBanner from "../../components/DefaultPageBanner";
 import ReusableSection from "../../components/ReusableSection";
-import SectionTitle from "../../components/SectionTitle";
+import PageTitle from "../../components/PageTitle";
 import { ButtonTwo } from "../../components/Buttons";
 
 const page = () => {
@@ -25,7 +25,7 @@ const page = () => {
                 description={bannerData.description}
                 hasButton={bannerData.hasButton}
             />
-            <SectionTitle orientation={"center"} title={sectionTitle} />
+            <PageTitle orientation={"center"} title={sectionTitle} />
             <ReusableSection>
                 <div className="w-full flex">
                     <div className="text-black">

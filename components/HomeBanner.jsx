@@ -51,7 +51,7 @@ const HomeBanner = (props) => {
                     <div className="hidden md:flex justify-center items-center border-b">
                         {statistics.map((stat, index) => (
                             <div className="px-12 py-8 flex flex-col text-center gap-2" key={index}>
-                                <span className="font-bold text-3xl text-cyan-400">{stat.number} {stat.sign}</span>
+                                <span className="font-extrabold text-3xl text-cyan-400">{stat.number} {stat.sign}</span>
                                 <span className="text-lg">{stat.title}</span>
                             </div>
                         ))}
@@ -59,7 +59,7 @@ const HomeBanner = (props) => {
                     <div className="m-auto px-4 max-w-screen-xl">
                         <p className="flex gap-4 pt-4 pb-16 md:pb-8 flex-wrap">
                             <span className="font-extrabold">New Application Open</span>
-                            <span className="text-sm md:text-base">
+                            <span className=" md:text-base">
                                 A New Full-stack Software Development Course by SheCanCODE Bootcamp is open for applicants
                                 <Link href={'/course-detail'} className="text-[#6AACE8] inline"> Learn more</Link>
                             </span>
