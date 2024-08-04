@@ -10,7 +10,6 @@ const HomeBanner = (props) => {
     const [statistics, setStatistics] = useState([]);
 
     useEffect(() => {
-        console.log(props);
         setBannerData(props);
         setButtonOne(props.buttonOne);
         setButtonTwo(props.buttonTwo);

@@ -14,7 +14,7 @@ const NavLinks = () => {
                 Links.map((link, index) => (
                     <div key={index}>
                         {/* Desktop menu  */}
-                        <div className="px-3 text-left md:cursor-pointer group">
+                        <div className=" text-left md:cursor-pointer group">
                             <h1
                                 className="py-7 flex justify-between items-center md:pr-0 pr-5 group hover:text-[#317ACC] font-bold"
                                 onClick={() => { heading !== link.name ? setHeading(link.name) : setHeading('') }}
