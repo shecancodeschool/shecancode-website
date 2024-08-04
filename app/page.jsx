@@ -69,10 +69,10 @@ const page = () => {
         buttonTwo={bannerData.buttonTwo}
         statistics={stats}
       />
-      {/* <Slogan /> */}
+      <Slogan />
       {/* <CourseList /> */}
-      {/* <HomeSloganSection sloganDescriptionData={sloganDescriptionData}/> */}
-      {/* <Statistics /> */}
+      <HomeSloganSection sloganDescriptionData={sloganDescriptionData}/>
+      <Statistics />
       {/* <EducationWalkSection /> */}
       {/* <ReviewsCarousel /> */}
       {/* <PartnersSection /> */}
