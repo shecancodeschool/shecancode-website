@@ -16,7 +16,7 @@ const NavLinks = () => {
                         {/* Desktop menu  */}
                         <div className="px-3 text-left md:cursor-pointer group">
                             <h1
-                                className="py-7 flex justify-between items-center md:pr-0 pr-5 group"
+                                className="py-7 flex justify-between items-center md:pr-0 pr-5 group hover:text-[#317ACC] font-bold"
                                 onClick={() => { heading !== link.name ? setHeading(link.name) : setHeading('') }}
                             >
                                 {link.name}
@@ -33,13 +33,13 @@ const NavLinks = () => {
                                         <div className="py-3">
                                             <div className="w-4 h-4 left-3 absolute mt-1 bg-white rotate-45"></div>
                                         </div>
-                                        <div className="bg-white p-3.5 grid grid-cols-3 gap-10">
+                                        <div className="bg-white p-3.5 flex gap-10 rounded-sm">
                                             {link.sublinks.map((sublink, index) => (
                                                 <div key={index}>
-                                                    <h1 className="text-lg font-semibold">{sublink.Head}</h1>
+                                                    <h1 className="text-lg font-bold text-[#317ACC]">{sublink.Head}</h1>
                                                     <div>
                                                         {sublink.sublink.map((subsublink, subsubIndex) => (
-                                                            <li key={subsubIndex} className="text-sm text-gray-600 my-2.5">
+                                                            <li key={subsubIndex} className="text-base text-gray-600 my-2.5">
                                                                 <Link
                                                                     href={subsublink.link}
                                                                     className="hover:text-blue-700"

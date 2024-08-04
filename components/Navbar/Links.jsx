@@ -77,6 +77,15 @@ export const Links = [
         submenu: true,
         sublinks: [
             {
+                Head: "All blogs",
+                sublink: [
+                    {
+                        name: 'All',
+                        link: "/articles"
+                    }
+                ]
+            },
+            {
                 Head: "Events",
                 sublink: [
                     {
