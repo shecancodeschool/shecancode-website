@@ -45,7 +45,7 @@ const Reviews = () => {
 
     // bg-[#092748]/100
     return (
-        <div className="pt-16 w-full pb-16 md:pb-24 bg-gradient-to-tr from-blue-950 to-blue-400">
+        <div className="pt-16 w-full pb-16 md:pb-24 bg-gradient-to-tr from-gray-950 to-sky-400">
             <div className='flex max-w-screen-xl px-5 md:px-5 mx-auto flex-col'>
                 <h2 className='section-header' style={{ color: 'white' }}>Reviews</h2>
                 <div className='w-full mx-auto flex flex-col md:flex-row gap-3 justify-between'>

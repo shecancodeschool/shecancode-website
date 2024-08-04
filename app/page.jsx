@@ -75,8 +75,8 @@ const page = () => {
       <Statistics />
       <Services />
       <Reviews />
-      <PartnersSection />
-      {/* <Faq /> */}
+      {/* <PartnersSection /> */}
+      <Faq />
     </>
   );
 }
