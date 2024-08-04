@@ -14,14 +14,8 @@ const HomeSloganSection = ({ sloganDescriptionData }) => {
                 </div>
 
                 <div className="flex flex-col gap-4 justify-start items-start text-left w-full md:w-1/2">
-                    <div className="flex flex-col gap-2 w-full">
-                        <h1 className="text-3xl md:text-4xl font-semibold text-[#333333] mb-4">
-                            {sloganDescriptionData.title}
-                        </h1>
-                    </div>
-                    <div className="text-base md:text-xl text-[#0B2B4E] w-full font-light">
-                        <p>{sloganDescriptionData.description}</p>
-                    </div>
+                    <h2 className="section-header" style={{ textAlign: "left", color: "#0B2B4E" }}>{sloganDescriptionData.title}</h2>
+                    <p className="text-base md:text-xl w-full">{sloganDescriptionData.description}</p>
                     <div className="flex justify-start mt-2">
                         <Link href={sloganDescriptionData.button.location} className="bg-[#317ACC] py-3 px-6 w-full md:w-fit text-white rounded-md hover:bg-[#296494]">
                             {sloganDescriptionData.button.label}

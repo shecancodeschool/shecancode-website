@@ -2,12 +2,12 @@ import HomeBanner from "../components/HomeBanner";
 import React from 'react'
 import HomeSloganSection from "../components/HomeSloganSection";
 import CourseList from "../components/CourseList";
-import EducationWalkSection from "../components/EducationWalk";
-import ReviewsCarousel from "../components/review/reviewCaresoul";
 import PartnersSection from "../components/Partners";
 import Faq from "../components/faq/fap";
 import Slogan from "../components/slogan";
 import Statistics from "../components/Statistics";
+import Services from "../components/Services";
+import Reviews from "../components/review/Reviews";
 
 
 const page = () => {
@@ -73,9 +73,9 @@ const page = () => {
       {/* <CourseList /> */}
       <HomeSloganSection sloganDescriptionData={sloganDescriptionData}/>
       <Statistics />
-      {/* <EducationWalkSection /> */}
-      {/* <ReviewsCarousel /> */}
-      {/* <PartnersSection /> */}
+      <Services />
+      <Reviews />
+      <PartnersSection />
       {/* <Faq /> */}
     </>
   );

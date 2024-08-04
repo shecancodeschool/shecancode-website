@@ -2,8 +2,9 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import ReusableSection from './ReusableSection';
 
-const EducationWalkSection = () => {
+const Services = () => {
     const [sectionData, setSectionData] = useState({
         sectionTitle: "",
         items: [],
@@ -40,7 +41,7 @@ const EducationWalkSection = () => {
     }, []);
 
     return (
-        <div className="w-full mt-8 mx-4 md:mt-28 mb-7 md:mb-14">
+        <ReusableSection background={'slate-100'}>
             <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
                 {/* Image grid */}
                 <div className=" h-[474px]  md:flex hidden gap-4 flex-col rounded bg-[#6AACE8]/10 items-center relative">
@@ -65,8 +66,8 @@ const EducationWalkSection = () => {
                 </div>
                 
                 {/* Text section */}
-                <div className="flex flex-col gap-4 md:gap-2 justify-center items-start">
-                    <h2 className="text-3xl md:text-4xl w-full font-semibold text-[#317ACC] mb-5 md:mb-10">
+                <div className="flex flex-col gap-4 w-full md:gap-2 justify-center items-start">
+                    <h2 className="section-header" style={{ textAlign: "left" }}>
                         {sectionData.sectionTitle}
                     </h2>
                     <ul className="flex flex-col gap-3">
@@ -88,8 +89,8 @@ const EducationWalkSection = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </ReusableSection>
     );
 };
 
-export default EducationWalkSection;
+export default Services;
