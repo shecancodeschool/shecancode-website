@@ -7,7 +7,7 @@ import ReviewsCarousel from "../components/review/reviewCaresoul";
 import PartnersSection from "../components/Partners";
 import Faq from "../components/faq/fap";
 import Slogan from "../components/slogan";
-import Statistics from "../components/Statics";
+import Statistics from "../components/Statistics";
 
 
 const page = () => {
