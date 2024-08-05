@@ -1,17 +1,17 @@
-import HomeBanner from "../components/HomeBanner";
+import HomeBanner from "../components/sections/home/HomeBanner";
 import React from 'react'
 import HomeSloganSection from "../components/HomeSloganSection";
-import CourseList from "../components/CourseList";
-import PartnersSection from "../components/Partners";
+import PartnersSection from "../components/sections/home/PartnersSection";
+import CoursesSection from "../components/sections/home/CoursesSection";
 import Faq from "../components/faq/fap";
 import Slogan from "../components/slogan";
-import Statistics from "../components/Statistics";
-import Services from "../components/Services";
+import StatisticsSection from "../components/StatisticsSection";
+import ServicesSection from "../components/ServicesSection";
 import Reviews from "../components/review/Reviews";
 
 
 const page = () => {
-  
+
   const stats = [
     {
       icon: "https://shecancode-website-dev.vercel.app/student.svg",
@@ -60,6 +60,100 @@ const page = () => {
     },
   }
 
+  const parternerAndHiringCompanies = [
+    { src: 'IRO.png', alt: 'IRO logo' },
+    { src: 'mastercard-logo.png', alt: 'Mastercard foundation logo' },
+    { src: 'kalb.png', alt: 'Klab logo' },
+    { src: 'US-Embassy-Kigali.jpeg', alt: 'U.S Embassy Kigali' },
+    { src: 'Embassy-of-Israel-2.jpeg', alt: 'Embassy of ISRAEL' },
+    { src: 'UN-Women-logo-blue-en.svg', alt: 'UN Women' },
+    { src: 'cropped-Muraho_Logo.webp', alt: 'Muraho Tech' },
+    { src: 'umurava2.png', alt: 'Umurava logo' },
+    // { src: 'Hence-Logo.svg', alt: 'Hence Technologies' },
+    { src: 'iremboGov.PNG', alt: 'Irembo logo' },
+    { src: 'Progate.png', alt: 'Progate' },
+    { src: 'TG.jpeg', alt: 'TG' },
+    { src: 'Angle-dimensions.png', alt: 'Angle Dimension' },
+  ];
+
+  const statistics = [
+    {
+      icon: "https://shecancode-website-dev.vercel.app/student.svg",
+      title: "Learners since 2018",
+      number: 700,
+      sign: "+"
+    },
+    {
+      icon: "https://shecancode-website-dev.vercel.app/success.svg",
+      title: "Employment Rate",
+      number: 80,
+      sign: "%"
+    },
+    {
+      icon: "https://shecancode-website-dev.vercel.app/experience.svg",
+      title: "Graduate Satisfaction Score",
+      number: 92,
+      sign: "%"
+    }
+  ];
+
+  const courses = [
+    {
+      title: "Web Development",
+      duration: "3 months",
+      price: "$100",
+      link: "/courses/web-development"
+    },
+    {
+      title: "Data Science",
+      duration: "4 months",
+      price: "$150",
+      link: "/courses/data-science"
+    },
+    {
+      title: "Mobile Development",
+      duration: "5 months",
+      price: "$200",
+      link: "/courses/mobile-development"
+    },
+    {
+      title: "Game Development",
+      duration: "6 months",
+      price: "$250",
+      link: "/courses/game-development"
+    },
+    {
+      title: "UX/UI Design",
+      duration: "7 months",
+      price: "$300",
+      link: "/courses/ux-ui-design"
+    }
+  ];
+
+  const servicesSectionData = {
+    sectionTitle: "Benefit from Out Experience In Empowering Young Women",
+    iimageOne: "/education-1.jpg",
+    imageTwo: "/education-2.png",
+    items: [
+      {
+        icon: "/Book--Streamline-Bootstrap.svg",
+        text: "Free Computer, Videos and kits"
+      },
+      {
+        icon: "/Book--Streamline-Bootstrap.svg",
+        text: "Learn at your own pace"
+      },
+      {
+        icon: "/Book--Streamline-Bootstrap.svg",
+        text: "Collaborate with different learners around the globe"
+      },
+      {
+        icon: "/Book--Streamline-Bootstrap.svg",
+        text: "Top instructors around the globe"
+      }
+    ],
+  }
+
   return (
     <>
       <HomeBanner
@@ -71,12 +165,12 @@ const page = () => {
         statistics={stats}
       />
       <Slogan />
-      {/* <CourseList /> */}
-      <HomeSloganSection sloganDescriptionData={sloganDescriptionData}/>
-      <Statistics />
-      <Services />
+      <HomeSloganSection sloganDescriptionData={sloganDescriptionData} />
+      <CoursesSection courses={courses} />
+      <PartnersSection parternerAndHiringCompanies={parternerAndHiringCompanies} />
+      <StatisticsSection statistics={statistics} />
+      <ServicesSection servicesSectionData={servicesSectionData} />
       <Reviews />
-      {/* <PartnersSection /> */}
       <Faq />
     </>
   );
