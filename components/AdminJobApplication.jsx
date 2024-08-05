@@ -11,10 +11,10 @@ const Jobs = () => {
         {
             name: 'Pacifique Ishimwe',
             role: 'Front-end Trainer',
-            phone: '123-456-7890',
+            phone: '123456789',
             email: 'pacifique@gmail.com',
             date: '2015-10-24',
-            status: 'Applied',
+            status: 'Full-time',
             resume: 'resume-link',
             coverLetter: 'cover-letter-link',
             nextDate: '2024-07-30',
@@ -23,25 +23,36 @@ const Jobs = () => {
             name: 'Hirwa',
             role: 'Back-end Trainer',
             phone: '987-654-3210',
-            email: 'johndoe@example.com',
+            email: 'hirwa@gmail.com',
             date: '2016-11-20',
-            status: 'Interviewed',
+            status: 'Full-time',
             resume: 'resume-link-john',
             coverLetter: 'cover-letter-link-john',
             nextDate: '2024-08-01',
         },
         {
-            name: 'Jane Smith',
+            name: 'Ntiru',
             role: 'Full Stack Developer',
-            phone: '555-555-5555',
-            email: 'janesmith@example.com',
+            phone: '123456789',
+            email: 'Ntirukelly@gmail.com',
             date: '2017-12-15',
-            status: 'Hired',
+            status: 'Full-time',
             resume: 'resume-link-jane',
             coverLetter: 'cover-letter-link-jane',
             nextDate: '2024-09-10',
         },
-        // Add other applicants here
+        {
+            name: 'Stella',
+            role: 'Full Stack Developer',
+            phone: '123456789',
+            email: 'stellah@gmail.com',
+            date: '2017-12-15',
+            status: 'Full-time',
+            resume: 'resume-link-jane',
+            coverLetter: 'cover-letter-link-jane',
+            nextDate: '2024-09-10',
+        },
+       
     ];
 
     const handleViewApplicant = (applicant) => {
@@ -127,9 +138,9 @@ const Jobs = () => {
                                             <div className="font-semibold text-[#222B45] text-[13px] leading-[16px]">{applicant.name}</div>
                                             <p className="text-[#8F9BB3] text-[11px] font leading-[13.75px]">{applicant.email}</p>
                                         </td>
-                                        <td className="px-6 py-4">{applicant.role}</td>
+                                        <td className="px-6 py-4 text-[13px] text-[#222B45] font font-semibold">{applicant.role}</td>
                                         <td className="px-6 py-4">{applicant.date}</td>
-                                        <td className="px-6 py-4">{applicant.status}</td>
+                                        <td className="px-6 py-4  ">{applicant.status}</td>
                                         <td className="px-6 py-4 flex  items-center space-x-4">
                                             <button
                                                 className="text-[#8F9BB3] hover:text-[#222B45] focus:outline-none"
