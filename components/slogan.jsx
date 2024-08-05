@@ -7,26 +7,30 @@ import employ from "../public/employ.svg"
 const Slogan = () => {
   return (
     <>
-      <div className='w-full  bg-slog text-black py-[40px]'>
-        <div className='max-w-[809px] mx-auto flex flex-wrap justify-evenly gap-[67px] items-center'>
-          <div className='md:w-[225px] flex flex-col xs:flex-row justify-center items-center gap-[16px] '>
-            <div className=' bg-btn1 p-3 rounded-full'>
-              <Image src={community} alt="Community" height={30} width={30} />
+      <div className='w-full  bg-slog text-black py-10'>
+        <div className='max-w-screen-xl mx-auto flex flex-wrap justify-evenly gap-16 items-center px-8'>
+          
+          <div className='flex flex-col xs:flex-row justify-center items-center gap-4'>
+            <div className='bg-btn1 p-3 rounded-full'>
+              <Image src={community} alt="Community" />
             </div>
-            <p className='md:text-[24px] text-lg  text-black/65'>Community</p>
+            <p className='text-lg md:text-2xl text-black/65'>Community</p>
           </div>
-          <div className='md:w-[225px] flex flex-col xs:flex-row justify-center items-center gap-[16px] '>
+          
+          <div className='flex flex-col xs:flex-row justify-center items-center gap-4'>
             <div className='p-3 bg-btn1 rounded-full'>
-              <Image src={train} alt="Train" height={30} width={30} />
+              <Image src={train} alt="Train" />
             </div>
-            <p className='md:text-[24px] text-lg text-black/65'>Train</p>
+            <p className='text-lg md:text-2xl text-black/65'>Train</p>
           </div>
-          <div className='md:w-[225px] flex flex-col xs:flex-row justify-center items-center gap-[16px] '>
+          
+          <div className='flex flex-col xs:flex-row justify-center items-center gap-4'>
             <div className='p-3 bg-btn1 rounded-full'>
-              <Image src={employ} alt="Employ" height={30} width={30} />
+              <Image src={employ} alt="Employ" />
             </div>
-            <p className='md:text-[24px] text-lg text-black/65'>Employ</p>
+            <p className='text-lg md:text-2xl text-black/65'>Employ</p>
           </div>
+
         </div>
       </div>
     </>

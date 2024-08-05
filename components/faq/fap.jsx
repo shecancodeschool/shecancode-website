@@ -40,7 +40,7 @@ export default function Faq() {
             style={{ backgroundImage: 'url("/3.png")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
             <div className="relative z-30 flex flex-col items-center justify-center text-white p-4 md:p-0 w-full">
-                <div className="bg-[#267BD9] bg-opacity-90 rounded-xl shadow-lg max-w-5xl w-full px-6 md:px-16 py-8 md:py-12">
+                <div className="bg-[#317ACC] bg-opacity-90 rounded-xl shadow-lg max-w-5xl w-full px-6 md:px-16 py-8 md:py-12">
                     <h2 className="text-2xl md:text-[38px] font-bold mb-8 text-center">Do you have questions?</h2>
                     <Accordion items={faqs} />
                 </div>

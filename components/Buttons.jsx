@@ -4,7 +4,7 @@ export const ButtonOne = ({ text }) => {
   return (
     <>
       <div>
-        <button className="bg-btn1 px-[24px] py-[12px] font rounded text-[16px] text-white">
+        <button className="bg-btn1 px-4 py-2 font rounded text-base text-white">
           {text}
         </button>
       </div>

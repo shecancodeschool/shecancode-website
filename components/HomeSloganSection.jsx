@@ -1,38 +1,25 @@
 import React from 'react';
-import Image from 'next/image';
-import graduationImage from '/public/claudia.png';
+import Link from 'next/link';
 
-const HomeSloganSection = () => {
+const HomeSloganSection = ({ sloganDescriptionData }) => {
     return (
-        <section
-            className="bg-gradient-to-r from-green-100 to-blue-100 h-auto md:h-full overflow-hidden"
-            style={{ backgroundImage: 'url("/frame3.png")', backgroundSize: 'cover' }}>
-            <div className='max-w-[86rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center place-content-center py-8'>
-                <div className="z-10 justify-center md:block hidden">
-                    <div className="flex justify-center items-center">
-                        <Image
-                            src={graduationImage}
-                            alt="Graduate"
-                            className="rounded-lg w-[60%] max-w-[554px]"
-                        />
-                    </div>
+        <section className="bg-gradient-to-b from-sky-600 to-sky-200 h-auto mx-auto md:h-full overflow-hidden flex flex-col items-center justify-center">
+            <div className='max-w-screen-xl mx-auto flex flex-wrap-reverse w-full items-center justify-center place-content-center px-4 py-16 md:py-24'>
+                <div className="flex justify-center items-center w-full md:w-1/2 mt-8 md:mt-0">
+                    <img
+                        src={`/${sloganDescriptionData.image.source}`}
+                        alt={sloganDescriptionData.image.alt}
+                        className="md:rounded-lg w-full md:w-2/3"
+                    />
                 </div>
 
-                <div className="flex items-center place-content-center py-8 md:mt-1 md:pt-7">
-                    <div className="flex flex-col gap-4 justify-start items-start text-left px-4">
-                        <div className="flex flex-col gap-2 w-full">
-                            <h1 className="text-[40px] md:text-[52px] font-semibold text-[#333333] mb-4">
-                                We are <span className="text-[#317ACC] relative underline-experts">Experts</span> Learning Institution
-                            </h1>
-                        </div>
-                        <div className="text-xl md:text-2xl text-[#0B2B4E] max-w-xl font-light">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit elit, bibendum volutpat platea mi, adipiscing eget magna. Eu nulla ut urna venenatis velit et tincidunt. Id vitae velit.</p>
-                        </div>
-                        <div className="flex justify-start">
-                            <button className="bg-[#317ACC] md:px-[42px] md:py-[20px] px-8 py-2 text-white rounded-md mt-6 transition duration-300 hover:bg-[#255a9e]">
-                                Enroll now
-                            </button>
-                        </div>
+                <div className="flex flex-col gap-4 justify-start items-start text-left w-full md:w-1/2">
+                    <h2 className="section-header" style={{ textAlign: "left", color: "white" }}>{sloganDescriptionData.title}</h2>
+                    <p className="text-base md:text-xl w-full">{sloganDescriptionData.description}</p>
+                    <div className="flex justify-start mt-2">
+                        <Link href={sloganDescriptionData.button.location} className="bg-[#317ACC] py-3 px-6 w-full md:w-fit text-white rounded-md hover:bg-[#296494]">
+                            {sloganDescriptionData.button.label}
+                        </Link>
                     </div>
                 </div>
             </div>

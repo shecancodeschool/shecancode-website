@@ -50,7 +50,7 @@ const PartnersSection = () => {
       }
     ]
 
-  
+
   };
 
   const handleMouseDown = (event) => {
@@ -59,25 +59,25 @@ const PartnersSection = () => {
 
 
   return (
-    <div className="px-4 md:px-14 md:py-3 py-1 md:mt-12 mt-8 md:my-12 mb-7 md:text-center">
-      <h2 className="md:text-[50px] text-[#317ACC] text-4xl font-semibold font md:mt-16">Our Partners</h2>
-      <h2 className="md:text-[28px] text-[#333333]/75 text-xl font md:mt-16 mt-5">Our apprentices have increased productivity in some of the best companies</h2>
-      <div className="max-w-[86rem] mx-auto slider-container pl-10 mt-32 ">
-      <Slider {...settings}>
-      {logos.map((logo, index) => (
-        <div key={index} className='w-full h-full flex justify-center items-center' onMouseDown={handleMouseDown}>
-          <div className='w-[50%] h-[100px] relative'>
-            <Image 
-              src={logo.src} 
-              alt={logo.alt} 
-              layout='fill' 
-              objectFit='center' 
-              className='object-contain' 
-            />
-          </div>
-        </div>
-      ))}
-    </Slider>
+    <div className='flex flex-col items-center justify-center mx-auto w-full px-4 md:px-12 py-16 md:pb-32 overflow-hidden'>
+      <h2 className="section-header">Our Partners</h2>
+      <p className="md:text-xl text-black text-xl font">Our apprentices have increased productivity in some of the best companies</p>
+      <div className="max-w-screen-xl mx-auto slider-container pl-10 mt-32 ">
+        <Slider {...settings}>
+          {logos.map((logo, index) => (
+            <div key={index} className='w-full h-full flex justify-center items-center' onMouseDown={handleMouseDown}>
+              <div className='w-[50%] h-[100px] relative'>
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  layout='fill'
+                  objectFit='center'
+                  className='object-contain'
+                />
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );
