@@ -132,8 +132,8 @@ const page = () => {
 
   const servicesSectionData = {
     sectionTitle: "Benefit from Out Experience In Empowering Young Women",
-    iimageOne: "/education-1.jpg",
-    imageTwo: "/education-2.png",
+    imageOne: "education-1.jpg",
+    imageTwo: "education-2.png",
     items: [
       {
         icon: "/Book--Streamline-Bootstrap.svg",

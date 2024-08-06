@@ -11,7 +11,7 @@ const ServicesSection = ({ servicesSectionData }) => {
                 <div className=" h-[474px]  md:flex hidden gap-4 flex-col rounded bg-[#6AACE8]/10 items-center relative">
                     <div className="relative -right-28  -top-7  ">
                         <Image
-                            src={servicesSectionData.imageOne}
+                            src={`/${servicesSectionData.imageOne}`}
                             alt="Audience"
                             width={400}
                             height={246}
@@ -20,7 +20,7 @@ const ServicesSection = ({ servicesSectionData }) => {
                     </div>
                     <div className="relative  -left-24 -top-7 lg:order-2 lg:ml-6 w-full lg:w-auto">
                         <Image
-                            src={servicesSectionData.imageTwo}
+                            src={`/${servicesSectionData.imageTwo}`}
                             alt="Laptop and hands"
                             width={400}
                             height={246}
