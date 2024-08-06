@@ -1,23 +1,13 @@
-'use client'
-
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 const HomeBanner = (props) => {
-    const [bannerData, setBannerData] = useState({});
-    const [buttonOne, setButtonOne] = useState({});
-    const [buttonTwo, setButtonTwo] = useState({});
-    const [statistics, setStatistics] = useState([]);
-
-    useEffect(() => {
-        setBannerData(props);
-        setButtonOne(props.buttonOne);
-        setButtonTwo(props.buttonTwo);
-        setStatistics(props.statistics);
-    }, []);
+    console.log(props);
+    const { bannerData, statistics } = props;
+    console.log(props);
+    const { title, backgroundImage, description, buttonOne, buttonTwo } = bannerData; 
 
     const jssStyles = {
-        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(${bannerData.backgroundImage})`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         transition: 'background-image 0.3s ease-in-out',
@@ -27,10 +17,10 @@ const HomeBanner = (props) => {
     return (
         <div className='flex flex-col min-h-screen items-center justify-between mx-auto w-full pt-36 md:pt-48 overflow-hidden' style={jssStyles}>
             <div className={`flex flex-col gap-6 items-center px-4 md:px-12 justify-center text-white w-full max-w-screen-xl`}>
-                <h1 className="text-3xl mb-8 md:text-5xl font-extrabold text-center">{bannerData.title}</h1>
-                {bannerData.description &&
+                <h1 className="text-3xl mb-8 md:text-5xl font-extrabold text-center">{title}</h1>
+                {description &&
                     <p className="text-lg md:text-xl text-center w-full sm:w-full md:w-2/3">
-                        {bannerData.description}
+                        {description}
                     </p>
                 }
                 <div className="mt-4 mb-8 flex gap-4 flex-wrap">
