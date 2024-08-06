@@ -3,14 +3,15 @@ import React from 'react'
 import HomeSloganSection from "../components/HomeSloganSection";
 import PartnersSection from "../components/sections/home/PartnersSection";
 import CoursesSection from "../components/sections/home/CoursesSection";
-import Faq from "../components/faq/fap";
-import Slogan from "../components/slogan";
+import FaqSection from "../components/faq/FaqSection";
+import SloganSection from "../components/SloganSection";
 import StatisticsSection from "../components/StatisticsSection";
 import ServicesSection from "../components/ServicesSection";
-import Reviews from "../components/review/Reviews";
+import ReviewsSection from "../components/review/ReviewsSection";
 
 
 const page = () => {
+  
 
   const stats = [
     {
@@ -76,7 +77,10 @@ const page = () => {
     { src: 'Angle-dimensions.png', alt: 'Angle Dimension' },
   ];
 
-  const statistics = [
+  const statisticsSectionData = {
+    title: "Market-aligned Courses Curated for Your Career Success",
+    description: "The quality of our programs and their impact on learners is a direct reflection of who we are and our ability to consistently meet the objectives we set for our students.",
+    statistics: [
     {
       icon: "https://shecancode-website-dev.vercel.app/student.svg",
       title: "Learners since 2018",
@@ -95,7 +99,7 @@ const page = () => {
       number: 92,
       sign: "%"
     }
-  ];
+  ]};
 
   const courses = [
     {
@@ -154,6 +158,57 @@ const page = () => {
     ],
   }
 
+  const reviewsSectionContent = {
+    title: 'Reviews',
+    subTitle: 'What our students say',
+    reviews: [
+      {
+        name: 'Mohh Jumah',
+        title: 'Senior Developer',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis.',
+        image: '/4.png'
+      },
+      {
+        name: 'John Mark',
+        title: 'Data Analyst',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis.',
+        image: '/4.png'
+      },
+      {
+        name: 'Doe',
+        title: 'Data Analyst',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis.',
+        image: '/4.png'
+      }
+    ]
+  };
+
+  const faqSectionData = {
+    title: "Do you have questions?",
+    faqs: [
+      {
+        question: "What is your return policy?",
+        answer: "We offer a 15-day return window for a full refund or exchange on unused items. Returns must include original packaging and proof of purchase for processing."
+      },
+      {
+        question: "Do you offer international shipping?",
+        answer: "Yes, we offer international shipping to many countries. Shipping costs and delivery times vary by destination."
+      },
+      {
+        question: "What if I receive a damaged or defective product?",
+        answer: "If you receive a damaged or defective product, please contact our customer support immediately for assistance."
+      },
+      {
+        question: "Are the product colors on the website accurate?",
+        answer: "While we strive to display product colors accurately, there may be slight variations due to monitor settings and lighting conditions."
+      },
+      {
+        question: "How do I contact customer support?",
+        answer: "You can contact our customer support via email at support@example.com or by calling 1-800-123-4567."
+      }
+    ]
+  }
+
   return (
     <>
       <HomeBanner
@@ -164,14 +219,14 @@ const page = () => {
         buttonTwo={bannerData.buttonTwo}
         statistics={stats}
       />
-      <Slogan />
+      <SloganSection />
       <HomeSloganSection sloganDescriptionData={sloganDescriptionData} />
       <CoursesSection courses={courses} />
       <PartnersSection parternerAndHiringCompanies={parternerAndHiringCompanies} />
-      <StatisticsSection statistics={statistics} />
+      <StatisticsSection statisticsSectionData={statisticsSectionData} />
       <ServicesSection servicesSectionData={servicesSectionData} />
-      <Reviews />
-      <Faq />
+      <ReviewsSection reviewsSectionContent={reviewsSectionContent} />
+      <FaqSection faqSectionData={faqSectionData}/>
     </>
   );
 }

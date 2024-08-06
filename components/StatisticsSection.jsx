@@ -1,13 +1,13 @@
 import React from 'react';
 import ReusableSection from './ReusableSection';
 
-const StatisticsSection = ({ statistics }) => {
+const StatisticsSection = ({ statisticsSectionData }) => {
+  const { title, description, statistics } = statisticsSectionData;
+
   return (
     <ReusableSection background={'#e6f5ff'}>
-      <h2 className='section-header'>Market-aligned Courses Curated for Your Career Success</h2>
-      <p className='text-center text-base md:text-xl max-w-screen-xl text-black/65'>The quality of our programs and their impact on learners is a direct reflection of who we are
-        and our ability to consistently meet the objectives we set for our students.
-      </p>
+      <h2 className='section-header'>{title}</h2>
+      <p className='text-center text-base md:text-xl max-w-screen-xl text-black/65'>{description}</p>
       <div className='flex flex-wrap justify-evenly w-full mt-3 items-baseline place-content-center'>
         {statistics && statistics.map((statistics, index) => (
           <div key={index} className='flex flex-col justify-center items-center md:gap-4 mb-8 md:mb-0 md:rounded-lg md:shadow-none mt-4 w-full sm:w-8 md:w-fit flex-shrink'>

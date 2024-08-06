@@ -4,7 +4,7 @@ import community from "../public/community.svg"
 import train from "../public/train.svg"
 import employ from "../public/employ.svg"
 
-const Slogan = () => {
+const SloganSection = () => {
   return (
     <>
       <div className='w-full  bg-slog text-black py-10'>
@@ -37,4 +37,4 @@ const Slogan = () => {
   )
 }
 
-export default Slogan
+export default SloganSection

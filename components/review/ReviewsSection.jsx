@@ -1,30 +1,11 @@
 "use client"
+
 import React, { useState, useRef } from 'react';
 import ReviewComp from './reviewComp';
 
-
-const reviews = [
-    {
-        name: 'Mohh Jumah',
-        title: 'Senior Developer',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis.',
-        image: '/4.png'
-    },
-    {
-        name: 'John Mark',
-        title: 'Data Analyst',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis.',
-        image: '/4.png'
-    },
-    {
-        name: 'Doe',
-        title: 'Data Analyst',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis.',
-        image: '/4.png'
-    }
-];
-
-const Reviews = () => {
+const ReviewsSection = ({ reviewsSectionContent }) => {
+    const { title, subTitle, reviews} = reviewsSectionContent;
+    
     const [currentIndex, setCurrentIndex] = useState(0);
     const sliderRef = useRef(null);
 
@@ -39,6 +20,7 @@ const Reviews = () => {
     const scrollLeft = () => {
         document.getElementById("content").scrollLeft -= 200;
     }
+    
     const scrollRight = () => {
         document.getElementById("content").scrollLeft += 200;
     }
@@ -47,10 +29,10 @@ const Reviews = () => {
     return (
         <div className="pt-16 w-full pb-16 md:pb-24 bg-gradient-to-tr from-gray-950 to-sky-400">
             <div className='flex max-w-screen-xl px-5 md:px-5 mx-auto flex-col'>
-                <h2 className='section-header' style={{ color: 'white' }}>Reviews</h2>
+                <h2 className='section-header' style={{ color: 'white' }}>{title}</h2>
                 <div className='w-full mx-auto flex flex-col md:flex-row gap-3 justify-between'>
                     <div className='flex flex-col justify-center'>
-                        <h3 className="text-center text-2xl md:text-3xl md:text-left font-bold text-white font mb-8">What Our Alumni Say About Us</h3>
+                        <h3 className="text-center text-2xl md:text-3xl md:text-left font-bold text-white font mb-8">{subTitle}</h3>
                         <div className="flex md:justify-start justify-end md:mt-8">
                             <button className="mr-2 border border-white p-2 md:p-5 rounded-full" onClick={scrollLeft}>
                                 <svg viewBox="0 0 1024 1024" fill="white" height="1em" width="1em">
@@ -77,4 +59,4 @@ const Reviews = () => {
     );
 };
 
-export default Reviews;
+export default ReviewsSection;
