@@ -1,8 +1,8 @@
 import React from 'react';
 import ReusableSection from './ReusableSection';
 
-const StatisticsSection = ({ statisticsSectionData }) => {
-  const { title, description, statistics } = statisticsSectionData;
+const StatisticsSection = ({ statisticsSectionData, statistics }) => {
+  const { title, description } = statisticsSectionData;
 
   return (
     <ReusableSection background={'#e6f5ff'}>
