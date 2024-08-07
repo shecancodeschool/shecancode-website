@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const MongoDBConnectionString = process.env.MONGODB_URI;
+const MongoDBConnectionString = "mongodb://localhost:27017/shecancode";
 
 let isConnected = false; // Track the connection status
 
