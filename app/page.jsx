@@ -16,6 +16,7 @@ import HomePageData from "../utils/homePageFakes";
 import CoursesData from "../utils/coursesFakes";
 
 const page = () => {
+  // States 
   const [homePageData, setHomePageData] = useState({});
   const [courses, setCourses] = useState([]);
 
