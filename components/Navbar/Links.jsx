@@ -66,6 +66,10 @@ export const Links = [
                     {
                         name: 'What we do',
                         link: "/what-we-do"
+                    },
+                    {
+                        name: 'Our team',
+                        link: "/our-team"
                     }
                 ]
             },
