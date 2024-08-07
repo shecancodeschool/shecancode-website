@@ -1,10 +1,10 @@
 import React from 'react'
 import ReusableSection from '../../ReusableSection'
 
-const CoursesSection = () => {
+const CoursesSection = ({homePageCoursesSectionData, courses}) => {
     return (
         <ReusableSection background={'#e6f2ff'}>
-            <h2 className="section-header">Market-aligned Courses Curated for Your Career Success</h2>
+            <h2 className="section-header">{homePageCoursesSectionData.title}</h2>
             
         </ReusableSection>
     )

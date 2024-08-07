@@ -10,40 +10,26 @@ const HomePageData = {
         buttonTwo: {
             label: "Hire Talent",
             location: "/contact-us"
-        }
+        },
+        courseAdvertTitle: "New Application Open"
     },
-    partnersAndHiringCompanies: [
-        { src: 'IRO.png', alt: 'IRO logo' },
-        { src: 'mastercard-logo.png', alt: 'Mastercard foundation logo' },
-        { src: 'kalb.png', alt: 'Klab logo' },
-        { src: 'US-Embassy-Kigali.jpeg', alt: 'U.S Embassy Kigali' },
-        { src: 'Embassy-of-Israel-2.jpeg', alt: 'Embassy of ISRAEL' },
-        { src: 'UN-Women-logo-blue-en.svg', alt: 'UN Women' },
-        { src: 'cropped-Muraho_Logo.webp', alt: 'Muraho Tech' },
-        { src: 'umurava2.png', alt: 'Umurava logo' },
-        // { src: 'Hence-Logo.svg', alt: 'Hence Technologies' },
-        { src: 'iremboGov.PNG', alt: 'Irembo logo' },
-        { src: 'Progate.png', alt: 'Progate' },
-        { src: 'TG.jpeg', alt: 'TG' },
-        { src: 'Angle-dimensions.png', alt: 'Angle Dimension' },
-    ],
     slogansData: [
         {
             title: "Community",
-            icon: "community",
+            icon: "https://shecancode-website-dev.vercel.app/community.png",
         },
         {
             title: "Train",
-            icon: "train",
+            icon: "https://shecancode-website-dev.vercel.app/train.png",
         },
         {
             title: "Employ",
-            icon: "employ",
+            icon: "https://shecancode-website-dev.vercel.app/employ.png",
         },
     ],
     sloganDescriptionData: {
         image: {
-            source: "blog-sm.jpg",
+            source: "https://shecancode-website-dev.vercel.app/blog-sm.jpg",
             alt: "Graduate"
         },
         title: "We're here to help you transform your career",
@@ -53,29 +39,71 @@ const HomePageData = {
             location: "/courses"
         },
     },
+    homePageCoursesSectionData: {
+        title: "Market-aligned Courses Curated for Your Career Success"
+    },
+    partnersAndHiringCompaniesSectionData: {
+        title: "Partners and Hiring Companies",
+        description: "Our career day events and recruitment drives have helped over 85% of our core graduates find meaningfull employment within 6-months post-graduation",
+        companies: [
+            { src: 'https://shecancode-website-dev.vercel.app/IRO.png', alt: 'IRO logo' },
+            { src: 'https://shecancode-website-dev.vercel.app/mastercard-logo.png', alt: 'Mastercard foundation logo' },
+            { src: 'https://shecancode-website-dev.vercel.app/kalb.png', alt: 'Klab logo' },
+            { src: 'https://shecancode-website-dev.vercel.app/US-Embassy-Kigali.jpeg', alt: 'U.S Embassy Kigali' },
+            { src: 'https://shecancode-website-dev.vercel.app/Embassy-of-Israel-2.jpeg', alt: 'Embassy of ISRAEL' },
+            { src: 'https://shecancode-website-dev.vercel.app/UN-Women-logo-blue-en.svg', alt: 'UN Women' },
+            { src: 'https://shecancode-website-dev.vercel.app/cropped-Muraho_Logo.webp', alt: 'Muraho Tech' },
+            { src: 'https://shecancode-website-dev.vercel.app/umurava2.png', alt: 'Umurava logo' },
+            // { src: 'https://shecancode-website-dev.vercel.app/Hence-Logo.svg', alt: 'Hence Technologies' },
+            { src: 'https://shecancode-website-dev.vercel.app/iremboGov.PNG', alt: 'Irembo logo' },
+            { src: 'https://shecancode-website-dev.vercel.app/Progate.png', alt: 'Progate' },
+            { src: 'https://shecancode-website-dev.vercel.app/TG.jpeg', alt: 'TG' },
+            { src: 'https://shecancode-website-dev.vercel.app/Angle-dimensions.png', alt: 'Angle Dimension' },
+        ]
+    },
+    statistics: [
+        {
+            icon: "https://shecancode-website-dev.vercel.app/student.svg",
+            title: "Learners since 2018",
+            number: 700,
+            sign: "+"
+        },
+        {
+            icon: "https://shecancode-website-dev.vercel.app/success.svg",
+            title: "Employment Rate",
+            number: 80,
+            sign: "%"
+        },
+        {
+            icon: "https://shecancode-website-dev.vercel.app/experience.svg",
+            title: "Graduate Satisfaction Score",
+            number: 92,
+            sign: "%"
+        }
+    ],
     statisticsSectionData: {
         title: "Market-aligned Courses Curated for Your Career Success",
         description: "The quality of our programs and their impact on learners is a direct reflection of who we are and our ability to consistently meet the objectives we set for our students.",
     },
     servicesSectionData: {
         sectionTitle: "Benefit from Out Experience In Empowering Young Women",
-        imageOne: "education-1.jpg",
-        imageTwo: "education-2.png",
+        imageOne: "https://shecancode-website-dev.vercel.app/education-1.jpg",
+        imageTwo: "https://shecancode-website-dev.vercel.app/education-2.png",
         items: [
             {
-                icon: "/Book--Streamline-Bootstrap.svg",
+                icon: "https://shecancode-website-dev.vercel.app/Book--Streamline-Bootstrap.svg",
                 text: "Free Computer, Videos and kits"
             },
             {
-                icon: "/Book--Streamline-Bootstrap.svg",
+                icon: "https://shecancode-website-dev.vercel.app/Book--Streamline-Bootstrap.svg",
                 text: "Learn at your own pace"
             },
             {
-                icon: "/Book--Streamline-Bootstrap.svg",
+                icon: "https://shecancode-website-dev.vercel.app/Book--Streamline-Bootstrap.svg",
                 text: "Collaborate with different learners around the globe"
             },
             {
-                icon: "/Book--Streamline-Bootstrap.svg",
+                icon: "https://shecancode-website-dev.vercel.app/Book--Streamline-Bootstrap.svg",
                 text: "Top instructors around the globe"
             }
         ],
@@ -88,24 +116,25 @@ const HomePageData = {
                 name: 'Mohh Jumah',
                 title: 'Senior Developer',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis.',
-                image: '/4.png'
+                image: 'https://shecancode-website-dev.vercel.app/4.png'
             },
             {
                 name: 'John Mark',
                 title: 'Data Analyst',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis.',
-                image: '/4.png'
+                image: 'https://shecancode-website-dev.vercel.app/4.png'
             },
             {
                 name: 'Doe',
                 title: 'Data Analyst',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis.',
-                image: '/4.png'
+                image: 'https://shecancode-website-dev.vercel.app/4.png'
             }
         ]
     },
     faqsSectionData: {
         title: "Do you have questions?",
+        background: "https://shecancode-website-dev.vercel.app/3.png",
         faqs: [
             {
                 question: "What is your return policy?",
@@ -129,27 +158,6 @@ const HomePageData = {
             }
         ]
     },
-    statistics: [
-        {
-            icon: "https://shecancode-website-dev.vercel.app/student.svg",
-            title: "Learners since 2018",
-            number: 700,
-            sign: "+"
-        },
-        {
-            icon: "https://shecancode-website-dev.vercel.app/success.svg",
-            title: "Employment Rate",
-            number: 80,
-            sign: "%"
-        },
-        {
-            icon: "https://shecancode-website-dev.vercel.app/experience.svg",
-            title: "Graduate Satisfaction Score",
-            number: 92,
-            sign: "%"
-        }
-    ]
-
 };
 
 export default HomePageData;

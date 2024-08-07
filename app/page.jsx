@@ -36,7 +36,6 @@ const page = () => {
     fetchHomePageData()
       .then((response) => {
         setHomePageData(response);
-        // console.log(response);
       })
       .catch(error => {
         console.error(error);
@@ -46,7 +45,6 @@ const page = () => {
     fetchCoursesData()
       .then((response) => {
         setCourses(response);
-        // console.log(response);
       })
       .catch(error => {
         console.error(error);
@@ -55,34 +53,37 @@ const page = () => {
 
   return (
     <>
-      {/* <HomeBanner 
-        bannerData={homePageData.bannerData} 
-        statistics={homePageData.statistics} 
+      <HomeBanner 
+        bannerData={HomePageData.bannerData} 
+        statistics={HomePageData.statistics} 
+        openCourse={CoursesData[CoursesData.length - 1]}
       />
       <SloganSection 
-        slogansData={homePageData.slogansData} 
+        slogansData={HomePageData.slogansData} 
       />
       <HomeSloganSection 
-        sloganDescriptionData={homePageData.sloganDescriptionData} 
+        sloganDescriptionData={HomePageData.sloganDescriptionData} 
       />
       <CoursesSection 
-        courses={courses} 
+        homePageCoursesSectionData={HomePageData.homePageCoursesSectionData}
+        courses={CoursesData} 
       />
       <PartnersSection 
-        parternerAndHiringCompanies={homePageData.parternerAndHiringCompanies} 
+        partnersAndHiringCompaniesSectionData={HomePageData.partnersAndHiringCompaniesSectionData} 
       />
       <StatisticsSection 
-        statisticsSectionData={homePageData.statisticsSectionData} 
+        statisticsSectionData={HomePageData.statisticsSectionData}
+        statistics={HomePageData.statistics} 
       />
       <ServicesSection 
-        servicesSectionData={homePageData.servicesSectionData} 
+        servicesSectionData={HomePageData.servicesSectionData} 
       />
       <ReviewsSection 
-        reviewsSectionContent={homePageData.reviewsSectionContent} 
+        reviewsSectionContent={HomePageData.reviewsSectionData} 
       />
       <FaqSection 
-        faqSectionData={homePageData.faqSectionData} 
-      /> */}
+        faqSectionData={HomePageData.faqsSectionData} 
+      />
     </>
   );
 }

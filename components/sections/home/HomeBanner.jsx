@@ -1,10 +1,8 @@
 import Link from "next/link";
 
 const HomeBanner = (props) => {
-    console.log(props);
-    const { bannerData, statistics } = props;
-    console.log(props);
-    const { title, backgroundImage, description, buttonOne, buttonTwo } = bannerData; 
+    const { bannerData, statistics, openCourse } = props;
+    const { title, backgroundImage, description, buttonOne, buttonTwo, courseAdvertTitle } = bannerData; 
 
     const jssStyles = {
         backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
@@ -48,10 +46,10 @@ const HomeBanner = (props) => {
                     </div>
                     <div className="m-auto px-4 max-w-screen-xl">
                         <p className="flex gap-4 pt-4 pb-16 md:pb-8 flex-wrap">
-                            <span className="font-extrabold">New Application Open</span>
+                            <span className="font-extrabold">{courseAdvertTitle}</span>
                             <span className=" md:text-base">
-                                A New Full-stack Software Development Course by SheCanCODE Bootcamp is open for applicants
-                                <Link href={'/course-detail'} className="text-[#6AACE8] inline"> Learn more</Link>
+                                {openCourse.description}
+                                <Link href={`${openCourse.link}`} className="text-[#6AACE8] inline"> Learn more</Link>
                             </span>
                         </p>
                     </div>

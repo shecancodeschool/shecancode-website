@@ -8,7 +8,7 @@ const HomeSloganSection = ({ sloganDescriptionData }) => {
             <div className='max-w-screen-xl mx-auto flex flex-wrap-reverse w-full items-center justify-center place-content-center px-4 py-16 md:py-24'>
                 <div className="flex justify-center items-center w-full md:w-1/2 mt-8 md:mt-0">
                     <img
-                        src={`/${image.source}`}
+                        src={image.source}
                         alt={image.alt}
                         className="md:rounded-lg w-full md:w-2/3"
                     />
