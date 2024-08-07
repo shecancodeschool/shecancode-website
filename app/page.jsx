@@ -11,8 +11,6 @@ import ReviewsSection from "../components/review/ReviewsSection";
 
 
 const page = () => {
-  
-
   const stats = [
     {
       icon: "https://shecancode-website-dev.vercel.app/student.svg",
