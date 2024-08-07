@@ -1,29 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-
-
 body {
-  background: #131212;
-  color: white;
+  background: #ffffff;
+  color: black;
   font-family: 'K2D', sans-serif;
 }
 
-.font{font-family: 'K2D', sans-serif;}
+.font {
+  font-family: 'K2D';
+}
+
+/* SECTION HEADER ************************** */
+.section-header {
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  width: 100%;
+  font-weight: 600;
+  color: #317ACC;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+
