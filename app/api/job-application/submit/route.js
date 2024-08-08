@@ -6,10 +6,10 @@ export const POST = async (req) => {
         
         const { firstName, lastName, email, phone, cv, coverLetter, linkedInAccount } = await req.json();
 
-        // Connect to the database
+ 
         await connectToDB();
 
-        // Create a new job application
+    
         const newApplication = await JobApplication.create({
             firstName,
             lastName,

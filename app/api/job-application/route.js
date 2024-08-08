@@ -3,10 +3,9 @@ import JobApplication from '../../../models/JobApplication';
 
 export const GET = async () => {
     try {
-        // Connect to the database
+   
         await connectToDB();
 
-        // Retrieve all job applications
         const applications = await JobApplication.find();
 
         // Return the applications in the response

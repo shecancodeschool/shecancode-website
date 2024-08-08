@@ -14,9 +14,8 @@ export const POST = async (req) => {
 
         // Generate OTP
         const otp = otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false });
-        const otpExpiresAt = new Date(Date.now() + 15 * 60 * 1000); // OTP expires in 15 minutes
+        const otpExpiresAt = new Date(Date.now() + 15 * 60 * 1000); 
 
-        // Create a new user
         const newUser = await User.create({
             email,
             password: hashedPassword,
