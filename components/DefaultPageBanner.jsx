@@ -18,7 +18,7 @@ const DefaultPageBanner = (props) => {
                         {description}
                     </p>
                 }
-                {hasButton.label && 
+                {hasButton && 
                     <button className="bg-[#317ACC] py-3 px-6 mt-6 text-white rounded-md hover:bg-[#296494]">
                         {hasButton.label}
                     </button>
