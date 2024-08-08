@@ -5,6 +5,7 @@ import CoursesFilter from "../../components/CoursesFilter";
 import { CourseCard } from "../../components/Card";
 
 const page = () => {
+  
   const CourseProps = [
     { title: "Product Management Basic - Course" },
     { title: "BM Data Science Professional Certificate" },

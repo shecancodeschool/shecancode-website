@@ -15,9 +15,16 @@ module.exports = {
           '0%': { transform: 'translateX(10%)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        infiniteSlider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            transform: "translateX(calc(-250px * 5))",
+          },
+        },
       },
       animation: {
         marquee: 'marquee 30s linear infinite',
+        ["infinite-slider"]: "infiniteSlider 20s linear infinite",
       },
 
       backgroundImage: {

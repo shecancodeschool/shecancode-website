@@ -1,83 +1,90 @@
-import HomeBanner from "../components/HomeBanner";
-import React from 'react'
-import HomeSloganSection from "../components/HomeSloganSection";
-import CourseList from "../components/CourseList";
-import PartnersSection from "../components/Partners";
-import Faq from "../components/faq/fap";
-import Slogan from "../components/slogan";
-import Statistics from "../components/Statistics";
-import Services from "../components/Services";
-import Reviews from "../components/review/Reviews";
+"use client";
 
+import React, { useEffect, useState } from 'react'
+
+import HomeBanner from "../components/sections/home/HomeBanner";
+import HomeSloganSection from "../components/HomeSloganSection";
+import PartnersSection from "../components/sections/home/PartnersSection";
+import CoursesSection from "../components/sections/home/CoursesSection";
+import FaqSection from "../components/faq/FaqSection";
+import SloganSection from "../components/SloganSection";
+import StatisticsSection from "../components/StatisticsSection";
+import ServicesSection from "../components/ServicesSection";
+import ReviewsSection from "../components/review/ReviewsSection";
+
+import HomePageData from "../utils/homePageFakes";
+import CoursesData from "../utils/coursesFakes";
 
 const page = () => {
-  
-  const stats = [
-    {
-      icon: "https://shecancode-website-dev.vercel.app/student.svg",
-      title: "Learners since 2018",
-      number: 700,
-      sign: "+"
-    },
-    {
-      icon: "https://shecancode-website-dev.vercel.app/success.svg",
-      title: "Employment Rate",
-      number: 80,
-      sign: "%"
-    },
-    {
-      icon: "https://shecancode-website-dev.vercel.app/experience.svg",
-      title: "Graduate Satisfaction Score",
-      number: 92,
-      sign: "%"
-    }
-  ];
+  // States 
+  const [homePageData, setHomePageData] = useState({});
+  const [courses, setCourses] = useState([]);
 
-  const bannerData = {
-    title: "The leading channel to get more women in tech",
-    backgroundImage: "https://shecancode-website-dev.vercel.app/banner_img.png",
-    description: "Join our community of more than 800 successful women in tech today.",
-    buttonOne: {
-      label: "Explore courses",
-      location: "/courses"
-    },
-    buttonTwo: {
-      label: "Hire Talent",
-      location: "/contact-us"
-    }
-  };
+  useEffect(() => {
+    const fetchHomePageData = async () => {
+      // This will be replaced by real api calls in integration 
+      const data = await HomePageData;
+      return data;
+    };
 
-  const sloganDescriptionData = {
-    image: {
-      source: "blog-sm.jpg",
-      alt: "Graduate"
-    },
-    title: "We're here to help you transform your career",
-    description: "Our mission is to empower women in technology by providing them with the tools and resources they need to succeed. Research on Bruce H. Lipton, Ph.D. an Epigeneticist. Bruce Lipton is an American developmental biologist known for promoting the idea that genes and DNA can be manipulated by a person's beliefs. He is also known for his work on epigenetics.",
-    button: {
-      label: "Enroll now",
-      location: "/courses"
-    },
-  }
+    const fetchCoursesData = async () => {
+      // This will be replaced by real api calls in integration 
+      const data = await CoursesData;
+      return data;
+    };
+
+    // Fetch Home page data
+    fetchHomePageData()
+      .then((response) => {
+        setHomePageData(response);
+      })
+      .catch(error => {
+        console.error(error);
+      })
+
+    // Fetch courses data
+    fetchCoursesData()
+      .then((response) => {
+        setCourses(response);
+      })
+      .catch(error => {
+        console.error(error);
+      })
+  }, []);
 
   return (
     <>
-      <HomeBanner
-        backgroundImage={bannerData.backgroundImage}
-        title={bannerData.title}
-        description={bannerData.description}
-        buttonOne={bannerData.buttonOne}
-        buttonTwo={bannerData.buttonTwo}
-        statistics={stats}
+      <HomeBanner 
+        bannerData={HomePageData.bannerData} 
+        statistics={HomePageData.statistics} 
+        openCourse={CoursesData[CoursesData.length - 1]}
       />
-      <Slogan />
-      {/* <CourseList /> */}
-      <HomeSloganSection sloganDescriptionData={sloganDescriptionData}/>
-      <Statistics />
-      <Services />
-      <Reviews />
-      {/* <PartnersSection /> */}
-      <Faq />
+      <SloganSection 
+        slogansData={HomePageData.slogansData} 
+      />
+      <HomeSloganSection 
+        sloganDescriptionData={HomePageData.sloganDescriptionData} 
+      />
+      <CoursesSection 
+        homePageCoursesSectionData={HomePageData.homePageCoursesSectionData}
+        courses={CoursesData} 
+      />
+      <PartnersSection 
+        partnersAndHiringCompaniesSectionData={HomePageData.partnersAndHiringCompaniesSectionData} 
+      />
+      <StatisticsSection 
+        statisticsSectionData={HomePageData.statisticsSectionData}
+        statistics={HomePageData.statistics} 
+      />
+      <ServicesSection 
+        servicesSectionData={HomePageData.servicesSectionData} 
+      />
+      <ReviewsSection 
+        reviewsSectionContent={HomePageData.reviewsSectionData} 
+      />
+      <FaqSection 
+        faqSectionData={HomePageData.faqsSectionData} 
+      />
     </>
   );
 }
