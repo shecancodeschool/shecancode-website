@@ -10,12 +10,15 @@ export const PATCH = async (req) => {
         const updatedApplication = await JobApplication.findByIdAndUpdate(id, { status }, { new: true });
 
         if (!updatedApplication) {
-            return new Response('Job application not found', { status: 404 });
+            return new Response(JSON.stringify({ message: 'Job application not found' }), { status: 404 });
         }
 
-        return new Response('Job application status updated successfully', { status: 200 });
+        return new Response(JSON.stringify({
+            message: 'Job application status updated successfully',
+            application: updatedApplication
+        }), { status: 200 });
     } catch (error) {
-        console.log(error.message);
-        return new Response('Failed to update job application status', { status: 500 });
+        console.error(error.message);
+        return new Response(JSON.stringify({ error: 'Failed to update job application status' }), { status: 500 });
     }
 };

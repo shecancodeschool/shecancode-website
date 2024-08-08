@@ -4,7 +4,7 @@ const CurriculumOutlineSchema = new Schema({
     title: { type: String, required: true },
     description: { type: String, required: true },
     modules: { type: [String], required: true }
-});
+}, { timestamps: true });
 
 const CurriculumOutline = models.CurriculumOutline || model('CurriculumOutline', CurriculumOutlineSchema);
 export default CurriculumOutline;

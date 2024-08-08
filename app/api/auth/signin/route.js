@@ -18,10 +18,10 @@ export const POST = async (req) => {
             return new Response(JSON.stringify({ message: 'Invalid credentials' }), { status: 401 });
         }
 
-        // Replace with the actual JWT secret value for production purposes
+       
         const token = jwt.sign(
             { id: user._id, email: user.email, role: user.role },
-            process.env.JWT_SECRET,
+            'Stella12345',
             { expiresIn: '1h' }
         );
 

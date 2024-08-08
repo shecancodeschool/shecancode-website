@@ -1,34 +1,10 @@
 import { connectToDB } from '../../../utils/database';
 import JobApplication from '../../../../models/JobApplication';
-import formidable from 'formidable';
-
-export const config = {
-    api: {
-        bodyParser: false, // Disallow body parsing, since formidable will handle it
-    },
-};
-
-const parseForm = (req) => {
-    const form = new formidable.IncomingForm();
-    form.uploadDir = './public/uploads'; // Adjust the upload directory as needed
-    form.keepExtensions = true;
-
-    return new Promise((resolve, reject) => {
-        form.parse(req, (err, fields, files) => {
-            if (err) {
-                reject(err);
-            } else {
-                resolve({ fields, files });
-            }
-        });
-    });
-};
 
 export const PATCH = async (req) => {
     try {
-        const { fields, files } = await parseForm(req);
-        const { id, firstName, lastName, email, phone, linkedInAccount } = fields;
-        const { cv, coverLetter } = files;
+        await connectToDB();
+        const { id, firstName, lastName, email, phone, linkedInAccount, cv, coverLetter } = await req.json();
 
         const updateFields = {
             firstName,
@@ -38,10 +14,8 @@ export const PATCH = async (req) => {
             linkedInAccount,
         };
 
-        if (cv) updateFields.cv = cv.filepath;
-        if (coverLetter) updateFields.coverLetter = coverLetter.filepath;
-
-        await connectToDB();
+        if (cv) updateFields.cv = cv;
+        if (coverLetter) updateFields.coverLetter = coverLetter;
 
         const updatedApplication = await JobApplication.findByIdAndUpdate(id, updateFields, { new: true });
 
@@ -57,13 +31,11 @@ export const PATCH = async (req) => {
 };
 
 
-
 export const DELETE = async (req) => {
     try {
         await connectToDB();
         const { id } = await req.json();
 
-        // Delete the job application
         const deletedApplication = await JobApplication.findByIdAndDelete(id);
 
         if (!deletedApplication) {

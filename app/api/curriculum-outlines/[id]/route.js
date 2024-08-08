@@ -1,4 +1,4 @@
-import { connectToDB } from '../../../../utils/database';
+import { connectToDB } from '../../../utils/database';
 import CurriculumOutline from '../../../../models/curriculumOutline';
 
 export const PUT = async (req) => {
@@ -10,7 +10,10 @@ export const PUT = async (req) => {
             { title, description, modules },
             { new: true }
         );
-        return new Response(JSON.stringify(updatedCurriculumOutline), { status: 200 });
+        return new Response(JSON.stringify({
+            message: 'Curriculum outline updated successfully',
+            curriculumOutline: updatedCurriculumOutline
+        }), { status: 200 });
     } catch (error) {
         console.error(error.message);
         return new Response(JSON.stringify({ message: "Failed to update curriculum outline" }), { status: 500 });

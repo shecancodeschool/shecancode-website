@@ -5,9 +5,9 @@ const JobApplicationSchema = new Schema({
     lastName: { type: String, required: true },
     email: { type: String, required: true, unique: true },
     phone: { type: String, required: true },
-    cv: { type: String, required: true },
-    coverLetter: { type: String, required: true },
-    linkedInAccount: { type: String, required: false },
+    cv: { type: String, required: true },  
+    coverLetter: { type: String, required: true },  
+    linkedInAccount: { type: String, required: false },  
     status: { 
         type: String, 
         enum: ["Pending", "In interview phase", "In technical interview phase", "Rejected"],

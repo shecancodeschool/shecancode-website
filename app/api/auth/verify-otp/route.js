@@ -1,15 +1,26 @@
 import { connectToDB } from '../../../utils/database';
-import UserModel from '../../../../models/user';
+import User from '../../../../models/user';
 
 export const POST = async (req) => {
     const { email, otp } = await req.json();
     try {
         await connectToDB();
 
-        // Find the user by email and OTP
-        const user = await UserModel.findOne({ email, otp, otpExpiresAt: { $gt: new Date() } });
+        console.log('Received email:', email);
+        console.log('Received OTP:', otp);
+
+        // Find the user by email and OTP, and ensure the OTP has not expired
+        const user = await User.findOne({
+            email,
+            otp,
+            otpExpiresAt: { $gt: new Date() }
+        });
+
+        console.log('User found:', user);
+
         if (!user) {
-            return new Response('Invalid or expired OTP', { status: 400 });
+            console.log('Invalid or expired OTP');
+            return new Response(JSON.stringify({ message: 'Invalid or expired OTP' }), { status: 400 });
         }
 
         // Clear the OTP and expiration date
@@ -17,9 +28,10 @@ export const POST = async (req) => {
         user.otpExpiresAt = null;
         await user.save();
 
-        return new Response('OTP verified successfully', { status: 200 });
+        console.log('OTP verified successfully');
+        return new Response(JSON.stringify({ message: 'OTP verified successfully' }), { status: 200 });
     } catch (error) {
-        console.log(error.message);
-        return new Response('Failed to verify OTP', { status: 500 });
+        console.log('Error verifying OTP:', error.message);
+        return new Response(JSON.stringify({ message: 'Failed to verify OTP', error: error.message }), { status: 500 });
     }
 };

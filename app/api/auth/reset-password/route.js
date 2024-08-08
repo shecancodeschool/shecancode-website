@@ -1,30 +1,27 @@
 import { connectToDB } from '../../../utils/database';
 import UserModel from '../../../../models/user';
-import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export const POST = async (req) => {
-    const { email, otp, newPassword } = await req.json();
+    const { email } = await req.json();
     try {
         await connectToDB();
 
-        // Find the user by email and OTP
-        const user = await UserModel.findOne({ email, otp, otpExpiresAt: { $gt: new Date() } });
+        const user = await UserModel.findOne({ email });
         if (!user) {
-            return new Response('Invalid or expired OTP', { status: 400 });
+            return new Response(JSON.stringify({ message: 'User not found' }), { status: 404 });
         }
 
-        // Hash the new password
-        const hashedPassword = await bcrypt.hash(newPassword, 10);
+        const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
-        // Update the user's password and clear the OTP
-        user.password = hashedPassword;
-        user.otp = null;
-        user.otpExpiresAt = null;
-        await user.save();
+        // Send token to user via email (implementation depends on your email service)
 
-        return new Response('Password reset successfully', { status: 200 });
+        return new Response(JSON.stringify({ message: 'Password reset token sent' }), { status: 200 });
     } catch (error) {
         console.log(error.message);
-        return new Response('Failed to reset password', { status: 500 });
+        return new Response(JSON.stringify({ message: 'Failed to send reset token' }), { status: 500 });
     }
 };
