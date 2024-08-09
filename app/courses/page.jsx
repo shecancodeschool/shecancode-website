@@ -21,7 +21,7 @@ const page = () => {
       <PageTitle orientation={"center"} title={CoursesPageData.subTitle} />
       <ReusableSection isTopSection={"true"} >
         <div className="w-full flex flex-col">
-          <div className="flex justify-center items-center gap-6 flex-wrap md:flex-nowrap mb-8">
+          <div className="flex justify-center items-center gap-2 md:gap-4 flex-wrap mb-8">
             <CoursesFilter text="All Programme" bgText="bg-sky-300" Text="text-[#FFFF]" />
             {CourseCategories && CourseCategories.map((category, index) => (
               <CoursesFilter text={category} key={index} Text="text-[#C4C4C4]" />
