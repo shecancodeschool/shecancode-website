@@ -1,5 +1,6 @@
 'use client'
-import React from "react";
+
+import React,{useState, useEffect} from "react";
 import { TbLogout } from "react-icons/tb";
 import userIcn from "../public/ACC.svg"
 import jobIcn from "../public/JOB.svg"
@@ -20,8 +21,9 @@ import {
 import { AiOutlineFolderView } from "react-icons/ai";
 import { MdDashboard, MdPreview, MdEvent } from "react-icons/md";
 
-let Add =  <IoMdAdd/>
 export const DashboardSideNav = () => {
+  // const { isSideNavOpen } = useContext(SideNavContext);
+
   return (
     <>
       <div className="fixed bg-[#F8F8F8] z-50 flex flex-col justify-between h-full w-[353px]">
