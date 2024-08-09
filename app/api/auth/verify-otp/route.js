@@ -1,4 +1,4 @@
-import { connectToDB } from '../../../utils/database';
+import { connectToDB } from '../../../../utils/database';
 import User from '../../../../models/user';
 
 export const POST = async (req) => {
@@ -9,7 +9,7 @@ export const POST = async (req) => {
         console.log('Received email:', email);
         console.log('Received OTP:', otp);
 
-        // Find the user by email and OTP, and ensure the OTP has not expired
+        
         const user = await User.findOne({
             email,
             otp,

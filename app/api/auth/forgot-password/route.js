@@ -1,4 +1,4 @@
-import { connectToDB } from '../../../utils/database';
+import { connectToDB } from '../../../../utils/database';
 import UserModel from '../../../../models/user';
 import crypto from 'crypto';
 import dotenv from 'dotenv';

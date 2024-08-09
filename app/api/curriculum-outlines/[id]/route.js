@@ -1,4 +1,4 @@
-import { connectToDB } from '../../../utils/database';
+import { connectToDB } from '../../../../utils/database';
 import CurriculumOutline from '../../../../models/curriculumOutline';
 
 export const PUT = async (req) => {

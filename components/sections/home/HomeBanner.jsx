@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const HomeBanner = (props) => {
     const { bannerData, statistics, openCourse } = props;
+    console.log(bannerData)
     const { title, backgroundImage, description, buttonOne, buttonTwo, courseAdvertTitle } = bannerData; 
 
     const jssStyles = {

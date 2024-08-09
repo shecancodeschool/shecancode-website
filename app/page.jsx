@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 import HomeBanner from "../components/sections/home/HomeBanner";
 import HomeSloganSection from "../components/HomeSloganSection";
@@ -11,82 +12,75 @@ import SloganSection from "../components/SloganSection";
 import StatisticsSection from "../components/StatisticsSection";
 import ServicesSection from "../components/ServicesSection";
 import ReviewsSection from "../components/review/ReviewsSection";
-
-import HomePageData from "../utils/homePageFakes";
-import CoursesData from "../utils/coursesFakes";
+import coursesFakes from "../utils/coursesFakes";
 
 const page = () => {
-  // States 
-  const [homePageData, setHomePageData] = useState({});
-  const [courses, setCourses] = useState([]);
+  
+  const { CoursesData, ...rest } = coursesFakes;
+  const [homePageData, setHomePageData] = useState(null);
 
   useEffect(() => {
     const fetchHomePageData = async () => {
-      // This will be replaced by real api calls in integration 
-      const data = await HomePageData;
-      return data;
+      try {
+        const response = await axios.get('http://localhost:3000/api/homepage/');
+        setHomePageData(response.data[0]);
+        console.log(response.data[0]);
+      } catch (error) {
+        console.error('Error fetching homepage data:', error);
+      }
     };
 
-    const fetchCoursesData = async () => {
-      // This will be replaced by real api calls in integration 
-      const data = await CoursesData;
-      return data;
-    };
-
-    // Fetch Home page data
-    fetchHomePageData()
-      .then((response) => {
-        setHomePageData(response);
-      })
-      .catch(error => {
-        console.error(error);
-      })
-
-    // Fetch courses data
-    fetchCoursesData()
-      .then((response) => {
-        setCourses(response);
-      })
-      .catch(error => {
-        console.error(error);
-      })
+    fetchHomePageData();
   }, []);
+
+  const updateHomePageData = async (updatedData) => {
+    try {
+      await axios.put('http://localhost:3000/api/homepage/', updatedData);
+      
+      fetchHomePageData();
+    } catch (error) {
+      console.error('Error updating homepage data:', error);
+    }
+  };
+
+  if (!homePageData) {
+    return <div>Loading...</div>; 
+  }
 
   return (
     <>
       <HomeBanner 
-        bannerData={HomePageData.bannerData} 
-        statistics={HomePageData.statistics} 
-        openCourse={CoursesData[CoursesData.length - 1]}
+        bannerData={homePageData.bannerData} 
+        statistics={homePageData.statistics}
+        openCourse={coursesFakes[0]} 
       />
       <SloganSection 
-        slogansData={HomePageData.slogansData} 
+        slogansData={homePageData.slogansData} 
       />
       <HomeSloganSection 
-        sloganDescriptionData={HomePageData.sloganDescriptionData} 
+        sloganDescriptionData={homePageData.sloganDescriptionData} 
       />
       <CoursesSection 
-        homePageCoursesSectionData={HomePageData.homePageCoursesSectionData}
-        courses={CoursesData} 
+        homePageCoursesSectionData={homePageData.homePageCoursesSectionData}
       />
       <PartnersSection 
-        partnersAndHiringCompaniesSectionData={HomePageData.partnersAndHiringCompaniesSectionData} 
+        partnersAndHiringCompaniesSectionData={homePageData.partnersAndHiringCompaniesSectionData} 
       />
       <StatisticsSection 
-        statisticsSectionData={HomePageData.statisticsSectionData}
-        statistics={HomePageData.statistics} 
+        statisticsSectionData={homePageData.statisticsSectionData}
+        statistics={homePageData.statistics} 
       />
       <ServicesSection 
-        servicesSectionData={HomePageData.servicesSectionData} 
+        servicesSectionData={homePageData.servicesSectionData} 
       />
       <ReviewsSection 
-        reviewsSectionContent={HomePageData.reviewsSectionData} 
+        reviewsSectionContent={homePageData.reviewsSectionData} 
       />
       <FaqSection 
-        faqSectionData={HomePageData.faqsSectionData} 
+        faqSectionData={homePageData.faqsSectionData} 
       />
     </>
   );
 }
 
-export default page
+export default page;

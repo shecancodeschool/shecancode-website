@@ -1,4 +1,4 @@
-import { connectToDB } from '../../../utils/database';
+import { connectToDB } from '../../../../utils/database';
 import UserModel from '../../../../models/user';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';

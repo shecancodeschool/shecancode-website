@@ -1,4 +1,4 @@
-import { connectToDB } from '../../../utils/database';
+import { connectToDB } from '../../../../utils/database';
 import UserModel from '../../../../models/user';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';

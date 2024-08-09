@@ -1,4 +1,4 @@
-import { connectToDB } from '../../../utils/database';
+import { connectToDB } from '../../../../utils/database';
 import User from '../../../../models/user';
 import bcrypt from 'bcrypt';
 import otpGenerator from 'otp-generator';
@@ -9,10 +9,10 @@ export const POST = async (req) => {
     try {
         await connectToDB();
 
-        // Hash the user's password
+       
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        // Generate OTP
+       
         const otp = otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false });
         const otpExpiresAt = new Date(Date.now() + 15 * 60 * 1000); 
 

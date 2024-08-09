@@ -1,4 +1,4 @@
-import { connectToDB } from '../../../utils/database';
+import { connectToDB } from '../../../../utils/database';
 import UserModel from '../../../../models/user';
 
 export const POST = async (req) => {
