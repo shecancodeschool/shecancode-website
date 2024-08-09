@@ -5,7 +5,7 @@ const CourseCard = ({ course }) => {
   const { title, description, duration, price, image, link, isOpen } = course;
 
   return (
-    <div className='flex flex-col w-[22%] shadow-md mb-10 rounded-md bg-white'>
+    <div className='flex flex-col sm:w-[48%] md:w-[22%] shadow-md mb-10 rounded-md bg-white'>
       <div className='h-36 w-full rounded-t-md relative'
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(${image})`,
@@ -18,7 +18,7 @@ const CourseCard = ({ course }) => {
         {isOpen && <div className='z-50 bg-orange-500 w-fit px-3 py-1 rounded-tl-md'>Now Open</div>}
         {!isOpen && <div className='z-50 bg-blue-500 w-fit px-3 py-1 rounded-tl-md'>Coming soon</div>}
       </div>
-      <div className='flex flex-col py-6 px-4 text-black justify-between h-72 gap-2'>
+      <div className='flex flex-col py-6 px-4 text-black justify-between min-h-72 gap-2 flex-wrap'>
         <div className='flex flex-col gap-2'>
           <h3 className='text-xl text-sky-700 font-bold'>{title}</h3>
           <p className='text-sm'>{description}</p>
