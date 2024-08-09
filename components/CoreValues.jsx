@@ -1,12 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
-import IconCollaboration from "../public/Icon-collaboration.svg";
-import IconTransparency from "../public/Icon_Transparency-1.svg";
-import IconTrust from "../public/Icon-Trust.png";
-import Logo from "../public/logo/logo1.png"
 import ReusableSection from './ReusableSection';
 
-const CoreValues = ({ values }) => {
+export default function CoreValues({ values }) {
   const { title, description, listOfValues } = values;
   return (
     <ReusableSection flexDirection={"row"} isTopSection>
@@ -61,9 +56,6 @@ const CoreValues = ({ values }) => {
     </ReusableSection >
   );
 };
-
-export default CoreValues;
-
 
 const ValueContainer = ({ icon, title, description }) => {
   return (
