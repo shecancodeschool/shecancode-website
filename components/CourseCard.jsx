@@ -5,7 +5,7 @@ const CourseCard = ({ course }) => {
   const { title, description, duration, price, image, link, isOpen } = course;
 
   return (
-    <div className='flex flex-col w-[22%] shadow-md mb-10 rounded-md'>
+    <div className='flex flex-col w-[22%] shadow-md mb-10 rounded-md bg-white'>
       <div className='h-36 w-full rounded-t-md relative'
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(${image})`,
