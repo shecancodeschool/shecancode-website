@@ -59,29 +59,6 @@ export const Banner = () => {
               </Link>
             </div>
           </div>
-
-          <div className="absolute bottom-0 bg-black bg-opacity-35 w-full flex flex-col items-center justify-center">
-            <div className="flex flex-col text-white w-full max-w-screen-xl">
-              <div className="hidden md:flex justify-center items-center border-b">
-                {statistics.map((stat, index) => (
-                  <div className="px-12 py-8 flex flex-col text-center gap-2" key={index}>
-                    <span className="font-bold text-3xl text-cyan-400">{stat.number} {stat.sign}</span>
-                    <span className="text-lg">{stat.title}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="m-auto px-4 max-w-screen-xl">
-                <p className="flex gap-4 py-4 flex-wrap">
-                  <span className="font-extrabold">New Application Open</span>
-                  <span className="text-sm md:text-base">
-                    A New Full-stack Software Development Course by SheCanCODE Bootcamp is open for applicants
-                    <Link href={'/course-detail'} className="text-[#6AACE8] inline"> Learn more</Link>
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-          
         </div>
       </div>
     </>
