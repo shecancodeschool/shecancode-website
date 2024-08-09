@@ -13,9 +13,10 @@ import ServicesSection from "../components/ServicesSection";
 import ReviewsSection from "../components/review/ReviewsSection";
 
 import HomePageData from "../utils/homePageFakes";
-import CoursesData from "../utils/coursesFakes";
+import coursesFakes from "../utils/coursesFakes";
 
 const page = () => {
+  const { CoursesData, ...rest } = coursesFakes;
   // States 
   const [homePageData, setHomePageData] = useState({});
   const [courses, setCourses] = useState([]);
@@ -57,7 +58,7 @@ const page = () => {
       <HomeBanner 
         bannerData={HomePageData.bannerData} 
         statistics={HomePageData.statistics} 
-        openCourse={CoursesData[CoursesData.length - 1]}
+        openCourse={CoursesData[0]}
       />
       <SloganSection 
         slogansData={HomePageData.slogansData} 
@@ -65,7 +66,7 @@ const page = () => {
       <HomeSloganSection 
         sloganDescriptionData={HomePageData.sloganDescriptionData} 
       />
-      <CoursesSection 
+      <CoursesSection
         homePageCoursesSectionData={HomePageData.homePageCoursesSectionData}
         courses={CoursesData} 
       />

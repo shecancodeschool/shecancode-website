@@ -3,7 +3,7 @@ import React from 'react'
 const CoursesFilter = ({text, bgText, Text}) => {
   return (
     <>
-      <div className={`p-2 text-[#C4C4C4] border border-[#C4C4C4] rounded max-h-[40px] cursor-pointer ${bgText} ${Text}`}>
+      <div className={`p-2 hover:text-sky-700 text-sky-500 border border-sky-500 hover:border-sky-700 rounded cursor-pointer ${bgText} ${Text}`}>
         {text}
       </div>
     </>
