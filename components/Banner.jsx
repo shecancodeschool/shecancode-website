@@ -37,51 +37,7 @@ export const Banner = () => {
 
   return (
     <>
-      <div className="relative h-screen isolate flex flex-col justify-end bg-[url('/banner_img.png')] object-cover">
-        {/* Overflow  */}
-        <div className="absolute top-0 left-0 right-0 w-full h-full bg-opacity-[80%] bg-[#011225]">
-
-          {/* Banner content  */}
-          <div className="absolute inset-0 flex flex-col justify-center items-center place-content-center gap-8 md:gap-8 text-white p-4 md:p-0">
-            <h3 className="text-3xl md:text-5xl font-regular text-center font">
-              UNLOCK YOUR CREATIVE POTENTIAL
-            </h3>
-            <div className="text-center max-w-3xl mx-auto">
-              <p className="text-base md:text-2xl">
-                The ShecanCode bootcamp, one of the original programs in the
-                country, cultivates artists who are inventive, rigorous, and
-                engaged
-              </p>
-            </div>
-            <div className="w-full flex justify-center items-center gap-5">
-              <Link href={'/courses'} className="bg-btn1 px-4 py-2 md:px-16 md:py-4 font-bold text-base md:text-2xl rounded-lg hover:bg-blue-400">
-                SEE AVAILABLE COURSES
-              </Link>
-            </div>
           </div>
-
-          <div className="absolute bottom-0 bg-black bg-opacity-35 w-full flex flex-col items-center justify-center">
-            <div className="flex flex-col text-white w-full max-w-screen-xl">
-              <div className="hidden md:flex justify-center items-center border-b">
-                {statistics.map((stat, index) => (
-                  <div className="px-12 py-8 flex flex-col text-center gap-2" key={index}>
-                    <span className="font-bold text-3xl text-cyan-400">{stat.number} {stat.sign}</span>
-                    <span className="text-lg">{stat.title}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="m-auto px-4 max-w-screen-xl">
-                <p className="flex gap-4 py-4 flex-wrap">
-                  <span className="font-extrabold">New Application Open</span>
-                  <span className="text-sm md:text-base">
-                    A New Full-stack Software Development Course by SheCanCODE Bootcamp is open for applicants
-                    <Link href={'/course-detail'} className="text-[#6AACE8] inline"> Learn more</Link>
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-          
         </div>
       </div>
     </>

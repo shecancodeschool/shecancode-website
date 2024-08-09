@@ -91,8 +91,8 @@ const HomePageData = {
         imageTwo: "https://shecancode-website-dev.vercel.app/education-2.png",
         items: [
             {
-                icon: "https://shecancode-website-dev.vercel.app/Book--Streamline-Bootstrap.svg",
-                text: "Free Computer, Videos and kits"
+                icon: "/icons/service1.svg",
+                text: "Online Courses"
             },
             {
                 icon: "https://shecancode-website-dev.vercel.app/Book--Streamline-Bootstrap.svg",
