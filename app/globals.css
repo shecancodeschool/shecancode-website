@@ -22,7 +22,16 @@ body {
   width: 100%;
   font-weight: 600;
   color: #317ACC;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-sub-title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  width: 100%;
+  font-weight: 600;
+  color: #317ACC;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
