@@ -1,4 +1,5 @@
 'use client'
+
 import React,{useState, useEffect} from "react";
 import { TbLogout } from "react-icons/tb";
 import userIcn from "../public/ACC.svg"
@@ -25,7 +26,6 @@ export const DashboardSideNav = () => {
 
   return (
     <>
-       {/* <div className={`fixed bg-[#F8F8F8] z-50 flex flex-col justify-between h-full w-[353px]${isSideNavOpen? 'open' : 'close'}`}> */}
       <div className="fixed bg-[#F8F8F8] z-50 flex flex-col justify-between h-full w-[353px]">
         <div className="h-[15%] flex border-b-2 mb-8 justify-center items-center gap-[21.27px]">
           <Image src={Logo} alt="shecancode" className="w-[71px] h-[41px]" />

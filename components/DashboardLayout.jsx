@@ -6,7 +6,6 @@ import SideNavProvider from "../Hooks/Context/UseContext"
 const DashboardLayout = ({ children }) => {
   return (
     <>
-       {/* <SideNavProvider> */}
         <div>
           <DashboardSideNav />
         </div>
@@ -16,7 +15,6 @@ const DashboardLayout = ({ children }) => {
             {children}
           </div>
         </div>
-        {/* </SideNavProvider> */}
     </>
   );
 };

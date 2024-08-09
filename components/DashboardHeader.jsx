@@ -24,8 +24,6 @@ export const DashboardHeader = () => {
     };
   }, []);
 
-  // Minimise the side bar
-  // const { toggleSideNav } = useContext(SideNavContext);
   return (
     <>
       <div className={`fixed right-0 z-50 flex justify-center items-center w-[76.9%] h-[100px] ${scrolled ? 'bg-[#F8F8F8] bg-opacity-100' : 'bg-[#F8F8F8] bg-opacity-0'}`}>
