@@ -1,4 +1,4 @@
-import { NewsDetails } from "../../../components/Banner";
+// import { NewsDetails } from "../../../components/Banner";
 import React from "react";
 import Image from "next/image";
 import sm from "../../../public/blog-sm.jpg";
@@ -12,7 +12,7 @@ const page = () => {
     <>
       <div className=" h-full flex flex-col justify-evenly gap-16 bg-[#FAFAFA]">
         <div className="">
-          <NewsDetails />
+          {/* <NewsDetails /> */}
         </div>
         {/* SINGLE BLOG VIEW */}
         <div className="w-full ">

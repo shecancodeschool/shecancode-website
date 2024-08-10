@@ -4,7 +4,7 @@ const blogs = [
         blogLink: "more-than-100-students-trained-in-2024",
         author: "John Doe",
         date: "2024-08-10T16:00:59.526Z",
-        categories: ["Career Advancement"],
+        categories: ["Career Readiness"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country.",
         image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
@@ -15,7 +15,7 @@ const blogs = [
         author: "Jane Smith",
         date: "2024-08-11",  // Assuming today's date
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
-        categories: ["Networking", "Career Advancement"],
+        categories: ["Networking", "Career Readiness"],
         content: "Learn valuable strategies to make meaningful connections and impress potential employers at networking events.",
         image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
     },
@@ -223,16 +223,15 @@ const blogs = [
 
 const blogCategories = [
     "Career Readiness",
-    "Business Development",
-    "Personal Growth",
-    "Technical Skills",
     "Networking",
-    "Career Advancement",
     "Productivity",
+    "Technical Skills",
+    "Personal Growth",
+    "Business Development",
     "Marketing",
-    "Tech Support",
-    "Project Management",
-    "Other"
+    "Social Media",
+    "Leadership",
+    "Communication"
 ];
 
 export default {
