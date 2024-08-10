@@ -45,7 +45,7 @@ const ServicesSection = ({ servicesSectionData }) => {
                                         height={24}
                                     />
                                 </div>
-                                <span className="text-gray-700 w-full text-xl md:text-xl lg:text-2xl font-medium">
+                                <span className="text-gray-700 w-full text-base md:text-xl font-medium">
                                     {item.text}
                                 </span>
                             </li>))
