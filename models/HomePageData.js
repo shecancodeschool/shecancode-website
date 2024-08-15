@@ -1,6 +1,5 @@
 import mongoose from 'mongoose';
 
-
 const HomePageDataSchema = new mongoose.Schema({
   bannerData: {
     title: { type: String, required: true, trim: true },

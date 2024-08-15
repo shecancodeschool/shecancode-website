@@ -127,28 +127,20 @@ export const Links = [
         submenu: true,
         sublinks: [
             {
-                Head: "Hire our alumni",
+                Head: "Job vacancies",
                 sublink: [
                     {
-                        name: 'How to hire our allumni',
-                        link: "/blogs?category=Events&post=Cohort-9-graduation"
-                    },
-                    {
-                        name: 'Hire',
-                        link: "/contact-us"
+                        name: 'View jobs',
+                        link: "/careers"
                     }
                 ]
             },
             {
-                Head: "Job vacancies",
+                Head: "Hire our alumni",
                 sublink: [
                     {
-                        name: 'SheCanCODE Team Specs',
-                        link: "/blogs?category=Alumni-stories&post=Best-backend-class-performer"
-                    },
-                    {
-                        name: 'View jobs',
-                        link: "/careers"
+                        name: 'Hire',
+                        link: "/contact-us"
                     }
                 ]
             },

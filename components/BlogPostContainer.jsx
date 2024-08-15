@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export default function BlogPostContainer({ blog }) {
-    const { image, title, blogLink, description, categories, ...rest } = blog;
+    const { image, title, slug, description, categories, ...rest } = blog;
     return (
-        <Link href={`/articles/${blogLink}`} className='flex flex-col w-full shadow-md mb-10 rounded-md cursor-pointer bg-white'>
+        <Link href={`/articles/${slug}`} className='flex flex-col w-full shadow-md mb-10 rounded-md cursor-pointer bg-white'>
             <div className='h-56 w-full rounded-t-md relative'
                 style={{
                     backgroundImage: `url(${image})`,

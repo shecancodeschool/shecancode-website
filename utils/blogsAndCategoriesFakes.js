@@ -1,7 +1,7 @@
 const blogs = [
     {
         title: "More than 100 students trained in 2024",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "John Doe",
         date: "2024-08-10T16:00:59.526Z",
         categories: ["Career Readiness"],
@@ -11,7 +11,7 @@ const blogs = [
     },
     {
         title: "Top Tips to Master Networking Events",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Jane Smith",
         date: "2024-08-11",  // Assuming today's date
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
@@ -21,7 +21,7 @@ const blogs = [
     },
     {
         title: "Essential Time Management Techniques for Busy Professionals",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Michael Lee",
         date: "2024-08-08",  // Assuming a recent date
         categories: ["Productivity"],
@@ -31,7 +31,7 @@ const blogs = [
     },
     {
         title: "The Web Developer's Guide to Building Responsive Websites",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Sarah Jones",
         date: "2024-07-25",  // Assuming an older date
         categories: ["Technical Skills"],
@@ -41,7 +41,7 @@ const blogs = [
     },
     {
         title: "Building a Strong Personal Brand in the Digital Age",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Emily Brown",
         date: "2024-08-05",
         categories: ["Personal Growth"],
@@ -51,7 +51,7 @@ const blogs = [
     },
     {
         title: "The Power of Storytelling in Business",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "David Johnson",
         date: "2024-08-02",
         categories: ["Business Development", "Marketing"],
@@ -61,7 +61,7 @@ const blogs = [
     },
     {
         title: "Overcoming Imposter Syndrome: Tips for Building Confidence",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Olivia Carter",
         date: "2024-07-30",
         categories: ["Personal Growth"],
@@ -71,7 +71,7 @@ const blogs = [
     },
     {
         title: "The Ultimate Guide to Creating Engaging Social Media Content",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Ethan Miller",
         date: "2024-07-28",
         categories: ["Marketing", "Social Media"],
@@ -81,7 +81,7 @@ const blogs = [
     },
     {
         title: "How to Develop a Winning Career Development Plan",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Sophia Rodriguez",
         date: "2024-07-25",
         categories: ["Career Advancement"],
@@ -91,7 +91,7 @@ const blogs = [
     },
     {
         title: "The Importance of Continuous Learning in Today's Workplace",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "William Evans",
         date: "2024-07-22",
         categories: ["Career Readiness", "Productivity"],
@@ -101,7 +101,7 @@ const blogs = [
     },
     {
         title: "Effective Communication Strategies for Leaders",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Ava Patel",
         date: "2024-07-19",
         categories: ["Leadership", "Communication"],
@@ -111,7 +111,7 @@ const blogs = [
     },
     {
         title: "Boost Your Productivity with These Time-Saving Tips",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Noah Lee",
         date: "2024-07-16",
         categories: ["Productivity"],
@@ -121,7 +121,7 @@ const blogs = [
     },
     {
         title: "The Future of Work: Trends and Opportunities",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Grace Kim",
         date: "2024-07-13",
         categories: ["Career Readiness"],
@@ -131,7 +131,7 @@ const blogs = [
     },
     {
         title: "Building a Strong Personal Brand in the Digital Age",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Emily Brown",
         date: "2024-08-05",
         categories: ["Personal Growth"],
@@ -141,7 +141,7 @@ const blogs = [
     },
     {
         title: "The Power of Storytelling in Business",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "David Johnson",
         date: "2024-08-02",
         categories: ["Business Development", "Marketing"],
@@ -151,7 +151,7 @@ const blogs = [
     },
     {
         title: "Overcoming Imposter Syndrome: Tips for Building Confidence",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Olivia Carter",
         date: "2024-07-30",
         categories: ["Personal Growth"],
@@ -161,7 +161,7 @@ const blogs = [
     },
     {
         title: "The Ultimate Guide to Creating Engaging Social Media Content",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Ethan Miller",
         date: "2024-07-28",
         categories: ["Marketing", "Social Media"],
@@ -171,7 +171,7 @@ const blogs = [
     },
     {
         title: "How to Develop a Winning Career Development Plan",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Sophia Rodriguez",
         date: "2024-07-25",
         categories: ["Career Advancement"],
@@ -181,7 +181,7 @@ const blogs = [
     },
     {
         title: "The Importance of Continuous Learning in Today's Workplace",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "William Evans",
         date: "2024-07-22",
         categories: ["Career Readiness", "Productivity"],
@@ -191,7 +191,7 @@ const blogs = [
     },
     {
         title: "Effective Communication Strategies for Leaders",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Ava Patel",
         date: "2024-07-19",
         categories: ["Leadership", "Communication"],
@@ -201,7 +201,7 @@ const blogs = [
     },
     {
         title: "Boost Your Productivity with These Time-Saving Tips",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Noah Lee",
         date: "2024-07-16",
         categories: ["Productivity"],
@@ -211,7 +211,7 @@ const blogs = [
     },
     {
         title: "The Future of Work: Trends and Opportunities",
-        blogLink: "more-than-100-students-trained-in-2024",
+        slug: "more-than-100-students-trained-in-2024",
         author: "Grace Kim",
         date: "2024-07-13",
         categories: ["Career Readiness"],
