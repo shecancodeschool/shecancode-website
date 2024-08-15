@@ -1,9 +1,9 @@
 "use client"
 
-import JobDescriptionContainer from '../../../components/JobDescriptionContainter'
 import JobDescriptionPageBanner from "../../../components/JobDescriptionPageBanner";
 import { usePathname } from 'next/navigation';
 import Jobs from '../../../utils/jobsFakes';
+import JobDescriptionContainter from '../../../components/JobDescriptionContainter';
 
 const page = () => {
   const pathname = usePathname();
