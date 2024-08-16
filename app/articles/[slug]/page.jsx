@@ -1,19 +1,24 @@
 // import { NewsDetails } from "../../../components/Banner";
 import React from "react";
 import Image from "next/image";
-import sm from "../../../public/blog-sm.jpg";
 import md from "../../../public/blog-md.jpg";
 import md1 from "../../../public/blog-post.png";
 import Blog from "../../../components/Blog";
 import Blog1 from "../../../public/blog1.jpg";
+import BlogBanner from "../../../components/blogdetails/BlogBanner";
+import blogsAndCategoriesFakes from "../../../utils/blogsAndCategoriesFakes";
 
-const page = () => {
+const page = ({params}) => {
+  const blog = blogsAndCategoriesFakes.blogs.find((blog) => blog.slug === params.slug)
+  
   return (
     <>
+      <BlogBanner 
+        backgroundImage={blog.image}
+        title={blog.title}
+        description={blog.description}
+      />
       <div className=" h-full flex flex-col justify-evenly gap-16 bg-[#FAFAFA]">
-        <div className="">
-          {/* <NewsDetails /> */}
-        </div>
         {/* SINGLE BLOG VIEW */}
         <div className="w-full ">
           <div className="max-w-[83rem] p-4 md:p-0 mx-auto flex justify-between w-full mb-[5rem]">

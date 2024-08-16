@@ -5,7 +5,7 @@ const blogs = [
         author: "John Doe",
         date: "2024-08-10T16:00:59.526Z",
         categories: ["Career Readiness"],
-        description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
+        description: "Efficiently empower seamless meta-services with impactful opportunities. Distinctively transition virtual outsourcing with focused e-tailers.",
         content: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country.",
         image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
     },
