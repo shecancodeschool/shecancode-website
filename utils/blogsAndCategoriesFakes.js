@@ -11,7 +11,7 @@ const blogs = [
     },
     {
         title: "Top Tips to Master Networking Events",
-        slug: "more-than-100-students-trained-in-2024",
+        slug: "top-tips-to-master-networking-events",
         author: "Jane Smith",
         date: "2024-08-11",  // Assuming today's date
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
@@ -21,7 +21,7 @@ const blogs = [
     },
     {
         title: "Essential Time Management Techniques for Busy Professionals",
-        slug: "more-than-100-students-trained-in-2024",
+        slug: "essential-time-management-techniques-for-busy-professionals",
         author: "Michael Lee",
         date: "2024-08-08",  // Assuming a recent date
         categories: ["Productivity"],
@@ -31,7 +31,7 @@ const blogs = [
     },
     {
         title: "The Web Developer's Guide to Building Responsive Websites",
-        slug: "more-than-100-students-trained-in-2024",
+        slug: "the-web-developers-guide-to-building-responsive-websites",
         author: "Sarah Jones",
         date: "2024-07-25",  // Assuming an older date
         categories: ["Technical Skills"],
@@ -41,7 +41,7 @@ const blogs = [
     },
     {
         title: "Building a Strong Personal Brand in the Digital Age",
-        slug: "more-than-100-students-trained-in-2024",
+        slug: "building-a-strong-personal-brand-in-the-digital-age",
         author: "Emily Brown",
         date: "2024-08-05",
         categories: ["Personal Growth"],
@@ -51,7 +51,7 @@ const blogs = [
     },
     {
         title: "The Power of Storytelling in Business",
-        slug: "more-than-100-students-trained-in-2024",
+        slug: "the-power-of-storytelling-in-business",
         author: "David Johnson",
         date: "2024-08-02",
         categories: ["Business Development", "Marketing"],
@@ -61,7 +61,7 @@ const blogs = [
     },
     {
         title: "Overcoming Imposter Syndrome: Tips for Building Confidence",
-        slug: "more-than-100-students-trained-in-2024",
+        slug: "overcoming-imposter-syndrome-tips-for-building-confidence",
         author: "Olivia Carter",
         date: "2024-07-30",
         categories: ["Personal Growth"],
@@ -71,7 +71,7 @@ const blogs = [
     },
     {
         title: "The Ultimate Guide to Creating Engaging Social Media Content",
-        slug: "more-than-100-students-trained-in-2024",
+        slug: "the-ultimate-guide-to-creating-engaging-social-media-content",
         author: "Ethan Miller",
         date: "2024-07-28",
         categories: ["Marketing", "Social Media"],

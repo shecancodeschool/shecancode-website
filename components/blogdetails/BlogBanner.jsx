@@ -1,6 +1,8 @@
-export default function BlogBanner({ backgroundImage, title, description, hasButton }) {
+import Link from "next/link";
+
+export default function BlogBanner({ backgroundImage, categories, title, description, slug }) {
     const jssStyles = {
-        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(${backgroundImage})`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         transition: 'background-image 0.3s ease-in-out',
@@ -9,18 +11,27 @@ export default function BlogBanner({ backgroundImage, title, description, hasBut
 
     return (
         <div className='flex flex-col items-center justify-center mx-auto w-full px-4 md:px-12 pt-36 pb-16 md:pb-32 overflow-hidden' style={jssStyles}>
-            <div className={`flex flex-col gap-6 items-center justify-center text-white w-full max-w-screen-xl`}>
-                <h1 className="text-3xl md:text-4xl font-extrabold w-full md:w-2/3 text-center">{title}</h1>
-                {description &&
-                    <p className="text-lg md:text-xl text-center w-full sm:w-full md:w-2/3">
-                        {description}
-                    </p>
-                }
-                {hasButton && 
-                    <button className="bg-[#317ACC] py-3 px-6 mt-6 text-white rounded-md hover:bg-[#296494]">
-                        {hasButton.label}
-                    </button>
-                }
+            <div className={`flex flex-col items-start space-y-12 justify-center text-white w-full max-w-screen-xl`}>
+                <div className="px-8 py-2 bg-white text-black">
+                    {categories && categories.map((category, index) => {
+                        if (index > 0) {
+                            return (
+                                <span key={index} className="text-black">, {category}</span>
+                            )
+                        }
+
+                        return (
+                            <span key={index} className="text-black">{category}</span>
+                        )
+                    })}
+                </div>
+                <h1 className="text-3xl md:text-5xl font-extrabold w-full text-start">{title}</h1>
+                <p className="text-lg md:text-xl text-start w-full sm:w-full md:w-2/3">
+                    {description}
+                </p>
+                <Link href={`/articles/${slug}/#content`} className="bg-[#317ACC] py-3 px-6 text-white rounded-md hover:bg-[#296494]">
+                    Read More
+                </Link>
             </div>
         </div>
     )

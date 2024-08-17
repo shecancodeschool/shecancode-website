@@ -15,8 +15,10 @@ const page = ({params}) => {
     <>
       <BlogBanner 
         backgroundImage={blog.image}
+        categories={blog.categories}
         title={blog.title}
         description={blog.description}
+        slug={blog.slug}
       />
       <div className=" h-full flex flex-col justify-evenly gap-16 bg-[#FAFAFA]">
         {/* SINGLE BLOG VIEW */}
