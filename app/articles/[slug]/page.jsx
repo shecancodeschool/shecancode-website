@@ -19,6 +19,8 @@ const page = ({params}) => {
         title={blog.title}
         description={blog.description}
         slug={blog.slug}
+        author={blog.author}
+        publicationDate={blog.publishedOn}
       />
       <div className=" h-full flex flex-col justify-evenly gap-16 bg-[#FAFAFA]">
         {/* SINGLE BLOG VIEW */}
