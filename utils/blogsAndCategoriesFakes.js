@@ -7,7 +7,7 @@ const blogs = [
         categories: ["Career Readiness"],
         description: "Efficiently empower seamless meta-services with impactful opportunities. Distinctively transition virtual outsourcing with focused e-tailers.",
         content: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "Top Tips to Master Networking Events",
@@ -17,7 +17,7 @@ const blogs = [
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         categories: ["Networking", "Career Readiness"],
         content: "Learn valuable strategies to make meaningful connections and impress potential employers at networking events.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "Essential Time Management Techniques for Busy Professionals",
@@ -27,7 +27,7 @@ const blogs = [
         categories: ["Productivity"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Discover effective time management methods to boost your efficiency and achieve your goals.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "The Web Developer's Guide to Building Responsive Websites",
@@ -37,7 +37,7 @@ const blogs = [
         categories: ["Technical Skills"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Learn the fundamentals of responsive web design to create websites that adapt seamlessly to different devices.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "Building a Strong Personal Brand in the Digital Age",
@@ -47,7 +47,7 @@ const blogs = [
         categories: ["Personal Growth"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Discover how to create a compelling personal brand that sets you apart in the competitive job market.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "The Power of Storytelling in Business",
@@ -57,7 +57,7 @@ const blogs = [
         categories: ["Business Development", "Marketing"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Learn how to use storytelling to connect with your audience and drive business growth.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "Overcoming Imposter Syndrome: Tips for Building Confidence",
@@ -67,7 +67,7 @@ const blogs = [
         categories: ["Personal Growth"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Learn how to overcome self-doubt and build confidence in your abilities.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "The Ultimate Guide to Creating Engaging Social Media Content",
@@ -77,7 +77,7 @@ const blogs = [
         categories: ["Marketing", "Social Media"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Discover strategies for creating social media content that resonates with your audience and drives engagement.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "How to Develop a Winning Career Development Plan",
@@ -87,7 +87,7 @@ const blogs = [
         categories: ["Career Advancement"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Learn how to create a comprehensive career development plan to achieve your professional goals.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "The Importance of Continuous Learning in Today's Workplace",
@@ -97,7 +97,7 @@ const blogs = [
         categories: ["Career Readiness", "Productivity"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Discover the benefits of continuous learning and how it can help you stay ahead in your career.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "Effective Communication Strategies for Leaders",
@@ -107,7 +107,7 @@ const blogs = [
         categories: ["Leadership", "Communication"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Learn how to communicate effectively with your team and build strong relationships.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "Boost Your Productivity with These Time-Saving Tips",
@@ -117,7 +117,7 @@ const blogs = [
         categories: ["Productivity"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Discover practical tips to help you increase your productivity and get more done in less time.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "The Future of Work: Trends and Opportunities",
@@ -127,7 +127,7 @@ const blogs = [
         categories: ["Career Readiness"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Explore the latest trends in the workplace and how to prepare for the future of work.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "Building a Strong Personal Brand in the Digital Age",
@@ -137,7 +137,7 @@ const blogs = [
         categories: ["Personal Growth"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Discover how to create a compelling personal brand that sets you apart in the competitive job market.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "The Power of Storytelling in Business",
@@ -147,7 +147,7 @@ const blogs = [
         categories: ["Business Development", "Marketing"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Learn how to use storytelling to connect with your audience and drive business growth.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "Overcoming Imposter Syndrome: Tips for Building Confidence",
@@ -157,7 +157,7 @@ const blogs = [
         categories: ["Personal Growth"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Learn how to overcome self-doubt and build confidence in your abilities.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "The Ultimate Guide to Creating Engaging Social Media Content",
@@ -167,7 +167,7 @@ const blogs = [
         categories: ["Marketing", "Social Media"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Discover strategies for creating social media content that resonates with your audience and drives engagement.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "How to Develop a Winning Career Development Plan",
@@ -177,7 +177,7 @@ const blogs = [
         categories: ["Career Advancement"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Learn how to create a comprehensive career development plan to achieve your professional goals.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "The Importance of Continuous Learning in Today's Workplace",
@@ -187,7 +187,7 @@ const blogs = [
         categories: ["Career Readiness", "Productivity"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Discover the benefits of continuous learning and how it can help you stay ahead in your career.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "Effective Communication Strategies for Leaders",
@@ -197,7 +197,7 @@ const blogs = [
         categories: ["Leadership", "Communication"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Learn how to communicate effectively with your team and build strong relationships.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "Boost Your Productivity with These Time-Saving Tips",
@@ -207,7 +207,7 @@ const blogs = [
         categories: ["Productivity"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Discover practical tips to help you increase your productivity and get more done in less time.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
     {
         title: "The Future of Work: Trends and Opportunities",
@@ -217,7 +217,7 @@ const blogs = [
         categories: ["Career Readiness"],
         description: "SheCanCode has trained more than 100 students in 2024, making it the largest tech training provider in the country",
         content: "Explore the latest trends in the workplace and how to prepare for the future of work.",
-        image: "https://media.licdn.com/dms/image/D4D22AQF-fn4luo-qXA/feedshare-shrink_2048_1536/0/1719222469868?e=1726099200&v=beta&t=fNFTczkVEmJ6FAKwnrI6c0-qDAhh4mS4l2uYr94E5rY",
+        image: "https://shecancode-website-dev.vercel.app/banner_img.png",
     },
 ];
 
