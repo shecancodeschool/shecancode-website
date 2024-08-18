@@ -1,10 +1,8 @@
-// import { NewsDetails } from "../../../components/Banner";
 import React from "react";
 import BlogBanner from "../../../components/blogdetails/BlogBanner";
 import blogsAndCategoriesFakes from "../../../utils/blogsAndCategoriesFakes";
 import ReusableSection from "../../../components/ReusableSection";
 import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa6";
 import Link from "next/link";
 
 const page = ({ params }) => {
