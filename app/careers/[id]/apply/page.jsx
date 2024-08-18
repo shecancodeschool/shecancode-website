@@ -16,7 +16,6 @@ const page = () => {
   return (
     <>
       <JobDescriptionPageBanner job={job} />
-      {/* <JobApplicationForm /> */}
       <ReusableSection>
         <form action={""} className='flex flex-col space-y-8 w-full items-center justify-center'>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

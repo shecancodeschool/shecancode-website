@@ -56,7 +56,7 @@ const Accordion = ({ items }) => {
     return (
         <div>
 
-            {items.map((item, index) => (
+            {items && items.map((item, index) => (
                 <AccordionItem
                     key={index}
                     question={item.question}

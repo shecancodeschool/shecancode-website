@@ -3,17 +3,14 @@ import CourseBanner from '../../../components/coursedetails/CourseBanner'
 import CourseDetail from '../../../components/CourseDetails'
 import coursesFakes from '../../../utils/coursesFakes';
 
-
 const page = ({ params }) => {
   const { slug } = params;
 
   const course = coursesFakes.CoursesData.find((course) => course.slug === slug);
-  console.log(course);
-  
 
   return (
     <>
-      <CourseBanner 
+      <CourseBanner
         image={course.image}
         title={course.title}
         description={course.description}
@@ -21,7 +18,9 @@ const page = ({ params }) => {
         startDate={course.startDate}
         isOpen={course.isOpen}
       />
-      <CourseDetail />
+      <CourseDetail
+        course={course}
+      />
     </>
   )
 }
